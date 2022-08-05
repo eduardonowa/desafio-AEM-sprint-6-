@@ -13,6 +13,7 @@ import Description from './components/micro/Description/Description'
 import CheckBox from './components/micro/CheckBox/CheckBox'
 import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
+import Error404 from './components/Error404/Error404'
 import Menu from './components/Menu/Menu'
 import Inputs from './components/Inputs/Inputs'
 import {
@@ -34,6 +35,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Error404 Component Mapping
+MapTo('vue/components/checkbox-red')(Error404, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox-red')(CheckBox, EditConfig)
