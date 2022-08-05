@@ -17,6 +17,7 @@ import Error404 from './components/Error404/Error404'
 import Menu from './components/Menu/Menu'
 import Inputs from './components/Inputs/Inputs'
 import Social from './components/containers/Tabs/Social/Social'
+import Success from './components/containers/Tabs/Success/Success'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -36,6 +37,8 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+// Success Component Mapping
+MapTo('vue/components/success-red')(Success, EditConfig)
 
 // Social Component Mapping
 MapTo('vue/components/social-red')(Social, EditConfig)
