@@ -31,13 +31,13 @@ const EditConfig = {
 **********************************************************************/
 
 // Birthday Component Mapping
-MapTo('vue/components/birthday')(Birthday, EditConfig)
+MapTo('vue/components/birthday-red')(Birthday, EditConfig)
 
 // Buttons Component Mapping
-MapTo('vue/components/buttons')(Buttons, EditConfig)
+MapTo('vue/components/buttons-red')(Buttons, EditConfig)
 
 // Title Component Mapping
-MapTo('vue/components/title')(Title, EditConfig)
+MapTo('vue/components/title-red')(Title, EditConfig)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
