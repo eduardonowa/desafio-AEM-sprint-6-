@@ -15,7 +15,8 @@ import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
 import Error404 from './components/Error404/Error404'
 import Menu from './components/Menu/Menu'
-import Inputs from './components/Inputs/Inputs'
+import MyInputs from './components/MyInputs/MyInputs'
+import Certificates from './components/container/Certificates/Certificates'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -45,6 +46,9 @@ MapTo('vue/components/checkbox-red')(CheckBox, EditConfig)
 // Description Component Mapping
 MapTo('vue/components/description-red')(Description, EditConfig)
 
+// Certificates Component Mapping
+MapTo('vue/components/certificates-red')(Certificates, EditConfig)
+
 // Birthday Component Mapping
 MapTo('vue/components/birthday-red')(Birthday, EditConfig)
 
@@ -58,7 +62,7 @@ MapTo('vue/components/menu-red')(Menu, EditConfig)
 MapTo('vue/components/title-red')(Title, EditConfig)
 
 // Input Component Mapping
-MapTo('vue/components/inputs-red')(Inputs, EditConfig)
+MapTo('vue/components/inputs-red')(MyInputs, EditConfig)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
