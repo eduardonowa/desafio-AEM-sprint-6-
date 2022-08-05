@@ -1,21 +1,22 @@
-// import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
-// import Text from './components/DefaultComponents/Text/Text'
+import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
+import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
-// import Checkbox from './components/DefaultComponents/Checkbox/Checkbox'
-// import Select from './components/DefaultComponents/Select/Select'
-// import Header from './components/DefaultComponents/Header/Header'
-// import Footer from './components/DefaultComponents/Footer/Footer'
-// import Image from './components/DefaultComponents/Image/Image'
-// import Main from './components/DefaultComponents/Main/Main'
+import Checkbox from './components/DefaultComponents/Checkbox/Checkbox' // default checkbox
+import Select from './components/DefaultComponents/Select/Select'
+import Header from './components/DefaultComponents/Header/Header'
+import Footer from './components/DefaultComponents/Footer/Footer'
+import Image from './components/DefaultComponents/Image/Image'
+import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
 import CheckBox from './components/micro/CheckBox/CheckBox'
 import Texts from './components/micro/Texts/Texts'
-import Birthday from './components/container/Birthday/Birthday'
+import Birthday from './components/containers/Birthday/Birthday'
 import Error404 from './components/Error404/Error404'
 import Menu from './components/Menu/Menu'
 import Inputs from './components/Inputs/Inputs'
+import Social from './components/containers/Tabs/Social/Social'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -36,8 +37,11 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
+// Social Component Mapping
+MapTo('vue/components/social-red')(Social, EditConfig)
+
 // Error404 Component Mapping
-MapTo('vue/components/checkbox-red')(Error404, EditConfig)
+MapTo('vue/components/error404-red')(Error404, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox-red')(CheckBox, EditConfig)
@@ -69,7 +73,7 @@ MapTo('vue/components/select')(Select, EditConfig)
 MapTo('vue/components/text-red')(Texts, EditConfig)
 
 // Checkbox Component Mapping
-// MapTo('vue/components/checkbox')(Checkbox, EditConfig)
+MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
