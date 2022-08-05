@@ -19,6 +19,7 @@ import Inputs from './components/Inputs/Inputs'
 import Social from './components/containers/Tabs/Social/Social'
 import Success from './components/containers/Tabs/Success/Success'
 import Basic from './components/containers/Tabs/Basic/Basic'
+import Certificates from './components/containers/Tabs/Certificates/Certificates'
 import Tabs from './components/containers/Tabs/Tabs'
 import {
   withComponentMappingContext,
@@ -51,6 +52,9 @@ MapTo('vue/components/success-red')(Success, EditConfig)
 
 // Social Component Mapping
 MapTo('vue/components/social-red')(Social, EditConfig)
+
+// Certificates Component Mapping
+MapTo('vue/components/certificates-red')(Certificates, EditConfig)
 
 // Error404 Component Mapping
 MapTo('vue/components/error404-red')(Error404, EditConfig)
