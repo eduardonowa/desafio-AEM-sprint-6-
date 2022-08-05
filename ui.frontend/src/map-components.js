@@ -8,6 +8,7 @@ import Footer from './components/DefaultComponents/Footer/Footer'
 import Image from './components/DefaultComponents/Image/Image'
 import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
+import Buttons from './components/micro/Buttons/Buttons'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -27,6 +28,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Buttons Component Mapping
+MapTo('vue/components/buttons')(Buttons, EditConfig)
 
 // Title Component Mapping
 MapTo('vue/components/title')(Title, EditConfig)
