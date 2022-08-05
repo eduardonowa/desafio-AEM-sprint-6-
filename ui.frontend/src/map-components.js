@@ -10,7 +10,7 @@ import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
-import CheckBox from './components/micro/CheckBox/CheckBox'
+import CheckBox from './components/CheckBox/CheckBox'
 import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/containers/Birthday/Birthday'
 import Error404 from './components/Error404/Error404'
@@ -18,6 +18,7 @@ import Menu from './components/Menu/Menu'
 import Inputs from './components/Inputs/Inputs'
 import Social from './components/containers/Tabs/Social/Social'
 import Success from './components/containers/Tabs/Success/Success'
+import Basic from './components/containers/Tabs/Basic/Basic'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -37,6 +38,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+// Basic Component Mapping
+MapTo('vue/components/basic-red')(Basic, EditConfig)
+
 // Success Component Mapping
 MapTo('vue/components/success-red')(Success, EditConfig)
 
