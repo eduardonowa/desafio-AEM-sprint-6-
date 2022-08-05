@@ -1,7 +1,7 @@
 import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
 import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
-import CheckBox from './components/DefaultComponents/Checkbox/Checkbox'
+import Checkbox from './components/DefaultComponents/Checkbox/Checkbox'
 import Select from './components/DefaultComponents/Select/Select'
 import Header from './components/DefaultComponents/Header/Header'
 import Footer from './components/DefaultComponents/Footer/Footer'
@@ -10,6 +10,7 @@ import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
+import CheckBox from './components/micro/CheckBox/CheckBox'
 import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
 import Menu from './components/Menu/Menu'
@@ -33,8 +34,11 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
+// Checkbox Component Mapping
+MapTo('vue/components/checkbox-red')(CheckBox, EditConfig)
+
 // Description Component Mapping
-MapTo('vue/components/birthday')(Description, EditConfig)
+MapTo('vue/components/description-red')(Description, EditConfig)
 
 // Birthday Component Mapping
 MapTo('vue/components/birthday-red')(Birthday, EditConfig)
@@ -57,7 +61,7 @@ MapTo('vue/components/select')(Select, EditConfig)
 MapTo('vue/components/text-red')(Texts, EditConfig)
 
 // Checkbox Component Mapping
-MapTo('vue/components/checkbox')(CheckBox, EditConfig)
+MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
