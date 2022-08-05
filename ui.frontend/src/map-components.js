@@ -14,6 +14,7 @@ import CheckBox from './components/micro/CheckBox/CheckBox'
 import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
 import Menu from './components/Menu/Menu'
+import Inputs from './components/Inputs/Inputs'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -51,6 +52,9 @@ MapTo('vue/components/menu-red')(Menu, EditConfig)
 
 // Title Component Mapping
 MapTo('vue/components/title-red')(Title, EditConfig)
+
+// Input Component Mapping
+MapTo('vue/components/inputs-red')(Inputs, EditConfig)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
