@@ -9,6 +9,7 @@ import Image from './components/DefaultComponents/Image/Image'
 import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
+import Description from './components/micro/Description/Description'
 import Birthday from './components/container/Birthday/Birthday'
 import {
   withComponentMappingContext,
@@ -29,6 +30,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Description Component Mapping
+MapTo('vue/components/birthday')(Description, EditConfig)
 
 // Birthday Component Mapping
 MapTo('vue/components/birthday')(Birthday, EditConfig)
