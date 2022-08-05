@@ -1,12 +1,12 @@
-import CustomClasses from './components/CustomClasses/CustomClasses'
-import Text from './components/Text/Text'
+import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
+import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
-import CheckBox from './components/Checkbox/Checkbox'
-import Select from './components/Select/Select'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Image from './components/Image/Image'
-import Main from './components/Main/Main'
+import CheckBox from './components/DefaultComponents/Checkbox/Checkbox'
+import Select from './components/DefaultComponents/Select/Select'
+import Header from './components/DefaultComponents/Header/Header'
+import Footer from './components/DefaultComponents/Footer/Footer'
+import Image from './components/DefaultComponents/Image/Image'
+import Main from './components/DefaultComponents/Main/Main'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
