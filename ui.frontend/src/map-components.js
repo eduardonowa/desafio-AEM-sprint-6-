@@ -1,12 +1,12 @@
-import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
-import Text from './components/DefaultComponents/Text/Text'
+// import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
+// import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
-import Checkbox from './components/DefaultComponents/Checkbox/Checkbox'
-import Select from './components/DefaultComponents/Select/Select'
-import Header from './components/DefaultComponents/Header/Header'
-import Footer from './components/DefaultComponents/Footer/Footer'
-import Image from './components/DefaultComponents/Image/Image'
-import Main from './components/DefaultComponents/Main/Main'
+// import Checkbox from './components/DefaultComponents/Checkbox/Checkbox'
+// import Select from './components/DefaultComponents/Select/Select'
+// import Header from './components/DefaultComponents/Header/Header'
+// import Footer from './components/DefaultComponents/Footer/Footer'
+// import Image from './components/DefaultComponents/Image/Image'
+// import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
@@ -69,7 +69,7 @@ MapTo('vue/components/select')(Select, EditConfig)
 MapTo('vue/components/text-red')(Texts, EditConfig)
 
 // Checkbox Component Mapping
-MapTo('vue/components/checkbox')(Checkbox, EditConfig)
+// MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
