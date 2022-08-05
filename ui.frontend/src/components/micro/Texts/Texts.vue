@@ -6,15 +6,14 @@
 
 <script>
 export default {
-  // eslint-disable-next-line
-  name: "Texts",
+  name: 'Texts',
   props: {
     description: String,
-    text: String,
-  },
-};
+    text: String
+  }
+}
 </script>
 
 <style lang="scss" scooped>
-@import "./Text.scss";
+@import "./Texts.scss";
 </style>
