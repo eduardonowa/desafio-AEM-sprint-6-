@@ -12,6 +12,7 @@ import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
 import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
+import Menu from './components/Menu/Menu'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -41,6 +42,9 @@ MapTo('vue/components/birthday-red')(Birthday, EditConfig)
 // Buttons Component Mapping
 MapTo('vue/components/buttons-red')(Buttons, EditConfig)
 
+// Menu Component Mapping
+MapTo('vue/components/menu-red')(Menu, EditConfig)
+
 // Title Component Mapping
 MapTo('vue/components/title-red')(Title, EditConfig)
 
@@ -50,7 +54,7 @@ MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 MapTo('vue/components/select')(Select, EditConfig)
 
 // Texts Component Mapping
-MapTo('vue/components/texts')(Texts, EditConfig)
+MapTo('vue/components/text-red')(Texts, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
