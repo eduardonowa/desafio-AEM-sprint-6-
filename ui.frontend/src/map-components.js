@@ -10,6 +10,7 @@ import Main from './components/DefaultComponents/Main/Main'
 import Title from './components/micro/Title/Title'
 import Buttons from './components/micro/Buttons/Buttons'
 import Description from './components/micro/Description/Description'
+import Texts from './components/micro/Texts/Texts'
 import Birthday from './components/container/Birthday/Birthday'
 import {
   withComponentMappingContext,
@@ -47,6 +48,9 @@ MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
 // Select Component Mapping
 MapTo('vue/components/select')(Select, EditConfig)
+
+// Texts Component Mapping
+MapTo('vue/components/texts')(Texts, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
