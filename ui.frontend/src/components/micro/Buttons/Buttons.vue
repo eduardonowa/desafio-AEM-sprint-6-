@@ -45,10 +45,10 @@ export default {
     type: String,
     event: {
       type: Function,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scooped>

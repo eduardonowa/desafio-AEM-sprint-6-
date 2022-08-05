@@ -55,75 +55,75 @@ export default {
   // eslint-disable-next-line
   name: "Birthday",
   components: {},
-  data() {
+  data () {
     return {
-      day: "",
-      month: "",
-      year: "",
-      age: "",
-      actualYear: "",
-      rangeYears: "",
-    };
+      day: '',
+      month: '',
+      year: '',
+      age: '',
+      actualYear: '',
+      rangeYears: ''
+    }
   },
   methods: {
-    getDay(event) {
-      this.day = event.target.value;
-      window.localStorage.setItem("day", this.day);
+    getDay (event) {
+      this.day = event.target.value
+      window.localStorage.setItem('day', this.day)
     },
-    getMonth(event) {
-      this.month = event.target.value;
-      window.localStorage.setItem("month", this.month);
+    getMonth (event) {
+      this.month = event.target.value
+      window.localStorage.setItem('month', this.month)
     },
-    getYear(event) {
-      this.year = event.target.value;
-      let date = new Date();
-      let actualDay = date.getDate();
-      let actualMonth = 1 + date.getMonth();
-      this.actualYear = date.getUTCFullYear();
-      let month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    getYear (event) {
+      this.year = event.target.value
+      const date = new Date()
+      let actualDay = date.getDate()
+      let actualMonth = 1 + date.getMonth()
+      this.actualYear = date.getUTCFullYear()
+      const month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
       if (this.day > actualDay) {
-        actualDay = actualDay + month[actualMonth - 1];
-        actualMonth = actualMonth - 1;
+        actualDay = actualDay + month[actualMonth - 1]
+        actualMonth = actualMonth - 1
       }
       if (this.month > actualMonth) {
-        actualMonth = actualMonth + 12;
-        this.actualYear = this.actualYear - 1;
+        actualMonth = actualMonth + 12
+        this.actualYear = this.actualYear - 1
       }
-      window.localStorage.setItem("year", this.year);
-      this.age = this.actualYear - this.year;
-      window.localStorage.setItem("age", this.age);
+      window.localStorage.setItem('year', this.year)
+      this.age = this.actualYear - this.year
+      window.localStorage.setItem('age', this.age)
     },
-    padStart(date) {
-      return String(date).padStart(2, "0");
+    padStart (date) {
+      return String(date).padStart(2, '0')
     },
 
-    getActualYear() {
-      let date = new Date();
-      this.rangeYears = date.getFullYear() - 1900;
-    },
+    getActualYear () {
+      const date = new Date()
+      this.rangeYears = date.getFullYear() - 1900
+    }
   },
-  mounted() {
-    this.getActualYear();
-    this.age = window.localStorage["age"];
+  mounted () {
+    this.getActualYear()
+    this.age = window.localStorage.age
   },
   computed: {
-    selectedDay() {
-      return window.localStorage.getItem("day")
-        ? window.localStorage.getItem("day")
-        : 0;
+    selectedDay () {
+      return window.localStorage.getItem('day')
+        ? window.localStorage.getItem('day')
+        : 0
     },
-    selectedMonth() {
-      return window.localStorage.getItem("month")
-        ? window.localStorage.getItem("month")
-        : 0;
+    selectedMonth () {
+      return window.localStorage.getItem('month')
+        ? window.localStorage.getItem('month')
+        : 0
     },
-    selectedYear() {
-      return window.localStorage.getItem("year")
-        ? window.localStorage.getItem("year")
-        : 0;
-    },
-  },
-};
+    selectedYear () {
+      return window.localStorage.getItem('year')
+        ? window.localStorage.getItem('year')
+        : 0
+    }
+  }
+}
 </script>
 
 <style lang="scss" scooped>
