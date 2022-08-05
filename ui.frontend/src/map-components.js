@@ -7,6 +7,7 @@ import Header from './components/DefaultComponents/Header/Header'
 import Footer from './components/DefaultComponents/Footer/Footer'
 import Image from './components/DefaultComponents/Image/Image'
 import Main from './components/DefaultComponents/Main/Main'
+import Title from './components/micro/Title/Title'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -26,6 +27,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Title Component Mapping
+MapTo('vue/components/title')(Title, EditConfig)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
