@@ -19,6 +19,7 @@ import Inputs from './components/Inputs/Inputs'
 import Social from './components/containers/Tabs/Social/Social'
 import Success from './components/containers/Tabs/Success/Success'
 import Basic from './components/containers/Tabs/Basic/Basic'
+import Tabs from './components/containers/Tabs/Tabs'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -38,6 +39,10 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Tabs Component Mapping
+MapTo('vue/components/tabs-red')(Tabs, EditConfig)
+
 // Basic Component Mapping
 MapTo('vue/components/basic-red')(Basic, EditConfig)
 
