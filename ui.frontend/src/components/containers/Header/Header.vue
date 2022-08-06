@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import Title from "@/components/micro/Title/Title.vue";
-import Description from "@/components/micro/Description/Description.vue";
+import Title from '@/components/micro/Title/Title.vue'
+import Description from '@/components/micro/Description/Description.vue'
 export default {
-    name: "Header",
-    components: {
-        Title,
-        Description
-    },
-};
+  name: 'Header',
+  components: {
+    Title,
+    Description
+  }
+}
 </script>
 
 <style lang="scss" scooped>

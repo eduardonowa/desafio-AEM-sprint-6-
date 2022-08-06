@@ -18,23 +18,23 @@
 // import { mapActions } from "vuex";
 // import $ from "jquery";
 // import {} from "jquery-mask-plugin";
-// export default {
-//   name: "MyInputs",
-//   props: {
-//     ClassField: {
-//       type: String,
-//       default: "form",
-//     },
-//     idSpan: String,
-//     InvalidText: String,
-//     ClassLabel: String,
-//     LabelInput: String,
-//     Type: String,
-//     ClassInput: String,
-//     Placeholder: String,
-//     idInputs: String,
-//     valueInput: String,
-//   },
+export default {
+  name: 'Inputs',
+  props: {
+    ClassField: {
+      type: String,
+      default: 'form'
+    },
+    idSpan: String,
+    InvalidText: String,
+    ClassLabel: String,
+    LabelInput: String,
+    Type: String,
+    ClassInput: String,
+    Placeholder: String,
+    idInputs: String,
+    valueInput: String
+  }
 //   mounted() {
 //     if (this.ClassField === "phone") {
 //       $(`.${this.ClassField} input`).mask("(00) 00000-0000");
@@ -77,8 +77,8 @@
 //       }
 //     },
 //   },
-// };
+}
 </script>
 <style lang="scss" scoped>
-// @import "./MyInputs.scss";
+ @import "./Inputs.scss";
 </style>
