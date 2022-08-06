@@ -3,7 +3,7 @@ import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
 import Checkbox from './components/DefaultComponents/Checkbox/Checkbox' // default checkbox
 import Select from './components/DefaultComponents/Select/Select'
-import Header from './components/DefaultComponents/Header/Header'
+import DefaultHeader from './components/DefaultComponents/DefaultHeader/DefaultHeader'
 import Footer from './components/DefaultComponents/Footer/Footer'
 import Image from './components/DefaultComponents/Image/Image'
 import Main from './components/DefaultComponents/Main/Main'
@@ -95,8 +95,8 @@ MapTo('vue/components/text-red')(Texts, EditConfig)
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
-// Header Component Mapping
-MapTo('vue/components/header')(Header, EditConfig)
+// DefaultHeader Component Mapping
+MapTo('vue/components/header')(DefaultHeader, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/main')(Main, EditConfig)
