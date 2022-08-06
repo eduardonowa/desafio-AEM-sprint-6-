@@ -20,6 +20,7 @@ import Social from './components/containers/Tabs/Social/Social'
 import Success from './components/containers/Tabs/Success/Success'
 import Basic from './components/containers/Tabs/Basic/Basic'
 import Certificates from './components/containers/Tabs/Certificates/Certificates'
+import Header from './components/containers/Header/Header'
 import Tabs from './components/containers/Tabs/Tabs'
 import {
   withComponentMappingContext,
@@ -40,6 +41,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Header Component Mapping
+MapTo('vue/components/header-red')(Header, EditConfig)
 
 // Tabs Component Mapping
 MapTo('vue/components/tabs-red')(Tabs, EditConfig)
