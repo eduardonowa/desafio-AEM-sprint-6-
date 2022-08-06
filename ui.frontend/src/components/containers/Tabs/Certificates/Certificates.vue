@@ -1,6 +1,6 @@
 <template>
   <div class="certificate-container">
-    <MyInputs
+    <Inputs
       LabelInput="Certificates"
       ClassField="certificates"
       Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
@@ -38,7 +38,7 @@
         <span> {{ spanMsg }} </span>
       </div>
     </div>
-    <MyInputs
+    <Inputs
       LabelInput="TeamName *"
       idSpan="teamSpan"
       ClassField="team-name"
@@ -47,7 +47,7 @@
       Type="text"
       :valueInput="teamnameValue"
     />
-    <MyInputs
+    <Inputs
       LabelInput="Institution *"
       idSpan="institutionSpan"
       ClassField="institution"
@@ -56,7 +56,7 @@
       Type="text"
       :valueInput="institutionValue"
     />
-    <MyInputs
+    <Inputs
       LabelInput="Graduation *"
       idSpan="graduationSpan"
       ClassField="graduation"
@@ -73,140 +73,139 @@
 </template>
 
 <script>
-import MyInputs from "@/components/MyInputs/MyInputs.vue";
-import Buttons from "@/components/micro/Buttons/Buttons.vue";
-import { mapActions } from "vuex";
+import Inputs from '@/components/Inputs/Inputs.vue'
+import Buttons from '@/components/micro/Buttons/Buttons.vue'
+// import { mapActions } from 'vuex'
 export default {
-  // eslint-disable-next-line
-  name: "Certificates",
-  components: { MyInputs, Buttons },
-  data() {
+  name: 'Certificates',
+  components: { Inputs, Buttons },
+  data () {
     return {
-      certificatesValue: "",
-      teamnameValue: "",
-      institutionValue: "",
-      graduationValue: "",
+      certificatesValue: '',
+      teamnameValue: '',
+      institutionValue: '',
+      graduationValue: '',
       certificates: [],
       isOpenCertificates: false,
-      spanMsg: "",
+      spanMsg: '',
       moreButtonAppear: false,
-      spanGeneral: "",
-    };
-  },
-  methods: {
-    ...mapActions(["nextTab"]),
-    validate() {
-      let fullNameStorage = window.localStorage["fullname"];
-      let emailStorage = window.localStorage["email"];
-      let ageStorage = window.localStorage["age"];
-      let githubStorage = window.localStorage["github"];
-      let teamNameStorage = window.localStorage["teamName"];
-      let institutionStorage = window.localStorage["institution"];
-      let graduationStorage = window.localStorage["graduation"];
-      if (teamNameStorage) {
-        document.getElementById("teamSpan").style.visibility = "hidden";
-      } else {
-        document.getElementById("teamSpan").style.visibility = "visible";
-      }
-      if (institutionStorage) {
-        document.getElementById("institutionSpan").style.visibility = "hidden";
-      } else {
-        document.getElementById("institutionSpan").style.visibility = "visible";
-      }
-      if (graduationStorage) {
-        document.getElementById("graduationSpan").style.visibility = "hidden";
-      } else {
-        document.getElementById("graduationSpan").style.visibility = "visible";
-      }
-      if (
-        fullNameStorage &&
-        emailStorage &&
-        ageStorage &&
-        githubStorage &&
-        teamNameStorage &&
-        institutionStorage &&
-        graduationStorage
-      ) {
-        this.$store.state.actualTab = "success";
-        this.spanGeneral = "";
-      } else {
-        this.spanGeneral = "Ops, you miss some field";
-      }
-    },
-    openCertificates() {
-      this.isOpenCertificates = !this.isOpenCertificates;
-    },
-    addCertificates() {
-      if (
-        this.$store.state.certificate &&
-        this.certificates.length <= 4 &&
-        // eslint-disable-next-line
-        /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(
-          this.$store.state.certificate
-        )
-      ) {
-        this.certificates.push(this.$store.state.certificate);
-        this.spanMsg = "";
-        this.$store.state.certificate = "";
-      } else if (!this.$store.state.certificate) {
-        this.spanMsg = "Empty certificate is not allowed.";
-      } else if (this.certificates.length == 5) {
-        this.spanMsg =
-          "Sorry, only 5 certificates are allowed. You can remove one certificate instead.";
-      } else if (
-        // eslint-disable-next-line
-        !/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(
-          this.$store.state.certificate
-        )
-      ) {
-        this.spanMsg = "Invalid certificate.";
-      }
-    },
-    removeFromCertificates(indexRemove) {
-      this.certificates = this.certificates.filter(
-        (data, index) => index !== indexRemove
-      );
-    },
-    canMoreAppear() {
-      if (this.certificates.length >= 1) {
-        document.getElementById("button3").style.visibility = "visible";
-        document.getElementById("idList").style.visibility = "visible";
-      } else {
-        document.getElementById("button3").style.visibility = "hidden";
-        document.getElementById("idList").style.visibility = "hidden";
-      }
-    },
-    getCertificatesStorage() {
-      if (localStorage.getItem("certificates")) {
-        let certificatesStorage = JSON.parse(
-          localStorage.getItem("certificates")
-        );
-        this.certificates = certificatesStorage;
-      }
-    },
-  },
-  updated() {
-    this.canMoreAppear();
-    window.localStorage.setItem(
-      "certificates",
-      JSON.stringify(this.certificates)
-    );
-    console.log("updated", this.$store.state.certificate);
-  },
-  mounted() {
-    document.title = `${process.env.VUE_APP_TITLE} | Certificates`;
-    this.certificatesValue = window.localStorage["certificate"];
-    this.teamnameValue = window.localStorage["teamName"];
-    this.institutionValue = window.localStorage["institution"];
-    this.graduationValue = window.localStorage["graduation"];
-    this.getCertificatesStorage();
-  },
-  computed: {
-    getCertificateValue() {
-      return this.$store.state.certificate;
+      spanGeneral: ''
     }
   }
-};
+  // methods: {
+  //   ...mapActions(['nextTab']),
+  //   validate () {
+  //     const fullNameStorage = window.localStorage.fullname
+  //     const emailStorage = window.localStorage.email
+  //     const ageStorage = window.localStorage.age
+  //     const githubStorage = window.localStorage.github
+  //     const teamNameStorage = window.localStorage.teamName
+  //     const institutionStorage = window.localStorage.institution
+  //     const graduationStorage = window.localStorage.graduation
+  //     if (teamNameStorage) {
+  //       document.getElementById('teamSpan').style.visibility = 'hidden'
+  //     } else {
+  //       document.getElementById('teamSpan').style.visibility = 'visible'
+  //     }
+  //     if (institutionStorage) {
+  //       document.getElementById('institutionSpan').style.visibility = 'hidden'
+  //     } else {
+  //       document.getElementById('institutionSpan').style.visibility = 'visible'
+  //     }
+  //     if (graduationStorage) {
+  //       document.getElementById('graduationSpan').style.visibility = 'hidden'
+  //     } else {
+  //       document.getElementById('graduationSpan').style.visibility = 'visible'
+  //     }
+  //     if (
+  //       fullNameStorage &&
+  //       emailStorage &&
+  //       ageStorage &&
+  //       githubStorage &&
+  //       teamNameStorage &&
+  //       institutionStorage &&
+  //       graduationStorage
+  //     ) {
+  //       this.$store.state.actualTab = 'success'
+  //       this.spanGeneral = ''
+  //     } else {
+  //       this.spanGeneral = 'Ops, you miss some field'
+  //     }
+  //   },
+  //   openCertificates () {
+  //     this.isOpenCertificates = !this.isOpenCertificates
+  //   },
+  //   addCertificates () {
+  //     if (
+  //       this.$store.state.certificate &&
+  //       this.certificates.length <= 4 &&
+  //       // eslint-disable-next-line
+  //       /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(
+  //         this.$store.state.certificate
+  //       )
+  //     ) {
+  //       this.certificates.push(this.$store.state.certificate)
+  //       this.spanMsg = ''
+  //       this.$store.state.certificate = ''
+  //     } else if (!this.$store.state.certificate) {
+  //       this.spanMsg = 'Empty certificate is not allowed.'
+  //     } else if (this.certificates.length == 5) {
+  //       this.spanMsg =
+  //         'Sorry, only 5 certificates are allowed. You can remove one certificate instead.'
+  //     } else if (
+  //       // eslint-disable-next-line
+  //       !/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(
+  //         this.$store.state.certificate
+  //       )
+  //     ) {
+  //       this.spanMsg = 'Invalid certificate.'
+  //     }
+  //   },
+  //   removeFromCertificates (indexRemove) {
+  //     this.certificates = this.certificates.filter(
+  //       (data, index) => index !== indexRemove
+  //     )
+  //   },
+  //   canMoreAppear () {
+  //     if (this.certificates.length >= 1) {
+  //       document.getElementById('button3').style.visibility = 'visible'
+  //       document.getElementById('idList').style.visibility = 'visible'
+  //     } else {
+  //       document.getElementById('button3').style.visibility = 'hidden'
+  //       document.getElementById('idList').style.visibility = 'hidden'
+  //     }
+  //   },
+  //   getCertificatesStorage () {
+  //     if (localStorage.getItem('certificates')) {
+  //       const certificatesStorage = JSON.parse(
+  //         localStorage.getItem('certificates')
+  //       )
+  //       this.certificates = certificatesStorage
+  //     }
+  //   }
+  // },
+  // updated () {
+  //   this.canMoreAppear()
+  //   window.localStorage.setItem(
+  //     'certificates',
+  //     JSON.stringify(this.certificates)
+  //   )
+  //   console.log('updated', this.$store.state.certificate)
+  // },
+  // mounted () {
+  //   document.title = `${process.env.VUE_APP_TITLE} | Certificates`
+  //   this.certificatesValue = window.localStorage.certificate
+  //   this.teamnameValue = window.localStorage.teamName
+  //   this.institutionValue = window.localStorage.institution
+  //   this.graduationValue = window.localStorage.graduation
+  //   this.getCertificatesStorage()
+  // },
+  // computed: {
+  //   getCertificateValue () {
+  //     return this.$store.state.certificate
+  //   }
+  // }
+}
 </script>
 
 <style lang="scss" scoped>
