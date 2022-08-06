@@ -3,7 +3,7 @@ import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
 import Checkbox from './components/DefaultComponents/Checkbox/Checkbox' // default checkbox
 import Select from './components/DefaultComponents/Select/Select'
-import Header from './components/DefaultComponents/Header/Header'
+import DefaultHeader from './components/DefaultComponents/DefaultHeader/DefaultHeader'
 import Footer from './components/DefaultComponents/Footer/Footer'
 import Image from './components/DefaultComponents/Image/Image'
 import Main from './components/DefaultComponents/Main/Main'
@@ -20,6 +20,7 @@ import Social from './components/containers/Tabs/Social/Social'
 import Success from './components/containers/Tabs/Success/Success'
 import Basic from './components/containers/Tabs/Basic/Basic'
 import Certificates from './components/containers/Tabs/Certificates/Certificates'
+import Header from './components/containers/Header/Header'
 import Tabs from './components/containers/Tabs/Tabs'
 import {
   withComponentMappingContext,
@@ -40,6 +41,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Header Component Mapping
+MapTo('vue/components/header-red')(Header, EditConfig)
 
 // Tabs Component Mapping
 MapTo('vue/components/tabs-red')(Tabs, EditConfig)
@@ -91,8 +95,8 @@ MapTo('vue/components/text-red')(Texts, EditConfig)
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
-// Header Component Mapping
-MapTo('vue/components/header')(Header, EditConfig)
+// DefaultHeader Component Mapping
+MapTo('vue/components/header')(DefaultHeader, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/main')(Main, EditConfig)

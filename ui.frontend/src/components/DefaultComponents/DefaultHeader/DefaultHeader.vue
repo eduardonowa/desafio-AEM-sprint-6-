@@ -6,7 +6,7 @@
 // Imports
 
 export default {
-  name: 'Header',
+  name: 'DefaultHeader',
   props: {
     text: {
       type: String
