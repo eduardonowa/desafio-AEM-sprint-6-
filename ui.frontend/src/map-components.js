@@ -1,7 +1,6 @@
 import CustomClasses from './components/DefaultComponents/CustomClasses/CustomClasses'
 import Text from './components/DefaultComponents/Text/Text'
 import AppPage from './components/Page/AppPage'
-import Checkbox from './components/DefaultComponents/Checkbox/Checkbox' // default checkbox
 import Select from './components/DefaultComponents/Select/Select'
 import DefaultHeader from './components/DefaultComponents/DefaultHeader/DefaultHeader'
 import Footer from './components/DefaultComponents/Footer/Footer'
@@ -22,6 +21,7 @@ import Basic from './components/containers/Tabs/Basic/Basic'
 import Certificates from './components/containers/Tabs/Certificates/Certificates'
 import Header from './components/containers/Header/Header'
 import Tabs from './components/containers/Tabs/Tabs'
+import Home from './components/containers/Home'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -41,6 +41,9 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Home Component Mapping
+MapTo('vue/components/home-red')(Home, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header-red')(Header, EditConfig)
@@ -91,9 +94,6 @@ MapTo('vue/components/select')(Select, EditConfig)
 
 // Texts Component Mapping
 MapTo('vue/components/text-red')(Texts, EditConfig)
-
-// Checkbox Component Mapping
-MapTo('vue/components/checkbox')(Checkbox, EditConfig)
 
 // DefaultHeader Component Mapping
 MapTo('vue/components/header')(DefaultHeader, EditConfig)

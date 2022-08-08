@@ -25,7 +25,7 @@
 
 <script>
 import MenuComponent from '@/components/Menu/Menu.vue'
-// import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 import Social from '@/components/containers/Tabs/Social/Social.vue'
 import Basic from '@/components/containers/Tabs/Basic/Basic.vue'
 import Certificates from '@/components/containers/Tabs/Certificates/Certificates.vue'
@@ -35,23 +35,23 @@ export default {
   // eslint-disable-next-line
   name: "Tabs",
 
-  //   data() {
-  //     return {
-  //       actualTab: this.$store.state.actualTab,
-  //     };
-  //   },
-  //   beforeUpdate() {
-  //     this.actualTab = this.$store.state.actualTab;
-  //   },
-  //   computed: {
-  //     getActualTab() {
-  //       return this.$store.state.actualTab;
-  //     },
-  //   },
+  data () {
+    return {
+      actualTab: this.$store.state.actualTab
+    }
+  },
+  beforeUpdate () {
+    this.actualTab = this.$store.state.actualTab
+  },
+  computed: {
+    getActualTab () {
+      return this.$store.state.actualTab
+    }
+  },
   components: { MenuComponent, Social, Basic, Certificates, Success },
 
   methods: {
-    // ...mapActions(['nextTab'])
+    ...mapActions(['nextTab'])
   }
 }
 </script>

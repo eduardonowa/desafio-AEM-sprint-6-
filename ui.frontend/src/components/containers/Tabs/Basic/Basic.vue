@@ -46,7 +46,7 @@
 import Inputs from '@/components/Inputs/Inputs.vue'
 import CheckBox from '@/components/CheckBox/CheckBox.vue'
 import Birthday from '@/components/containers/Birthday/Birthday.vue'
-// import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 import Buttons from '@/components/micro/Buttons/Buttons.vue'
 export default {
   // eslint-disable-next-line
@@ -69,7 +69,7 @@ export default {
     this.phoneValue = window.localStorage.phone
   },
   methods: {
-    // ...mapActions(['nextTab']),
+    ...mapActions(['nextTab']),
     validate () {
       if (
         window.localStorage.fullname &&
