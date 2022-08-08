@@ -3,8 +3,8 @@
     <Description
       :description="description"
       :colorDescription="colorDescription"
-      :fontFamilyDescription="fontFamilyDescription"
       :fontSizeDescription="fontSizeDescription"
+      :fontFamilyDescription="fontFamilyDescription"
     />
     <div>
       <Title

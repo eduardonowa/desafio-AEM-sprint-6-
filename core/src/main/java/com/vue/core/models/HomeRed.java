@@ -45,7 +45,6 @@ public interface HomeRed
     String getTextAlignHeader();
 
     @JsonIgnore
-    @JsonProperty("fontFamilyDescription")
     String getFontFamilyDescription();
 
     @JsonProperty("fontSizeDescription")

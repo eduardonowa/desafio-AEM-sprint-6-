@@ -63,16 +63,27 @@
                               </items>
                            </textAlignHeader>
                            <fontFamilyDescription cq-msm-lockable="./fontFamilyDescription"
-                                                  defaultValue="fontFamilyDescription"
                                                   fieldLabel="Description Font Family:"
                                                   jcr:primaryType="nt:unstructured"
                                                   name="./fontFamilyDescription"
-                                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                  value="false">
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                  vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter jcr:primaryType="nt:unstructured" text="Inter" value="Inter"/>
-                                 <Arial jcr:primaryType="nt:unstructured" text="Arial" value="Arial"/>
-                                 <Nunito jcr:primaryType="nt:unstructured" text="Nunito" value="Nunito"/>
+                                 <Inter checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyDescription"
+                                        text="Inter"
+                                        value="Inter"/>
+                                 <Arial checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyDescription"
+                                        text="Arial"
+                                        value="Arial"/>
+                                 <Nunito checked="{Boolean}true"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="fontFamilyDescription"
+                                         text="Nunito"
+                                         value="Nunito"/>
                               </items>
                            </fontFamilyDescription>
                            <fontSizeDescription cq-msm-lockable="./fontSizeDescription"

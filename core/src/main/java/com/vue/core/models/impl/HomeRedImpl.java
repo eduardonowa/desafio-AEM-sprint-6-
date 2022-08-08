@@ -76,7 +76,6 @@ public class HomeRedImpl
 
     @Override
     @JsonIgnore
-    @JsonProperty("fontFamilyDescription")
     public String getFontFamilyDescription() {
         return fontFamilyDescription;
     }

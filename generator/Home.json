@@ -105,34 +105,41 @@
       },
       {
         "field": "fontFamilyDescription",
-        "type": "select",
+        "type": "radiogroup",
         "label": "Description Font Family:",
         "json-expose": false,
-        "json-property": "fontFamilyDescription",
         "attributes": {
-        "defaultValue": "fontFamilyDescription",
-        "value": false
+        "vertical": "{Boolean}false"
         },
         "items": [
           {
-          "field": "Inter",
-          "attributes": {
-          "text": "Inter",
-          "value": "Inter"
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Inter",
+            "value": "Inter"
             }
           },
           {
-          "field": "Arial",
-          "attributes": {
-          "text": "Arial",
-          "value": "Arial"
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Arial",
+            "value": "Arial"
             }
           },
           {
-          "field": "Nunito",
-          "attributes": {
-          "text": "Nunito",
-          "value": "Nunito"
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Nunito",
+            "value": "Nunito"
             }
           }
         ]

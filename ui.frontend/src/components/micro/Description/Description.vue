@@ -1,7 +1,7 @@
 <template>
   <h3
     :style="{
-      color: colorDescription,
+      'color': colorDescription,
       'font-family': fontFamilyDescription,
       'font-size': formatDescriptionFontSize
     }"
