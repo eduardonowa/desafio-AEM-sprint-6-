@@ -13,6 +13,9 @@ export default {
     text: {
       type: String
     }
+  },
+  mounted () {
+    console.log(this.$store.state.exemplo)
   }
 }
 </script>
