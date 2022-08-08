@@ -1,5 +1,5 @@
 <template>
-    <h3 id="description">{{ description }}</h3>
+    <h3 :style="{'color': colorDescription}" id="description">{{ description }}</h3>
 </template>
 
 <script>
@@ -8,8 +8,12 @@ export default {
   props: {
     description: {
       type: String,
-      default: ''
+      default: 'Forms'
+    },
+    colorDescription: {
+      type: String
     }
+
   }
 }
 </script>

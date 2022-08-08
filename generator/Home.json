@@ -1,0 +1,64 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "home-red",
+  "title": "Vue - Home",
+  "group": "SPA Vue Project - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties-tabs": [
+      {
+        "id": "header-properties",
+        "label": "Header",
+        "fields": ["description", "colorDescription", "bgHome"]
+      },
+      {
+        "id": "home-properties",
+        "label": "Home",
+        "fields": []
+      }
+    ],
+    "properties": [
+      {
+        "field": "description",
+        "label": "Text Description",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "description"
+      },
+      {
+        "field": "colorDescription",
+        "label": "Color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorDescription"
+      },
+      {
+        "field": "bgHome",
+        "label": "Background Color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "bgHome"
+      }
+    ]
+  }
+}

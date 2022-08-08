@@ -1,7 +1,9 @@
 <template>
-  <div id="homeContainer">
-  <Header />
-  <Tabs />
+  <div id="homeContainer" :style="{ background: bgHome }">
+    <Header :description="description" :colorDescription="colorDescription" />
+    <Tabs 
+    
+    />
   </div>
 </template>
 
@@ -12,11 +14,25 @@ import Tabs from './Tabs/Tabs.vue'
 export default {
   name: 'Home',
   components: {
-    Header, Tabs
+    Header,
+    Tabs
+  },
+  props: {
+    bgHome: {
+      type: String,
+      default: 'white'
+    },
+    description: {
+      type: String,
+      default: 'Forms'
+    },
+    colorDescription: {
+      type: String
+    }
   }
 }
 </script>
 
 <style lang="scss">
-@import "./Home.scss";
+@import './Home.scss';
 </style>
