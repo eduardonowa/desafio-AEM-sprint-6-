@@ -88,13 +88,13 @@ export default {
       } else {
         this.isCertificates = false
       }
-    }
+    },
 
-    // clearStorage() {
-    //   localStorage.clear();
-    //   this.$store.state.abledTabs = ["basic"];
-    //   this.$store.state.actualTab = "basic";
-    // },
+    clearStorage () {
+      localStorage.clear()
+      this.$store.state.abledTabs = ['basic']
+      this.$store.state.actualTab = 'basic'
+    }
   },
   mounted () {
     this.getData()

@@ -28,10 +28,9 @@
 <script>
 import Inputs from '@/components/Inputs/Inputs.vue'
 import Buttons from '@/components/micro/Buttons/Buttons.vue'
-// import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 export default {
-  // eslint-disable-next-line
-  name: "Social",
+  name: 'Social',
   components: {
     Inputs,
     Buttons
@@ -43,15 +42,15 @@ export default {
     }
   },
   methods: {
-    // ...mapActions(['nextTab']),
-    // verify () {
-    //   if (localStorage.getItem('github')) {
-    //     document.getElementById('spanGit').style.visibility = 'hidden'
-    //     this.nextTab()
-    //   } else {
-    //     document.getElementById('spanGit').style.visibility = 'visible'
-    //   }
-    // }
+    ...mapActions(['nextTab']),
+    verify () {
+      if (localStorage.getItem('github')) {
+        document.getElementById('spanGit').style.visibility = 'hidden'
+        this.nextTab()
+      } else {
+        document.getElementById('spanGit').style.visibility = 'visible'
+      }
+    }
   },
   mounted () {
     this.linkedinValue = localStorage.getItem('linkedin')
