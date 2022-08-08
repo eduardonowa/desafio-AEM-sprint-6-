@@ -1,22 +1,27 @@
 <template>
-  <div id="headerContainer">
-    <Description :description="description" :colorDescription="colorDescription" />
+  <div id="headerContainer" :style="{ 'align-items': textAlignHeader }">
+    <Description
+      :description="description"
+      :colorDescription="colorDescription"
+      :fontFamilyDescription="fontFamilyDescription"
+      :fontSizeDescription="fontSizeDescription"
+    />
     <div>
       <Title
         v-if="this.$store.state.actualTab === 'basic'"
-        :tabNumber="tabNumberBasic"
+        :titleText="titleTextBasic"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'social'"
-        :tabNumber="tabNumberSocial"
+        :titleText="titleTextSocial"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'certificates'"
-        :tabNumber="tabNumberCertificates"
+        :titleText="titleTextCertificates"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'success'"
-        :tabNumber="tabNumberSuccess"
+        :titleText="titleTextSuccess"
       />
     </div>
   </div>
@@ -32,19 +37,19 @@ export default {
     Description
   },
   props: {
-    tabNumberBasic: {
+    titleTextBasic: {
       type: String,
       default: 'First'
     },
-    tabNumberSocial: {
+    titleTextSocial: {
       type: String,
       default: 'Second'
     },
-    tabNumberCertificates: {
+    titleTextCertificates: {
       type: String,
       default: 'Third'
     },
-    tabNumberSuccess: {
+    titleTextSuccess: {
       type: String,
       default: 'Success'
     },
@@ -53,6 +58,15 @@ export default {
       default: 'Forms'
     },
     colorDescription: {
+      type: String
+    },
+    fontFamilyDescription: {
+      type: String
+    },
+    fontSizeDescription: {
+      type: String
+    },
+    textAlignHeader: {
       type: String
     }
   }

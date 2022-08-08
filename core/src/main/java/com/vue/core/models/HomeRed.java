@@ -19,6 +19,7 @@
 package com.vue.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
@@ -39,7 +40,15 @@ public interface HomeRed
     @JsonProperty("colorDescription")
     String getColorDescription();
 
-    @JsonProperty("bgHome")
-    String getBgHome();
+    @JsonIgnore
+    @JsonProperty("textAlignHeader")
+    String getTextAlignHeader();
+
+    @JsonIgnore
+    @JsonProperty("fontFamilyDescription")
+    String getFontFamilyDescription();
+
+    @JsonProperty("fontSizeDescription")
+    Long getFontSizeDescription();
 
 }

@@ -20,6 +20,7 @@ package com.vue.core.models.impl;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.vue.core.models.HomeRed;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -46,7 +47,11 @@ public class HomeRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String colorDescription;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String bgHome;
+    private String textAlignHeader;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontFamilyDescription;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long fontSizeDescription;
     @SlingObject
     private Resource resource;
 
@@ -63,9 +68,23 @@ public class HomeRedImpl
     }
 
     @Override
-    @JsonProperty("bgHome")
-    public String getBgHome() {
-        return bgHome;
+    @JsonIgnore
+    @JsonProperty("textAlignHeader")
+    public String getTextAlignHeader() {
+        return textAlignHeader;
+    }
+
+    @Override
+    @JsonIgnore
+    @JsonProperty("fontFamilyDescription")
+    public String getFontFamilyDescription() {
+        return fontFamilyDescription;
+    }
+
+    @Override
+    @JsonProperty("fontSizeDescription")
+    public Long getFontSizeDescription() {
+        return fontSizeDescription;
     }
 
     @Override

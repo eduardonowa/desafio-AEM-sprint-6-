@@ -1,6 +1,6 @@
 <template>
   <div class="containerTitle">
-    <h1 class="title">{{ tabNumber }} Tab</h1>
+    <h1 class="title" :style="{ 'color': titleColor , 'font-family': fontFamilyTitle , 'font-size': formatTitleFontSize}">{{ titleText }} Tab</h1>
   </div>
 </template>
 
@@ -9,7 +9,23 @@ export default {
   // eslint-disable-next-line
   name: 'Title',
   props: {
-    tabNumber: String
+    titleText: {
+      type: String
+    },
+    titleColor: {
+      type: String
+    },
+    fontFamilyTitle: {
+      type: String
+    },
+    fontSizeTitle: {
+      type: String
+    }
+  },
+  computed: {
+    formatTitleFontSize () {
+      return (this.fontSizeTitle / 16) + 'em'
+    }
   }
 }
 </script>

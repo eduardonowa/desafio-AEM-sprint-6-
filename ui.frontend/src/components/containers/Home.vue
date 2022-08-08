@@ -1,9 +1,13 @@
 <template>
-  <div id="homeContainer" :style="{ background: bgHome }">
-    <Header :description="description" :colorDescription="colorDescription" />
-    <Tabs 
-    
+  <div id="homeContainer">
+    <Header
+      :description="description"
+      :colorDescription="colorDescription"
+      :textAlignHeader="textAlignHeader"
+      :fontFamilyDescription="fontFamilyDescription"
+      :fontSizeDescription="fontSizeDescription"
     />
+    <Tabs />
   </div>
 </template>
 
@@ -18,15 +22,20 @@ export default {
     Tabs
   },
   props: {
-    bgHome: {
-      type: String,
-      default: 'white'
-    },
     description: {
       type: String,
       default: 'Forms'
     },
     colorDescription: {
+      type: String
+    },
+    textAlignHeader: {
+      type: String
+    },
+    fontFamilyDescription: {
+      type: String
+    },
+    fontSizeDescription: {
       type: String
     }
   }

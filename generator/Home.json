@@ -9,7 +9,7 @@
     "model-impl-pkg": "com.vue.core.models.impl"
   },
   "name": "home-red",
-  "title": "Vue - Home",
+  "title": "Vue - Home Red",
   "group": "SPA Vue Project - Content",
   "type": "components",
   "options": {
@@ -29,11 +29,28 @@
       {
         "id": "header-properties",
         "label": "Header",
-        "fields": ["description", "colorDescription", "bgHome"]
+        "fields": ["description", "colorDescription", "textAlignHeader", "fontFamilyDescription",
+        "fontSizeDescription"
+      ]
       },
       {
-        "id": "home-properties",
-        "label": "Home",
+        "id": "basic-properties",
+        "label": "Basic",
+        "fields": []
+      },
+      {
+        "id": "social-properties",
+        "label": "Social",
+        "fields": []
+      },
+      {
+        "id": "certificates-properties",
+        "label": "Certificates",
+        "fields": []
+      },
+      {
+        "id": "success-properties",
+        "label": "Success",
         "fields": []
       }
     ],
@@ -46,18 +63,86 @@
         "json-property": "description"
       },
       {
+        "field": "fontSizeDescription",
+        "label": "Description Font-Size (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeDescription"
+      },
+      {
+        "field": "textAlignHeader",
+        "type": "select",
+        "label": "Content Position:",
+        "json-expose": false,
+        "json-property": "textAlignHeader",
+        "attributes": {
+        "defaultValue": "textAlignHeader",
+        "value": false
+        },
+        "items": [
+          {
+          "field": "flex-start",
+          "attributes": {
+          "text": "Left",
+          "value": "flex-start"
+            }
+          },
+          {
+          "field": "center",
+          "attributes": {
+          "text": "Center",
+          "value": "center"
+            }
+          },
+          {
+          "field": "flex-end",
+          "attributes": {
+          "text": "Right",
+          "value": "flex-end"
+            }
+          }
+        ]
+      },
+      {
+        "field": "fontFamilyDescription",
+        "type": "select",
+        "label": "Description Font Family:",
+        "json-expose": false,
+        "json-property": "fontFamilyDescription",
+        "attributes": {
+        "defaultValue": "fontFamilyDescription",
+        "value": false
+        },
+        "items": [
+          {
+          "field": "Inter",
+          "attributes": {
+          "text": "Inter",
+          "value": "Inter"
+            }
+          },
+          {
+          "field": "Arial",
+          "attributes": {
+          "text": "Arial",
+          "value": "Arial"
+            }
+          },
+          {
+          "field": "Nunito",
+          "attributes": {
+          "text": "Nunito",
+          "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
         "field": "colorDescription",
         "label": "Color",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorDescription"
-      },
-      {
-        "field": "bgHome",
-        "label": "Background Color",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "bgHome"
       }
     ]
   }
