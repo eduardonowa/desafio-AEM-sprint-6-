@@ -73,7 +73,7 @@
         "field": "textAlignHeader",
         "type": "select",
         "label": "Content Position:",
-        "json-expose": false,
+        "json-expose": true,
         "json-property": "textAlignHeader",
         "attributes": {
         "defaultValue": "textAlignHeader",
@@ -107,7 +107,7 @@
         "field": "fontFamilyDescription",
         "type": "radiogroup",
         "label": "Description Font Family:",
-        "json-expose": false,
+        "json-expose": true,
         "attributes": {
         "vertical": "{Boolean}false"
         },

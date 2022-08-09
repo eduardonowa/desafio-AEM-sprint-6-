@@ -20,7 +20,6 @@ package com.vue.core.models.impl;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.vue.core.models.HomeRed;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -68,14 +67,12 @@ public class HomeRedImpl
     }
 
     @Override
-    @JsonIgnore
     @JsonProperty("textAlignHeader")
     public String getTextAlignHeader() {
         return textAlignHeader;
     }
 
     @Override
-    @JsonIgnore
     public String getFontFamilyDescription() {
         return fontFamilyDescription;
     }

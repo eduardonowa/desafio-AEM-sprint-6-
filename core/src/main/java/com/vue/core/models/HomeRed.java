@@ -19,7 +19,6 @@
 package com.vue.core.models;
 
 import com.adobe.cq.export.json.ComponentExporter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.osgi.annotation.versioning.ConsumerType;
 
@@ -40,11 +39,9 @@ public interface HomeRed
     @JsonProperty("colorDescription")
     String getColorDescription();
 
-    @JsonIgnore
     @JsonProperty("textAlignHeader")
     String getTextAlignHeader();
 
-    @JsonIgnore
     String getFontFamilyDescription();
 
     @JsonProperty("fontSizeDescription")
