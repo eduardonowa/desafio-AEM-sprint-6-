@@ -23,7 +23,7 @@
           >
             <p>{{ certificate }}</p>
             <button class="removeButton" @click="removeFromCertificates(index)">
-              X
+              <img src="@/assets/whitex.png" alt="white x">
             </button>
           </div>
         </div>
