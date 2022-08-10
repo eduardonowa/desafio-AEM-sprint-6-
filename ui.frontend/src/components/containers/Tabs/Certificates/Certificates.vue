@@ -10,10 +10,11 @@
     <div class="buttons">
       <div class="certificates">
         <Buttons
-          msg="Certificate"
+          :msgThree="msgThree"
           type="3"
           class="certificateButton"
           :event="openCertificates"
+          :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree" :formatButtonFontSizeThree="formatButtonFontSizeThree" :backgroundButtonThree="backgroundButtonThree"
         />
         <div v-show="isOpenCertificates" class="certificatesList" id="idList">
           <div
@@ -30,10 +31,11 @@
       </div>
       <div class="more-span">
         <Buttons
-          msg="More"
+          :msgTwo="msgTwo"
           type="2"
           class="moreButton"
           :event="addCertificates"
+          :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo" :formatButtonFontSizeTwo="formatButtonFontSizeTwo" :backgroundButtonTwo="backgroundButtonTwo"
         />
         <span> {{ spanMsg }} </span>
       </div>
@@ -67,7 +69,7 @@
     />
     <div class="footer-certificates">
       <span> {{ spanGeneral }}</span>
-      <Buttons class="finish" msg="Finish" type="1" :event="validate" />
+      <Buttons class="finish" :msgOne="msgOne" type="1" :event="validate" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
     </div>
   </div>
 </template>
@@ -79,6 +81,56 @@ import { mapActions } from 'vuex'
 export default {
   name: 'Certificates',
   components: { Inputs, Buttons },
+  props: {
+    colorButtonOne: {
+      type: String
+    },
+    fontFamilyButtonOne: {
+      type: String
+    },
+    formatButtonFontSizeOne: {
+      type: String
+    },
+    backgroundButtonOne: {
+      type: String
+    },
+    colorButtonTwo: {
+      type: String
+    },
+    fontFamilyButtonTwo: {
+      type: String
+    },
+    formatButtonFontSizeTwo: {
+      type: String
+    },
+    backgroundButtonTwo: {
+      type: String
+    },
+    colorButtonThree: {
+      type: String
+    },
+    fontFamilyButtonThree: {
+      type: String
+    },
+    formatButtonFontSizeThree: {
+      type: String
+    },
+    backgroundButtonThree: {
+      type: String
+    },
+    msgOne: {
+      type: String,
+      default: 'Finish'
+    },
+    msgTwo: {
+      type: String,
+      default: 'More'
+    },
+    msgThree: {
+      type: String,
+      default: 'Certificates'
+    }
+  },
   data () {
     return {
       certificatesValue: '',

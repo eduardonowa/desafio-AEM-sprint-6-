@@ -36,7 +36,7 @@
     <div class="footer">
       <CheckBox />
       <div class="button-next">
-        <Buttons :event="validate" type="0" msg="Next" />
+        <Buttons :event="validate" type="0" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
       </div>
     </div>
   </div>
@@ -52,6 +52,24 @@ export default {
   // eslint-disable-next-line
   name: "Basic",
   components: { Inputs, CheckBox, Birthday, Buttons },
+  props: {
+    colorButtonZero: {
+      type: String
+    },
+    fontFamilyButtonZero: {
+      type: String
+    },
+    formatButtonFontSizeZero: {
+      type: String
+    },
+    backgroundButtonZero: {
+      type: String
+    },
+    msgZero: {
+      type: String,
+      default: 'Next'
+    }
+  },
   data () {
     return {
       fullnameValue: '',

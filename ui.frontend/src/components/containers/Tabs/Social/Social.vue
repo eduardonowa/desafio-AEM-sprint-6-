@@ -20,7 +20,7 @@
     />
 
     <div class="button">
-      <Buttons type="0" msg="Next" :event="verify" />
+      <Buttons type="0" :event="verify" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
     </div>
   </div>
 </template>
@@ -34,6 +34,24 @@ export default {
   components: {
     Inputs,
     Buttons
+  },
+  props: {
+    colorButtonZero: {
+      type: String
+    },
+    fontFamilyButtonZero: {
+      type: String
+    },
+    formatButtonFontSizeZero: {
+      type: String
+    },
+    backgroundButtonZero: {
+      type: String
+    },
+    msgZero: {
+      type: String,
+      default: 'Next'
+    }
   },
   data () {
     return {
