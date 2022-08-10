@@ -47,4 +47,15 @@ public interface HomeRed
     @JsonProperty("fontSizeDescription")
     Long getFontSizeDescription();
 
+    @JsonProperty("colorButtonZero")
+    String getColorButtonZero();
+
+    String getFontFamilyButtonZero();
+
+    @JsonProperty("backgroundButtonZero")
+    String getBackgroundButtonZero();
+
+    @JsonProperty("msgZero")
+    String getMsgZero();
+
 }

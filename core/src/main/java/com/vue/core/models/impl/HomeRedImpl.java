@@ -51,6 +51,14 @@ public class HomeRedImpl
     private String fontFamilyDescription;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeDescription;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontFamilyButtonZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgZero;
     @SlingObject
     private Resource resource;
 
@@ -81,6 +89,29 @@ public class HomeRedImpl
     @JsonProperty("fontSizeDescription")
     public Long getFontSizeDescription() {
         return fontSizeDescription;
+    }
+
+    @Override
+    @JsonProperty("colorButtonZero")
+    public String getColorButtonZero() {
+        return colorButtonZero;
+    }
+
+    @Override
+    public String getFontFamilyButtonZero() {
+        return fontFamilyButtonZero;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonZero")
+    public String getBackgroundButtonZero() {
+        return backgroundButtonZero;
+    }
+
+    @Override
+    @JsonProperty("msgZero")
+    public String getMsgZero() {
+        return msgZero;
     }
 
     @Override

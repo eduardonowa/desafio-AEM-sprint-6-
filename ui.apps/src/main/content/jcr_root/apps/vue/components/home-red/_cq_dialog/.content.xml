@@ -48,7 +48,7 @@
                                              fieldLabel="Color"
                                              jcr:primaryType="nt:unstructured"
                                              name="./colorDescription"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textAlignHeader cq-msm-lockable="./textAlignHeader"
                                             defaultValue="textAlignHeader"
                                             fieldLabel="Content Position:"
@@ -103,7 +103,47 @@
                   <items jcr:primaryType="nt:unstructured">
                      <column jcr:primaryType="nt:unstructured"
                              sling:resourceType="granite/ui/components/coral/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                           <msgZero cq-msm-lockable="./msgZero"
+                                    fieldLabel="Text Description"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./msgZero"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                              <fontFamilyButtonZero cq-msm-lockable="./fontFamilyButtonZero"
+                                 fieldLabel="Description Font Family:"
+                                 jcr:primaryType="nt:unstructured"
+                                 name="./fontFamilyButtonZero"
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                 vertical="{Boolean}false">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <Inter checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyButtonZero"
+                                        text="Inter"
+                                        value="Inter"/>
+                                 <Arial checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyButtonZero"
+                                        text="Arial"
+                                        value="Arial"/>
+                                 <Nunito checked="{Boolean}true"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="fontFamilyButtonZero"
+                                         text="Nunito"
+                                         value="Nunito"/>
+                              </items>
+                           </fontFamilyButtonZero>
+                           <colorButtonZero cq-msm-lockable="./colorButtonZero"
+                                            fieldLabel="Button text color"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./colorButtonZero"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonZero cq-msm-lockable="./backgroundButtonZero"
+                                                 fieldLabel="Button background color"
+                                                 jcr:primaryType="nt:unstructured"
+                                                 name="./backgroundButtonZero"
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
                      </column>
                   </items>
                </basic-properties>
