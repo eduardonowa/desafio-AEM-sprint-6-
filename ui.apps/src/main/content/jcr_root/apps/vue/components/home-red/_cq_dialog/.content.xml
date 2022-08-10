@@ -48,7 +48,7 @@
                                              fieldLabel="Color"
                                              jcr:primaryType="nt:unstructured"
                                              name="./colorDescription"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                            <textAlignHeader cq-msm-lockable="./textAlignHeader"
                                             defaultValue="textAlignHeader"
                                             fieldLabel="Content Position:"
@@ -137,12 +137,12 @@
                                             fieldLabel="Button text color"
                                             jcr:primaryType="nt:unstructured"
                                             name="./colorButtonZero"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                            <backgroundButtonZero cq-msm-lockable="./backgroundButtonZero"
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
                                                  name="./backgroundButtonZero"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                         </items>
                      </column>
                   </items>
