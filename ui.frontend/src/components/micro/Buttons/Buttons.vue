@@ -6,7 +6,7 @@
       id="button0"
       @click.prevent="event"
     >
-      {{ msg }} <img class="img0" src="@/assets/next.png" alt="next image" />
+      {{ msg }} <img class="img0" src="/content/dam/vue/next.png" alt="next image" />
     </button>
     <button
       class="classButton"
@@ -14,7 +14,7 @@
       id="button1"
       @click.prevent="event"
     >
-      <img src="@/assets/check.png" class="img1" alt="check image" />{{ msg }}
+      <img src="/content/dam/vue/check.png" class="img1" alt="check image" />{{ msg }}
     </button>
     <button
       class="classButton"
@@ -22,8 +22,8 @@
       id="button2"
       @click.prevent="event"
     >
-      <img src="@/assets/plus.png" class="img2" alt="plus image" />{{ msg }}
-      <img src="@/assets/next.png" class="img0" alt="next image" />
+      <img src="/content/dam/vue/plus.png" class="img2" alt="plus image" />{{ msg }}
+      <img src="/content/dam/vue/next.png" class="img0" alt="next image" />
     </button>
     <button
       class="classButton"
@@ -31,7 +31,7 @@
       id="button3"
       @click.prevent="event"
     >
-      {{ msg }}<img src="@/assets/vector.png" class="img3" alt="vector image" />
+      {{ msg }}<img src="/content/dam/vue/vector.png" class="img3" alt="vector image" />
     </button>
   </div>
 </template>
