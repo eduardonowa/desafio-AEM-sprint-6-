@@ -24,11 +24,11 @@ import org.osgi.annotation.versioning.ConsumerType;
 
 
 /**
- * Defines the {@code HomeRed} Sling Model used for the {@code vue/components/home-red} component.
+ * Defines the {@code TabsRed} Sling Model used for the {@code vue/components/tabs-red} component.
  * 
  */
 @ConsumerType
-public interface HomeRed
+public interface TabsRed
     extends ComponentExporter
 {
 
@@ -46,6 +46,50 @@ public interface HomeRed
 
     @JsonProperty("fontSizeDescription")
     Long getFontSizeDescription();
+
+    @JsonProperty("titleTextBasic")
+    String getTitleTextBasic();
+
+    @JsonProperty("fontSizeTitleBasic")
+    Long getFontSizeTitleBasic();
+
+    String getFontFamilyTitleBasic();
+
+    @JsonProperty("titleColorBasic")
+    String getTitleColorBasic();
+
+    @JsonProperty("titleTextSocial")
+    String getTitleTextSocial();
+
+    @JsonProperty("fontSizeTitleSocial")
+    Long getFontSizeTitleSocial();
+
+    String getFontFamilyTitleSocial();
+
+    @JsonProperty("titleColorSocial")
+    String getTitleColorSocial();
+
+    @JsonProperty("titleTextCertificates")
+    String getTitleTextCertificates();
+
+    @JsonProperty("fontSizeTitleCertificates")
+    Long getFontSizeTitleCertificates();
+
+    String getFontFamilyTitleCertificates();
+
+    @JsonProperty("titleColorCertificates")
+    String getTitleColorCertificates();
+
+    @JsonProperty("titleTextSuccess")
+    String getTitleTextSuccess();
+
+    @JsonProperty("fontSizeTitleSuccess")
+    Long getFontSizeTitleSuccess();
+
+    String getFontFamilyTitleSuccess();
+
+    @JsonProperty("titleColorSuccess")
+    String getTitleColorSuccess();
 
     @JsonProperty("colorButtonZero")
     String getColorButtonZero();

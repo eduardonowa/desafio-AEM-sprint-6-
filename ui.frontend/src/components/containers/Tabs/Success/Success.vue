@@ -63,7 +63,8 @@ export default {
       type: String
     },
     msgOne: {
-      type: String
+      type: String,
+      default: 'Return'
     }
   },
   data () {
