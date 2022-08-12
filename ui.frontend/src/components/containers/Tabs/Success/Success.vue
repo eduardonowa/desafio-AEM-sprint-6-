@@ -34,7 +34,7 @@
     <Texts description="Institution: " :text="this.institution" />
     <Texts description="Graduation: " :text="this.graduation" />
     <div class="button">
-      <Buttons type="1" msg="Return" :event="clearStorage" />
+      <Buttons type="1" :event="clearStorage" :msgOne="msgOne" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
     </div>
   </div>
 </template>
@@ -48,6 +48,24 @@ export default {
   components: {
     Buttons,
     Texts
+  },
+  props: {
+    colorButtonOne: {
+      type: String
+    },
+    fontFamilyButtonOne: {
+      type: String
+    },
+    formatButtonFontSizeOne: {
+      type: String
+    },
+    backgroundButtonOne: {
+      type: String
+    },
+    msgOne: {
+      type: String,
+      default: 'Return'
+    }
   },
   data () {
     return {

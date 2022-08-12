@@ -1,0 +1,469 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "tabs-red",
+  "title": "Vue - Tabs Red",
+  "group": "SPA Vue Project - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties-tabs": [
+      {
+        "id": "header-properties",
+        "label": "Header",
+        "fields": ["description", "colorDescription", "textAlignHeader", "fontFamilyDescription",
+        "fontSizeDescription", "titleTextBasic", "fontSizeTitleBasic", "fontFamilyTitleBasic", "titleColorBasic",
+        "titleTextSocial", "fontSizeTitleSocial", "fontFamilyTitleSocial", "titleColorSocial",
+        "titleTextCertificates", "fontSizeTitleCertificates", "fontFamilyTitleCertificates", "titleColorCertificates",
+        "titleTextSuccess", "fontSizeTitleSuccess", "fontFamilyTitleSuccess", "titleColorSuccess"
+      ]
+      },
+      {
+        "id": "basic-properties",
+        "label": "Basic",
+        "fields": ["colorButtonZero", "fontFamilyButtonZero", "formatButtonFontSizeZero", "backgroundButtonZero", "msgZero"]
+      },
+      {
+        "id": "social-properties",
+        "label": "Social",
+        "fields": []
+      },
+      {
+        "id": "certificates-properties",
+        "label": "Certificates",
+        "fields": []
+      },
+      {
+        "id": "success-properties",
+        "label": "Success",
+        "fields": []
+      }
+    ],
+    "properties": [
+      {
+        "field": "description",
+        "label": "Text Description",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "description"
+      },
+      {
+        "field": "fontSizeDescription",
+        "label": "Description Font-Size (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeDescription"
+      },
+      {
+        "field": "textAlignHeader",
+        "type": "select",
+        "label": "Content Position:",
+        "json-expose": true,
+        "json-property": "textAlignHeader",
+        "attributes": {
+        "defaultValue": "textAlignHeader",
+        "value": false
+        },
+        "items": [
+          {
+          "field": "flex-start",
+          "attributes": {
+          "text": "Left",
+          "value": "flex-start"
+            }
+          },
+          {
+          "field": "center",
+          "attributes": {
+          "text": "Center",
+          "value": "center"
+            }
+          },
+          {
+          "field": "flex-end",
+          "attributes": {
+          "text": "Right",
+          "value": "flex-end"
+            }
+          }
+        ]
+      },
+      {
+        "field": "fontFamilyDescription",
+        "type": "radiogroup",
+        "label": "Description Font Family:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyDescription",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "colorDescription",
+        "label": "Color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorDescription"
+      },
+      {
+        "field": "titleTextBasic",
+        "label": "Text Description Basic Tab",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleTextBasic"
+      },
+      {
+        "field": "fontSizeTitleBasic",
+        "label": "Description Font-Size Basic Tab (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeTitleBasic"
+      },
+      {
+        "field": "fontFamilyTitleBasic",
+        "type": "radiogroup",
+        "label": "Description Font Family Basic Tab:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleBasic",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleBasic",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleBasic",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "titleColorBasic",
+        "label": "Color Basic Tab Text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColorBasic"
+      },
+      {
+        "field": "titleTextSocial",
+        "label": "Text Description Social Tab",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleTextSocial"
+      },
+      {
+        "field": "fontSizeTitleSocial",
+        "label": "Description Font-Size Social Tab (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeTitleSocial"
+      },
+      {
+        "field": "fontFamilyTitleSocial",
+        "type": "radiogroup",
+        "label": "Description Font Family Social Tab:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSocial",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSocial",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSocial",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "titleColorSocial",
+        "label": "Color Social Tab Text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColorSocial"
+      },
+      {
+        "field": "titleTextCertificates",
+        "label": "Text Description Certificates Tab",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleTextCertificates"
+      },
+      {
+        "field": "fontSizeTitleCertificates",
+        "label": "Description Font-Size Certificates Tab (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeTitleCertificates"
+      },
+      {
+        "field": "fontFamilyTitleCertificates",
+        "type": "radiogroup",
+        "label": "Description Font Family Certificates Tab:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleCertificates",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleCertificates",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleCertificates",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "titleColorCertificates",
+        "label": "Color Certificates Tab Text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColorCertificates"
+      },
+      {
+        "field": "titleTextSuccess",
+        "label": "Text Description Succes Tab",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleTextSuccess"
+      },
+      {
+        "field": "fontSizeTitleSuccess",
+        "label": "Description Font-Size Succes Tab (px)",
+        "type": "numberfield",
+        "json-expose": true,
+        "json-property": "fontSizeTitleSuccess"
+      },
+      {
+        "field": "fontFamilyTitleSuccess",
+        "type": "radiogroup",
+        "label": "Description Font Family Succes Tab:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSuccess",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSuccess",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyTitleSuccess",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "titleColorSuccess",
+        "label": "Color Succes Tab Title",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "titleColorSuccess"
+      },
+      {
+        "field": "msgZero",
+        "label": "Text Description",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgZero"
+      },
+      {
+        "field": "colorButtonZero",
+        "label": "Button text color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonZero"
+      },
+      {
+        "field": "backgroundButtonZero",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonZero"
+      },
+      {
+        "field": "fontFamilyButtonZero",
+        "type": "radiogroup",
+        "label": "Description Font Family:",
+        "json-expose": true,
+        "attributes": {
+        "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyButtonZero",
+            "text": "Inter",
+            "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyButtonZero",
+            "text": "Arial",
+            "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+            "checked": "{Boolean}true",
+            "name": "fontFamilyButtonZero",
+            "text": "Nunito",
+            "value": "Nunito"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

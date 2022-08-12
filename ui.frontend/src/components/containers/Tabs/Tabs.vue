@@ -1,25 +1,50 @@
 <template>
-  <div class="card">
-    <template v-if="actualTab !== 'success'">
-      <h2 class="teamSign">Team Sign Up</h2>
-      <MenuComponent />
+  <div>
+    <Header
+      :description="description"
+      :colorDescription="colorDescription"
+      :textAlignHeader="textAlignHeader"
+      :fontFamilyDescription="fontFamilyDescription"
+      :fontSizeDescription="fontSizeDescription"
+      :titleTextBasic="titleTextBasic"
+      :fontSizeTitleBasic="fontSizeTitleBasic"
+      :fontFamilyTitleBasic="fontFamilyTitleBasic"
+      :titleColorBasic="titleColorBasic"
+      :titleTextSocial="titleTextSocial"
+      :fontSizeTitleSocial="fontSizeTitleSocial"
+      :fontFamilyTitleSocial="fontFamilyTitleSocial"
+      :titleColorSocial="titleColorSocial"
+      :titleTextCertificates="titleTextCertificates"
+      :fontSizeTitleCertificates="fontSizeTitleCertificates"
+      :fontFamilyTitleCertificates="fontFamilyTitleCertificates"
+      :titleColorCertificates="titleColorCertificates"
+      :titleTextSuccess="titleTextSuccess"
+      :fontSizeTitleSuccess="fontSizeTitleSuccess"
+      :fontFamilyTitleSuccess="fontFamilyTitleSuccess"
+      :titleColorSuccess="titleColorSuccess"
+    />
+    <div class="card">
+      <template v-if="actualTab !== 'success'">
+        <h2 class="teamSign">Team Sign Up</h2>
+        <MenuComponent />
 
-      <template v-if="getActualTab === 'basic'">
-        <Basic />
+        <template v-if="getActualTab === 'basic'">
+          <Basic :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+        </template>
+
+        <template v-else-if="getActualTab === 'social'">
+          <Social :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+        </template>
+
+        <template v-else-if="getActualTab === 'certificates'">
+          <Certificates :msgOne="msgOne" :msgTwo="msgTwo" :msgThree="msgThree" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo" :formatButtonFontSizeTwo="formatButtonFontSizeTwo" :backgroundButtonTwo="backgroundButtonTwo" :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree" :formatButtonFontSizeThree="formatButtonFontSizeThree" :backgroundButtonThree="backgroundButtonThree" />
+        </template>
       </template>
 
-      <template v-else-if="getActualTab === 'social'">
-        <Social />
+      <template v-else-if="getActualTab === 'success'">
+        <Success :msgOne="msgOne" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
       </template>
-
-      <template v-else-if="getActualTab === 'certificates'">
-        <Certificates />
-      </template>
-    </template>
-
-    <template v-else-if="getActualTab === 'success'">
-      <Success />
-    </template>
+    </div>
   </div>
 </template>
 
@@ -30,11 +55,137 @@ import Social from '@/components/containers/Tabs/Social/Social.vue'
 import Basic from '@/components/containers/Tabs/Basic/Basic.vue'
 import Certificates from '@/components/containers/Tabs/Certificates/Certificates.vue'
 import Success from '@/components/containers/Tabs/Success/Success.vue'
+import Header from '@/components/containers/Header/Header.vue'
 
 export default {
   // eslint-disable-next-line
   name: "Tabs",
-
+  props: {
+    description: {
+      type: String,
+      default: 'Forms'
+    },
+    colorDescription: {
+      type: String
+    },
+    textAlignHeader: {
+      type: String
+    },
+    fontFamilyDescription: {
+      type: String
+    },
+    fontSizeDescription: {
+      type: String
+    },
+    titleTextBasic: {
+      type: String
+    },
+    titleColorBasic: {
+      type: String
+    },
+    fontFamilyTitleBasic: {
+      type: String
+    },
+    fontSizeTitleBasic: {
+      type: String
+    },
+    titleTextSocial: {
+      type: String
+    },
+    titleColorSocial: {
+      type: String
+    },
+    fontFamilyTitleSocial: {
+      type: String
+    },
+    fontSizeTitleSocial: {
+      type: String
+    },
+    titleTextCertificates: {
+      type: String
+    },
+    titleColorCertificates: {
+      type: String
+    },
+    fontFamilyTitleCertificates: {
+      type: String
+    },
+    fontSizeTitleCertificates: {
+      type: String
+    },
+    titleTextSuccess: {
+      type: String
+    },
+    titleColorSucess: {
+      type: String
+    },
+    fontFamilyTitleSucess: {
+      type: String
+    },
+    fontSizeTitleSucess: {
+      type: String
+    },
+    colorButtonZero: {
+      type: String
+    },
+    fontFamilyButtonZero: {
+      type: String
+    },
+    formatButtonFontSizeZero: {
+      type: String
+    },
+    backgroundButtonZero: {
+      type: String
+    },
+    colorButtonOne: {
+      type: String
+    },
+    fontFamilyButtonOne: {
+      type: String
+    },
+    formatButtonFontSizeOne: {
+      type: String
+    },
+    backgroundButtonOne: {
+      type: String
+    },
+    colorButtonTwo: {
+      type: String
+    },
+    fontFamilyButtonTwo: {
+      type: String
+    },
+    formatButtonFontSizeTwo: {
+      type: String
+    },
+    backgroundButtonTwo: {
+      type: String
+    },
+    colorButtonThree: {
+      type: String
+    },
+    fontFamilyButtonThree: {
+      type: String
+    },
+    formatButtonFontSizeThree: {
+      type: String
+    },
+    backgroundButtonThree: {
+      type: String
+    },
+    msgZero: {
+      type: String
+    },
+    msgOne: {
+      type: String
+    },
+    msgTwo: {
+      type: String
+    },
+    msgThree: {
+      type: String
+    }
+  },
   data () {
     return {
       actualTab: this.$store.state.actualTab
@@ -48,7 +199,7 @@ export default {
       return this.$store.state.actualTab
     }
   },
-  components: { MenuComponent, Social, Basic, Certificates, Success },
+  components: { MenuComponent, Social, Basic, Certificates, Success, Header },
 
   methods: {
     ...mapActions(['nextTab'])

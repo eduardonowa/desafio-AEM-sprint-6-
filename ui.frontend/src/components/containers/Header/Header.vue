@@ -10,18 +10,30 @@
       <Title
         v-if="this.$store.state.actualTab === 'basic'"
         :titleText="titleTextBasic"
+        :fontSizeTitle="fontSizeTitleBasic"
+        :fontFamilyTitle="fontFamilyTitleBasic"
+        :titleColor="titleColorBasic"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'social'"
         :titleText="titleTextSocial"
+        :fontSizeTitle="fontSizeTitleSocial"
+        :fontFamilyTitle="fontFamilyTitleSocial"
+        :titleColor="titleColorSocial"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'certificates'"
         :titleText="titleTextCertificates"
+        :fontSizeTitle="fontSizeTitleCertificates"
+        :fontFamilyTitle="fontFamilyTitleCertificates"
+        :titleColor="titleColorCertificates"
       />
       <Title
         v-else-if="this.$store.state.actualTab === 'success'"
         :titleText="titleTextSuccess"
+        :fontSizeTitle="fontSizeTitleSuccess"
+        :fontFamilyTitle="fontFamilyTitleSuccess"
+        :titleColor="titleColorSuccess"
       />
     </div>
   </div>
@@ -67,6 +79,42 @@ export default {
       type: String
     },
     textAlignHeader: {
+      type: String
+    },
+    titleColorBasic: {
+      type: String
+    },
+    fontFamilyTitleBasic: {
+      type: String
+    },
+    fontSizeTitleBasic: {
+      type: String
+    },
+    titleColorSocial: {
+      type: String
+    },
+    fontFamilyTitleSocial: {
+      type: String
+    },
+    fontSizeTitleSocial: {
+      type: String
+    },
+    titleColorCertificates: {
+      type: String
+    },
+    fontFamilyTitleCertificates: {
+      type: String
+    },
+    fontSizeTitleCertificates: {
+      type: String
+    },
+    titleColorSucess: {
+      type: String
+    },
+    fontFamilyTitleSucess: {
+      type: String
+    },
+    fontSizeTitleSucess: {
       type: String
     }
   }
