@@ -29,20 +29,54 @@
         <MenuComponent />
 
         <template v-if="getActualTab === 'basic'">
-          <Basic :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+          <Basic
+            :msgZero="msgZero"
+            :colorButtonZero="colorButtonZero"
+            :fontFamilyButtonZero="fontFamilyButtonZero"
+            :formatButtonFontSizeZero="formatButtonFontSizeZero"
+            :backgroundButtonZero="backgroundButtonZero"
+          />
         </template>
 
         <template v-else-if="getActualTab === 'social'">
-          <Social :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+          <Social
+            :msgZero="msgZero"
+            :colorButtonZero="colorButtonZero"
+            :fontFamilyButtonZero="fontFamilyButtonZero"
+            :formatButtonFontSizeZero="formatButtonFontSizeZero"
+            :backgroundButtonZero="backgroundButtonZero"
+          />
         </template>
 
         <template v-else-if="getActualTab === 'certificates'">
-          <Certificates :msgOne="msgOne" :msgTwo="msgTwo" :msgThree="msgThree" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo" :formatButtonFontSizeTwo="formatButtonFontSizeTwo" :backgroundButtonTwo="backgroundButtonTwo" :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree" :formatButtonFontSizeThree="formatButtonFontSizeThree" :backgroundButtonThree="backgroundButtonThree" />
+          <Certificates
+            :msgOne="msgOne"
+            :msgTwo="msgTwo"
+            :msgThree="msgThree"
+            :colorButtonOne="colorButtonOne"
+            :fontFamilyButtonOne="fontFamilyButtonOne"
+            :formatButtonFontSizeOne="formatButtonFontSizeOne"
+            :backgroundButtonOne="backgroundButtonOne"
+            :colorButtonTwo="colorButtonTwo"
+            :fontFamilyButtonTwo="fontFamilyButtonTwo"
+            :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
+            :backgroundButtonTwo="backgroundButtonTwo"
+            :colorButtonThree="colorButtonThree"
+            :fontFamilyButtonThree="fontFamilyButtonThree"
+            :formatButtonFontSizeThree="formatButtonFontSizeThree"
+            :backgroundButtonThree="backgroundButtonThree"
+          />
         </template>
       </template>
 
       <template v-else-if="getActualTab === 'success'">
-        <Success :msgOne="msgOne" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
+        <Success
+          :msgOne="msgOne"
+          :colorButtonOne="colorButtonOne"
+          :fontFamilyButtonOne="fontFamilyButtonOne"
+          :formatButtonFontSizeOne="formatButtonFontSizeOne"
+          :backgroundButtonOne="backgroundButtonOne"
+        />
       </template>
     </div>
   </div>
@@ -59,7 +93,7 @@ import Header from '@/components/containers/Header/Header.vue'
 
 export default {
   // eslint-disable-next-line
-  name: "Tabs",
+  name: 'Tabs',
   props: {
     description: {
       type: String,
@@ -208,5 +242,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Tabs.scss";
+@import './Tabs.scss';
 </style>
