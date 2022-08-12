@@ -1,14 +1,14 @@
 <template>
-  <div class="containerTitle">
-    <h1 class="title" :style="style">{{ Text }}</h1>
-  </div>
+  <h3 :style="style" id="description">
+    {{ Text }}
+  </h3>
 </template>
 
 <script>
-import './title.css'
+import './description.css'
 export default {
-  // eslint-disable-next-line
-  name: 'Title',
+  name: 'Description',
+
   props: {
     Text: {
       type: String,

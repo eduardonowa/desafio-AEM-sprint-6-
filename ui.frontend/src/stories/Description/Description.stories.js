@@ -1,8 +1,8 @@
-import Title from './Title.vue'
+import Description from './Description.vue'
 
 export default {
-  title: 'Title',
-  component: Title,
+  title: 'Description',
+  component: Description,
   decorators: [
     () => ({ template: '<div style="margin: 2em;"><story/></div>' })
   ],
@@ -19,11 +19,11 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Title },
-  template: '<Title v-bind="$props" />'
+  components: { Description },
+  template: '<Description v-bind="$props" />'
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Type = Template.bind({});
+Type.args = {
     Text: 'default text'
 };

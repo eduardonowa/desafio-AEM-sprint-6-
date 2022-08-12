@@ -1,0 +1,13 @@
+#description {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  font-size: 1.3em;
+  margin: 0;
+  color: #111111;
+  font-weight: 400;
+  padding-left: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');

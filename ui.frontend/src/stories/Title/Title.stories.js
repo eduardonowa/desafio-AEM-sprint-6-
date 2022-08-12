@@ -23,7 +23,7 @@ const Template = (args, { argTypes }) => ({
   template: '<Title v-bind="$props" />'
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Type = Template.bind({});
+Type.args = {
     Text: 'default text'
 };
