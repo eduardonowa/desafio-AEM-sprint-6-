@@ -12,7 +12,7 @@
       'background': backgroundButtonZero
     }"
     >
-      {{ msgZero }} <img class="img0" src="@/assets/next.png" alt="next image" />
+      {{ msgZero }} <img class="img0" src="/content/dam/vue/next.png" alt="next image" />
     </button>
     <button
       class="classButton"
@@ -26,7 +26,7 @@
       'background': backgroundButtonOne
     }"
     >
-      <img src="@/assets/check.png" class="img1" alt="check image" />{{ msgOne }}
+      <img src="/content/dam/vue/check.png" class="img1" alt="check image" />{{ msgOne }}
     </button>
     <button
       class="classButton"
@@ -40,8 +40,8 @@
       'background': backgroundButtonTwo
     }"
     >
-      <img src="@/assets/plus.png" class="img2" alt="plus image" />{{ msgTwo }}
-      <img src="@/assets/next.png" class="img0" alt="next image" />
+      <img src="/content/dam/vue/plus.png" class="img2" alt="plus image" />{{ msgTwo }}
+      <img src="/content/dam/vue/next.png" class="img0" alt="next image" />
     </button>
     <button
       class="classButton"
@@ -55,7 +55,7 @@
       'background': backgroundButtonThree
     }"
     >
-      {{ msgThree }}<img src="@/assets/vector.png" class="img3" alt="vector image" />
+      {{ msgThree }}<img src="/content/dam/vue/vector.png" class="img3" alt="vector image" />
     </button>
   </div>
 </template>
