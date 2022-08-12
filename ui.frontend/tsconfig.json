@@ -14,7 +14,8 @@
     "baseUrl": ".",
     "isolatedModules": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "jest"
     ],
     "paths": {
       "@/*": [
@@ -33,7 +34,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx",
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
