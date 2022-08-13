@@ -1,8 +1,8 @@
-import Description from './Description.vue'
+import Inputs from './Inputs.vue'
 
 export default {
-  title: 'Desafio AEM/Components/Description',
-  component: Description,
+  title: 'Desafio AEM/Components/Inputs',
+  component: Inputs,
   decorators: [
     () => ({ template: '<div style="margin: 2em;"><story/></div>' })
   ],
@@ -13,17 +13,19 @@ export default {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
     },
-    fontSize:{control: 'text'},
-  },
-};
+    fontSize: { control: 'text' },
+    type: {
+      control: { type: 'select' },
+      options: ['text', 'date', 'email', 'tel']
+    }
+  }
+}
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Description },
-  template: '<Description v-bind="$props" />'
-});
+  components: { Inputs },
+  template: '<Inputs v-bind="$props" />'
+})
 
-export const Type = Template.bind({});
-Type.args = {
-    Text: 'default text'
-};
+export const Type = Template.bind({})
+Type.args = {}

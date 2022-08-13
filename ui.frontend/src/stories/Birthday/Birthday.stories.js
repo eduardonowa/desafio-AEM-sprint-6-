@@ -1,7 +1,7 @@
 import Birthday from './Birthday.vue'
 
 export default {
-  title: 'Birthday',
+  title: 'Desafio AEM/Components/Birthday',
   component: Birthday,
   decorators: [
     () => ({ template: '<div style="margin: 2em;"><story/></div>' })
@@ -12,6 +12,10 @@ export default {
     fontFamily: {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
+    },
+    type: {
+      control: { type: 'select' },
+      options: ['text', 'phone', 'date', 'email', 'textarea']
     },
     fontSize: { control: 'text' },
   }

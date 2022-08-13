@@ -1,7 +1,7 @@
 import Buttons from './Buttons.vue'
 
 export default {
-  title: 'Buttons',
+  title: 'Desafio AEM/Components/Buttons',
   component: Buttons,
   decorators: [() => ({ template: '<div style="margin: 2em;"><story/></div>' })],
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes

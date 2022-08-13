@@ -1,8 +1,8 @@
-import Description from './Description.vue'
+import Menu from './Menu.vue'
 
 export default {
-  title: 'Desafio AEM/Components/Description',
-  component: Description,
+  title: 'Desafio AEM/Components/Menu',
+  component: Menu,
   decorators: [
     () => ({ template: '<div style="margin: 2em;"><story/></div>' })
   ],
@@ -13,17 +13,17 @@ export default {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
     },
-    fontSize:{control: 'text'},
-  },
-};
+    fontSize: { control: 'text' },
+    spanColor: { control: 'color' },
+    borderColor: { control: 'color' },
+  }
+}
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { Description },
-  template: '<Description v-bind="$props" />'
-});
+  components: { Menu },
+  template: '<Menu v-bind="$props" />'
+})
 
-export const Type = Template.bind({});
-Type.args = {
-    Text: 'default text'
-};
+export const Type = Template.bind({})
+Type.args = {}

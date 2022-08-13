@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+
+ #labelStory {
+  font-size: 1.2em;
+  color: #767676;
+  margin-right: 2em;
+}
+
+ #spanStory {
+  font-size: 1em;
+  color: #ff0000;
+}
+
+#inputStory {
+  display: flex;
+  border: 2px solid #aaaaaa;
+  border-radius: 4px;
+  width: 350px;
+  height: 2.5em;
+  background: transparent;
+  color: #767676;
+  font-size: 1em;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+#inputStory:focus {
+  outline: 0;
+}

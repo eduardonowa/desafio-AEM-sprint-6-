@@ -1,7 +1,7 @@
 import Title from './Title.vue'
 
 export default {
-  title: 'Title',
+  title: 'Desafio AEM/Components/Title',
   component: Title,
   decorators: [
     () => ({ template: '<div style="margin: 2em;"><story/></div>' })
