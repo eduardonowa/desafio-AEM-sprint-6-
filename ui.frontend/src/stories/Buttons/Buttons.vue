@@ -80,23 +80,23 @@ export default {
       }
     },
     fontSize: {
-      type:String
+      type: String
     }
   },
   methods: {
-    onClick() {
+    onClick () {
       this.$emit('onClick')
     }
   },
   computed: {
-    style() {
+    style () {
       return {
         color: this.color,
         backgroundColor: this.backgroundColor,
         fontFamily: this.fontFamily,
         width: (this.width / 16) + 'em',
         height: (this.height / 16) + 'em',
-        fontSize: (this.fontSize/16) + 'em'
+        fontSize: (this.fontSize / 16) + 'em'
       }
     }
   }

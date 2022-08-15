@@ -19,7 +19,7 @@
 
 <script>
 import './menu.css'
-import $ from 'jquery'
+
 import {} from 'jquery-mask-plugin'
 export default {
   // eslint-disable-next-line
@@ -27,11 +27,11 @@ export default {
   props: {
     menuTabs: {
       type: Array,
-      default: ['basic', 'social', 'certificates']
+      default: () => ['basic', 'social', 'certificates']
     },
     abledTabs: {
       type: Array,
-      default: ['basic', 'social', 'certificates']
+      default: () => ['basic', 'social', 'certificates']
     },
     color: {
       type: String
@@ -54,7 +54,7 @@ export default {
     }
   },
   methods: {
-    focused(className) {
+    focused (className) {
       this.abledTabs.forEach((tab) => {
         const el = document.querySelector(`.${tab.toLowerCase()}`)
         el.classList.remove('focus')
@@ -62,10 +62,10 @@ export default {
       const el = document.querySelector(`.${className}`)
       el.classList.add('focus')
     },
-    loadTab(tab) {
+    loadTab (tab) {
       this.focused(tab)
     },
-    capitalize(word) {
+    capitalize (word) {
       const letters = word.split('')
       const first = letters.shift()
       letters.unshift(first.toUpperCase())
@@ -73,23 +73,23 @@ export default {
     }
   },
   computed: {
-    style() {
+    style () {
       return {
         fontSize: this.fontSize / 16 + 'em'
       }
     },
-    styleButton() {
+    styleButton () {
       return {
         fontFamily: this.fontFamily,
         color: this.color,
-        borderColor:this.borderColor
+        borderColor: this.borderColor
       }
     },
-    styleSpan() {
+    styleSpan () {
       return {
         backgroundColor: this.spanColor
       }
-    },
+    }
   }
 }
 </script>

@@ -43,7 +43,7 @@ import './birthday.css'
 export default {
   // eslint-disable-next-line
   name: 'Birthday',
-  data() {
+  data () {
     return {
       day: '',
       month: '',
@@ -111,13 +111,13 @@ export default {
     }
   },
   methods: {
-    getDay(event) {
+    getDay (event) {
       this.day = event.target.value
     },
-    getMonth(event) {
+    getMonth (event) {
       this.month = event.target.value
     },
-    getYear(event) {
+    getYear (event) {
       this.year = event.target.value
       const date = new Date()
       let actualDay = date.getDate()
@@ -136,12 +136,12 @@ export default {
 
       console.log(this.age)
     },
-    padStart(date) {
+    padStart (date) {
       return String(date).padStart(2, '0')
     }
   },
   computed: {
-    style() {
+    style () {
       return {
         color: this.color,
         fontFamily: this.fontFamily,

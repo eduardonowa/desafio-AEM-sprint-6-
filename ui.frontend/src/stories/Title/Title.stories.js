@@ -13,17 +13,17 @@ export default {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
     },
-    fontSize:{control: 'text'},
-  },
-};
+    fontSize: { control: 'text' }
+  }
+}
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { Title },
   template: '<Title v-bind="$props" />'
-});
+})
 
-export const Type = Template.bind({});
+export const Type = Template.bind({})
 Type.args = {
-    Text: 'default text'
-};
+  Text: 'default text'
+}

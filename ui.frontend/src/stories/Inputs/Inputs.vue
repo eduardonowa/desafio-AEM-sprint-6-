@@ -14,7 +14,6 @@
 
 <script>
 import './inputs.css'
-import $ from 'jquery'
 import {} from 'jquery-mask-plugin'
 export default {
   // eslint-disable-next-line
@@ -67,24 +66,24 @@ export default {
     }
   },
   methods: {
-    teste() {
+    teste () {
       console.log('testee')
     }
   },
   computed: {
-    style() {
+    style () {
       return {
         color: this.color,
         fontFamily: this.fontFamily,
         fontSize: this.fontSize / 16 + 'em'
       }
     },
-    labelStyle() {
+    labelStyle () {
       return {
         color: this.labelColor
       }
     },
-    inputStyle() {
+    inputStyle () {
       return {
         borderColor: this.borderColor
       }

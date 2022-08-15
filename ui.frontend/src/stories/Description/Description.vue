@@ -30,7 +30,7 @@ export default {
     }
   },
   computed: {
-    style() {
+    style () {
       return {
         color: this.color,
         fontFamily: this.fontFamily,

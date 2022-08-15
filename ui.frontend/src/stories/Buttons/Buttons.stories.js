@@ -16,9 +16,9 @@ export default {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
     },
-    width: {control: 'text'},
-    height:{control: 'text'},
-    fontSize:{control: 'text'},
+    width: { control: 'text' },
+    height: { control: 'text' },
+    fontSize: { control: 'text' }
   }
 }
 
@@ -33,4 +33,3 @@ Types.args = {
   primary: true,
   type: '0'
 }
-

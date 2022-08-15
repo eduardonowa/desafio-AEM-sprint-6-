@@ -7,13 +7,13 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Tabs',
+    path: '/tabs',
+    name: 'tabs',
     component: Tabs
   },
   {
     path: '*',
-    name: 'Error 404',
+    name: 'error404',
     component: Error404
   }
 ]

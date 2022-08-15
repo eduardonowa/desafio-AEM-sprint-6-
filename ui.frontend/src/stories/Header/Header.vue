@@ -48,17 +48,17 @@ export default {
   },
 
   computed: {
-    style() {
+    style () {
       return {
         backgroundColor: this.backgroundColor
       }
     },
-    styleTitle() {
+    styleTitle () {
       return {
         fontSize: this.fontSizeTitle / 16 + 'em'
       }
     },
-    styleDescription() {
+    styleDescription () {
       return {
         fontSize: this.fontSizeDescription / 16 + 'em'
       }

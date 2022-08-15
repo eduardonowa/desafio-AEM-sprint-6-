@@ -15,7 +15,7 @@ export default {
     },
     fontSize: { control: 'text' },
     spanColor: { control: 'color' },
-    borderColor: { control: 'color' },
+    borderColor: { control: 'color' }
   }
 }
 

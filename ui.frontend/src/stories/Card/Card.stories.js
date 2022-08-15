@@ -11,7 +11,7 @@ export default {
     fontFamily: {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
-    },
+    }
   }
 }
 

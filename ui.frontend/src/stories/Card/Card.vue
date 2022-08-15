@@ -43,28 +43,28 @@ export default {
       type: String
     },
     bodyBackground: {
-      type:String
+      type: String
     },
     headerBackground: {
-      type:String
+      type: String
     },
     cardBackground: {
-      type:String
-    },
+      type: String
+    }
   },
 
   computed: {
-    styleBody() {
+    styleBody () {
       return {
         backgroundColor: this.bodyBackground
       }
     },
-    styleHeader() {
+    styleHeader () {
       return {
         backgroundColor: this.headerBackground
       }
     },
-    styleCard() {
+    styleCard () {
       return {
         backgroundColor: this.cardBackground
       }

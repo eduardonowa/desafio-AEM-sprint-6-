@@ -17,7 +17,7 @@ export default {
       control: { type: 'select' },
       options: ['text', 'phone', 'date', 'email', 'textarea']
     },
-    fontSize: { control: 'text' },
+    fontSize: { control: 'text' }
   }
 }
 
