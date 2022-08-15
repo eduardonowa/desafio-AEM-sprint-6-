@@ -1,5 +1,5 @@
 <template>
-  <nav class="menu">
+  <nav class="menu" role="navigation">
     <div class="menu-tab" v-for="(tab, i) in $store.state.menuTabs" :key="i">
       <button
         v-if="i === 0"

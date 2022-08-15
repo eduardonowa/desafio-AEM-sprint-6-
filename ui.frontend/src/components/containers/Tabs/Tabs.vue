@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header
+      role="banner"
       :description="description"
       :colorDescription="colorDescription"
       :textAlignHeader="textAlignHeader"

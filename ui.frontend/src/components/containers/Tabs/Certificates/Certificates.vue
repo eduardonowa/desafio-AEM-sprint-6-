@@ -1,11 +1,12 @@
 <template>
-  <div class="certificate-container">
+  <div class="certificate-container" role="form">
     <Inputs
       LabelInput="Certificates"
       ClassField="certificates"
       Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
       Type="text"
       :valueInput="getCertificateValue"
+      aria-label="Certificate addition"
     />
     <div class="buttons">
       <div class="certificates">
@@ -48,6 +49,7 @@
       Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
       Type="text"
       :valueInput="teamnameValue"
+      aria-label="Team Name"
     />
     <Inputs
       LabelInput="Institution *"
@@ -57,6 +59,7 @@
       Placeholder="Universidade Federal da Paraíba"
       Type="text"
       :valueInput="institutionValue"
+      aria-label="Institution"
     />
     <Inputs
       LabelInput="Graduation *"
@@ -66,6 +69,7 @@
       Placeholder="Ciências da Computação"
       Type="text"
       :valueInput="graduationValue"
+      aria-label="Graduation"
     />
     <div class="footer-certificates">
       <span> {{ spanGeneral }}</span>

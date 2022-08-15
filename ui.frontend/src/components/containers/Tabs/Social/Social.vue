@@ -1,5 +1,5 @@
 <template>
-  <div class="social-container">
+  <div class="social-container" role="form">
     <Inputs
       LabelInput="Linkedin"
       Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
@@ -7,6 +7,7 @@
       ClassInput="linkedin"
       :valueInput="linkedinValue"
       ClassField="linkedin"
+      aria-label="Linkedin"
     />
     <Inputs
       LabelInput="GitHub *"
@@ -17,6 +18,7 @@
       ClassInput="git"
       :valueInput="githubValue"
       ClassField="github"
+      aria-label="Github"
     />
 
     <div class="button">

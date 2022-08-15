@@ -1,5 +1,5 @@
 <template>
-  <div class="basic-container">
+  <div class="basic-container" role="form">
     <Inputs
       ClassField="fullname"
       Type="text"
@@ -7,6 +7,7 @@
       InvalidText="Please enter your name"
       :valueInput="fullnameValue"
       Placeholder="Foo Bar"
+      aria-label="Full name"
     />
     <Inputs
       ClassField="nickname"
@@ -15,6 +16,7 @@
       InvalidText="Invalid"
       :valueInput="nicknameValue"
       Placeholder="Juanito"
+      aria-label="Nickname"
     />
     <Inputs
       ClassField="email"
@@ -23,6 +25,7 @@
       InvalidText="Please enter your email"
       :valueInput="emailValue"
       Placeholder="foo@bar.com"
+      aria-label="Email"
     />
     <Inputs
       ClassField="phone"
@@ -31,12 +34,13 @@
       :valueInput="phoneValue"
       Placeholder="(83) 00000-0000"
       Type="tel"
+      aria-label="Phone"
     />
-    <Birthday />
+    <Birthday aria-label="Birthday"/>
     <div class="footer">
-      <CheckBox />
+      <CheckBox aria-label="Contract terms"/>
       <div class="button-next">
-        <Buttons :event="validate" type="0" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+        <Buttons :event="validate" type="0" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" aria-label="Next Form"/>
       </div>
     </div>
   </div>

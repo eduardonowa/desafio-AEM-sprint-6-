@@ -1,5 +1,5 @@
 <template>
-  <div class="success-container">
+  <div class="success-container" aria-label="Success tab with all informations" role="main">
     <Texts description="Your data has been sent successfully!" />
     <Texts description="Full Name: " :text="this.fullname" />
     <Texts
