@@ -6,7 +6,7 @@
       <div class="select">
         <label>Day</label>
         <select name="day" id="day" @change="getDay($event)">
-          <option>Day</option>
+          <option disabled value="">Day</option>
           <option
             v-for="day in 31"
             :key="day"
@@ -19,7 +19,7 @@
       <div class="select">
         <label>Month</label>
         <select name="month" id="month" @change="getMonth($event)">
-          <option>Month</option>
+          <option disabled value="">Month</option>
           <option
             v-for="month in 12"
             :key="month"
@@ -32,7 +32,7 @@
       <div class="select">
         <label>Year</label>
         <select name="year" id="year" @change="getYear($event)">
-          <option>Year</option>
+          <option disabled value="">Year</option>
           <option
             v-for="year in this.rangeYears"
             :key="year"

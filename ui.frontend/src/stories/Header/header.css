@@ -1,0 +1,18 @@
+#headerContainer {
+  background: #e5e5e5;
+  width: 100%;
+  padding: 1.875em 0em 1.875em 6.25em;
+  border-bottom: 2px solid #aaaaaa;
+  text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+@media(max-width: 768px) {
+  #headerContainer {
+    border-bottom: none;
+  }
+}

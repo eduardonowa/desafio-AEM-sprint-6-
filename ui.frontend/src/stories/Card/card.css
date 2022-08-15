@@ -1,0 +1,34 @@
+.bodyType {
+  height: 100vh;
+  width: 100vw;
+  background: #e5e5e5;
+}
+
+.card {
+  padding: 20px 40px;
+  margin: 50px auto;
+  width: 600px;
+  min-height: 650px;
+  background: white;
+  border-radius: 20px;
+}
+
+.teamSign {
+  padding-top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.125em;
+}
+
+@media (max-width: 768px) {
+  .bodyType {
+    background: white;
+  }
+}
+
+.teamSign {
+  padding-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.125em;
+}
