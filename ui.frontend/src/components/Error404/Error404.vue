@@ -1,6 +1,6 @@
 <template>
     <div class="errorPage">
-        <img src="@/assets/error404.gif" alt="Erro 404" id="errorGif">
+        <img src="/content/dam/vue/error404.gif" alt="Erro 404" id="errorGif">
     </div>
 </template>
 

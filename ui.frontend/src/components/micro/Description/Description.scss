@@ -43,3 +43,9 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0s;
 }
+::-webkit-scrollbar{
+  background-color: #e5e5e1;
+  width: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
