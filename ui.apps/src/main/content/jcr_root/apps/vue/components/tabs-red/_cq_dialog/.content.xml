@@ -260,35 +260,6 @@
                      <column jcr:primaryType="nt:unstructured"
                              sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                           <colorButtonZero cq-msm-lockable="./colorButtonZero"
-                                            fieldLabel="Button text color"
-                                            jcr:primaryType="nt:unstructured"
-                                            name="./colorButtonZero"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                           <fontFamilyButtonZero cq-msm-lockable="./fontFamilyButtonZero"
-                                                 fieldLabel="Description Font Family:"
-                                                 jcr:primaryType="nt:unstructured"
-                                                 name="./fontFamilyButtonZero"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
-                                                 vertical="{Boolean}false">
-                              <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
-                                        jcr:primaryType="nt:unstructured"
-                                        name="fontFamilyButtonZero"
-                                        text="Inter"
-                                        value="Inter"/>
-                                 <Arial checked="{Boolean}true"
-                                        jcr:primaryType="nt:unstructured"
-                                        name="fontFamilyButtonZero"
-                                        text="Arial"
-                                        value="Arial"/>
-                                 <Nunito checked="{Boolean}true"
-                                         jcr:primaryType="nt:unstructured"
-                                         name="fontFamilyButtonZero"
-                                         text="Nunito"
-                                         value="Nunito"/>
-                              </items>
-                           </fontFamilyButtonZero>
                            <backgroundButtonZero cq-msm-lockable="./backgroundButtonZero"
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
@@ -299,12 +270,11 @@
                                     jcr:primaryType="nt:unstructured"
                                     name="./msgZero"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
-                           <spanFullname cq-msm-lockable="./spanFullname"
-                                         fieldLabel="Span first input"
-                                         jcr:primaryType="nt:unstructured"
-                                         name="./spanFullname"
-                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelCheckbox cq-msm-lockable="./labelCheckbox"
+                                          fieldLabel="Checkbox Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelCheckbox"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelFullname cq-msm-lockable="./labelFullname"
                                           fieldLabel="Label first input"
                                           jcr:primaryType="nt:unstructured"
@@ -314,12 +284,22 @@
                                                 fieldLabel="Placeholder first input"
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderFullname"
-
-                           <labelCheckbox cq-msm-lockable="./labelCheckbox"
-                                          fieldLabel="Checkbox Label"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanFullname cq-msm-lockable="./spanFullname"
+                                         fieldLabel="Span first input"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanFullname"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelNickname cq-msm-lockable="./labelNickname"
+                                          fieldLabel="Label second input"
                                           jcr:primaryType="nt:unstructured"
-                                          name="./labelCheckbox"
+                                          name="./labelNickname"
                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderNickname cq-msm-lockable="./placeholderNickname"
+                                                fieldLabel="Label second input"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderNickname"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -349,13 +329,11 @@
                                               fieldLabel="Label Input"
                                               jcr:primaryType="nt:unstructured"
                                               name="./labelCertificates"
-                                              emptyText="Fullname"
                                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <placeholderCertificates cq-msm-lockable="./placeholderCertificates"
                                                     fieldLabel="Placeholder First Input"
                                                     jcr:primaryType="nt:unstructured"
                                                     name="./placeholderCertificates"
-                                                    emptyText="https://www.linkedin.com/in/foo-bar-3a0560104/"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>

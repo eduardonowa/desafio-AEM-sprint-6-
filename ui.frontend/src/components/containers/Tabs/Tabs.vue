@@ -40,6 +40,8 @@
             :placeholderFullname="placeholderFullname"
             :spanFullname="spanFullname"
             :labelCheckbox="labelCheckbox"
+            :labelNickname="labelNickname"
+            :placeholderNickname="placeholderNickname"
           />
         </template>
 
@@ -102,6 +104,8 @@ export default {
   // eslint-disable-next-line
   name: 'Tabs',
   props: {
+    labelNickname: String,
+    placeholderNickname: String,
     spanFullname: String,
     labelFullname: String,
     placeholderFullname: String,
