@@ -126,10 +126,8 @@ export default {
     InvalidTextEmail: String,
     LabelEmail: String,
     LabelPhone: String,
-    description: {
-      type: String,
-      default: 'Forms'
-    },
+    description: String,
+
     colorDescription: {
       type: String
     },
@@ -181,13 +179,13 @@ export default {
     titleTextSuccess: {
       type: String
     },
-    titleColorSucess: {
+    titleColorSuccess: {
       type: String
     },
-    fontFamilyTitleSucess: {
+    fontFamilyTitleSuccess: {
       type: String
     },
-    fontSizeTitleSucess: {
+    fontSizeTitleSuccess: {
       type: String
     },
     colorButtonZero: {

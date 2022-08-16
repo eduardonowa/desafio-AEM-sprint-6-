@@ -51,15 +51,15 @@ export default {
   props: {
     titleTextBasic: {
       type: String,
-      default: 'First'
+      default: 'First Tab'
     },
     titleTextSocial: {
       type: String,
-      default: 'Second'
+      default: 'Second Tab'
     },
     titleTextCertificates: {
       type: String,
-      default: 'Third'
+      default: 'Third Tab'
     },
     titleTextSuccess: {
       type: String,

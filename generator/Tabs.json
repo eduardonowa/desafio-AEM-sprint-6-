@@ -32,25 +32,9 @@
         "fields": [
           "description",
           "colorDescription",
-          "textAlignHeader",
           "fontFamilyDescription",
           "fontSizeDescription",
-          "titleTextBasic",
-          "fontSizeTitleBasic",
-          "fontFamilyTitleBasic",
-          "titleColorBasic",
-          "titleTextSocial",
-          "fontSizeTitleSocial",
-          "fontFamilyTitleSocial",
-          "titleColorSocial",
-          "titleTextCertificates",
-          "fontSizeTitleCertificates",
-          "fontFamilyTitleCertificates",
-          "titleColorCertificates",
-          "titleTextSuccess",
-          "fontSizeTitleSuccess",
-          "fontFamilyTitleSuccess",
-          "titleColorSuccess"
+          "textAlignHeader"
         ]
       },
       {
@@ -62,12 +46,10 @@
         "id": "basic-properties",
         "label": "Basic",
         "fields": [
-          "colorButtonZero",
-          "fontFamilyButtonZero",
-          "formatButtonFontSizeZero",
-          "backgroundButtonZero",
-          "msgZero",
-          "labelCheckbox",
+          "titleTextBasic",
+          "fontSizeTitleBasic",
+          "fontFamilyTitleBasic",
+          "titleColorBasic",
           "labelFullname",
           "placeholderFullname",
           "spanFullname",
@@ -76,24 +58,47 @@
           "LabelEmail",
           "PlaceholderEmail",
           "InvalidTextEmail",
-          "LabelPhone"
-
+          "LabelPhone",
+          "labelCheckbox",
+          "msgZero",
+          "colorButtonZero",
+          "fontFamilyButtonZero",
+          "formatButtonFontSizeZero",
+          "backgroundButtonZero"
         ]
       },
       {
         "id": "social-properties",
         "label": "Social",
-        "fields": []
+        "fields": [
+          "titleTextSocial",
+          "fontSizeTitleSocial",
+          "fontFamilyTitleSocial",
+          "titleColorSocial"
+          
+        ]
       },
       {
         "id": "certificates-properties",
         "label": "Certificates",
-        "fields": ["labelCertificates", "placeholderCertificates"]
+        "fields": [
+          "titleTextCertificates",
+          "fontSizeTitleCertificates",
+          "fontFamilyTitleCertificates",
+          "titleColorCertificates",
+          "labelCertificates",
+          "placeholderCertificates"
+        ]
       },
       {
         "id": "success-properties",
         "label": "Success",
-        "fields": []
+        "fields": [
+          "titleTextSuccess",
+          "fontSizeTitleSuccess",
+          "fontFamilyTitleSuccess",
+          "titleColorSuccess"
+        ]
       }
     ],
     "properties": [
@@ -203,7 +208,7 @@
       },
       {
         "field": "description",
-        "label": "Text Description",
+        "label": "Description text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "description"
@@ -299,14 +304,14 @@
       },
       {
         "field": "titleTextBasic",
-        "label": "Text Description Basic Tab",
+        "label": "Title Basic Tab",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleTextBasic"
       },
       {
         "field": "fontSizeTitleBasic",
-        "label": "Description Font-Size Basic Tab (px)",
+        "label": "Title Font-Size Basic Tab (px)",
         "type": "numberfield",
         "json-expose": true,
         "json-property": "fontSizeTitleBasic"
@@ -314,7 +319,7 @@
       {
         "field": "fontFamilyTitleBasic",
         "type": "radiogroup",
-        "label": "Description Font Family Basic Tab:",
+        "label": "Title Font Family Basic Tab:",
         "json-expose": true,
         "attributes": {
           "vertical": "{Boolean}false"
@@ -361,14 +366,14 @@
       },
       {
         "field": "titleTextSocial",
-        "label": "Text Description Social Tab",
+        "label": "Title Social Tab",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleTextSocial"
       },
       {
         "field": "fontSizeTitleSocial",
-        "label": "Description Font-Size Social Tab (px)",
+        "label": "Title Font-Size Social Tab (px)",
         "type": "numberfield",
         "json-expose": true,
         "json-property": "fontSizeTitleSocial"
@@ -376,7 +381,7 @@
       {
         "field": "fontFamilyTitleSocial",
         "type": "radiogroup",
-        "label": "Description Font Family Social Tab:",
+        "label": "Title Font Family Social Tab:",
         "json-expose": true,
         "attributes": {
           "vertical": "{Boolean}false"
@@ -423,14 +428,14 @@
       },
       {
         "field": "titleTextCertificates",
-        "label": "Text Description Certificates Tab",
+        "label": "Title Certificates Tab",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleTextCertificates"
       },
       {
         "field": "fontSizeTitleCertificates",
-        "label": "Description Font-Size Certificates Tab (px)",
+        "label": "Title Font-Size Certificates Tab (px)",
         "type": "numberfield",
         "json-expose": true,
         "json-property": "fontSizeTitleCertificates"
@@ -438,7 +443,7 @@
       {
         "field": "fontFamilyTitleCertificates",
         "type": "radiogroup",
-        "label": "Description Font Family Certificates Tab:",
+        "label": "Title Font Family Certificates Tab:",
         "json-expose": true,
         "attributes": {
           "vertical": "{Boolean}false"
@@ -485,14 +490,14 @@
       },
       {
         "field": "titleTextSuccess",
-        "label": "Text Description Succes Tab",
+        "label": "Title Succes Tab",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleTextSuccess"
       },
       {
         "field": "fontSizeTitleSuccess",
-        "label": "Description Font-Size Succes Tab (px)",
+        "label": "Title Font-Size Succes Tab (px)",
         "type": "numberfield",
         "json-expose": true,
         "json-property": "fontSizeTitleSuccess"
@@ -500,7 +505,7 @@
       {
         "field": "fontFamilyTitleSuccess",
         "type": "radiogroup",
-        "label": "Description Font Family Succes Tab:",
+        "label": "Title Font Family Succes Tab:",
         "json-expose": true,
         "attributes": {
           "vertical": "{Boolean}false"
@@ -547,7 +552,7 @@
       },
       {
         "field": "msgZero",
-        "label": "Text Description",
+        "label": "Button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgZero"

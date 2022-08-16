@@ -1,6 +1,6 @@
 <template>
   <div class="containerTitle">
-    <h1 class="title" :style="{ 'color': titleColor , 'font-family': fontFamilyTitle , 'font-size': formatTitleFontSize}">{{ titleText }} Tab</h1>
+    <h1 class="title" :style="{ 'color': titleColor , 'font-family': fontFamilyTitle , 'font-size': formatTitleFontSize}">{{ titleText }}</h1>
   </div>
 </template>
 
