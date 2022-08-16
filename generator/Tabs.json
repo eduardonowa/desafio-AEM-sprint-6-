@@ -9,7 +9,7 @@
     "model-impl-pkg": "com.vue.core.models.impl"
   },
   "name": "tabs-red",
-  "title": "Vue - Tabs Red",
+  "title": "Properties Tabs",
   "group": "SPA Vue Project - Content",
   "type": "components",
   "options": {
@@ -54,6 +54,11 @@
         ]
       },
       {
+        "id": "hmenu-nav-properties",
+        "label": "Menu Nav",
+        "fields": ["fontFamilyNav", "bgColorSpanNav", "textNavColor"]
+      },
+      {
         "id": "basic-properties",
         "label": "Basic",
         "fields": [
@@ -92,6 +97,61 @@
       }
     ],
     "properties": [
+      {
+        "field": "textNavColor",
+        "label": "Select text color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "textNavColor"
+      },
+      {
+        "field": "bgColorSpanNav",
+        "label": "Select border color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "bgColorSpanNav"
+      },
+      {
+        "field": "fontFamilyNav",
+        "type": "radiogroup",
+        "label": "Font Family:",
+        "json-expose": true,
+        "attributes": {
+          "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+              "checked": "{Boolean}true",
+              "name": "fontFamilyNav",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+              "checked": "{Boolean}true",
+              "name": "fontFamilyNav",
+              "text": "Arial",
+              "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
+              "checked": "{Boolean}true",
+              "name": "fontFamilyNav",
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          }
+        ]
+      },
       {
         "field": "labelNickname",
         "label": "Label second input",

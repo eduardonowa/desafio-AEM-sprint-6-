@@ -22,7 +22,7 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Vue - Tabs Red"
+          jcr:title="Properties Tabs"
           sling:resourceType="cq/gui/components/authoring/dialog">
    <content jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -251,6 +251,53 @@
                      </column>
                   </items>
                </header-properties>
+               <hmenu-nav-properties jcr:primaryType="nt:unstructured"
+                                     jcr:title="Menu Nav"
+                                     sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <fontFamilyNav cq-msm-lockable="./fontFamilyNav"
+                                          fieldLabel="Font Family:"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./fontFamilyNav"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                          vertical="{Boolean}false">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <Inter checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyNav"
+                                        text="Inter"
+                                        value="Inter"/>
+                                 <Arial checked="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilyNav"
+                                        text="Arial"
+                                        value="Arial"/>
+                                 <Nunito checked="{Boolean}true"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="fontFamilyNav"
+                                         text="Nunito"
+                                         value="Nunito"/>
+                              </items>
+                           </fontFamilyNav>
+                           <bgColorSpanNav cq-msm-lockable="./bgColorSpanNav"
+                                           fieldLabel="Select border color"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./bgColorSpanNav"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                           <textNavColor cq-msm-lockable="./textNavColor"
+                                         fieldLabel="Select text color"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./textNavColor"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </hmenu-nav-properties>
                <basic-properties jcr:primaryType="nt:unstructured"
                                  jcr:title="Basic"
                                  sling:resourceType="granite/ui/components/coral/foundation/container">
