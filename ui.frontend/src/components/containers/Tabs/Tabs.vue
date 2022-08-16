@@ -66,6 +66,8 @@
             :fontFamilyButtonThree="fontFamilyButtonThree"
             :formatButtonFontSizeThree="formatButtonFontSizeThree"
             :backgroundButtonThree="backgroundButtonThree"
+            :labelCertificates="labelCertificates"
+            :placeholderCertificates="placeholderCertificates"
           />
         </template>
       </template>
@@ -96,6 +98,8 @@ export default {
   // eslint-disable-next-line
   name: 'Tabs',
   props: {
+    placeholderCertificates: String,
+    labelCertificates: String,
     description: {
       type: String,
       default: 'Forms'
