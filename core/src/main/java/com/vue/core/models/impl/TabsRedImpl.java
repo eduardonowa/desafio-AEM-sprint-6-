@@ -100,6 +100,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderNickname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String LabelEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String PlaceholderEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String InvalidTextEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
@@ -273,6 +279,24 @@ public class TabsRedImpl
     @JsonProperty("placeholderNickname")
     public String getPlaceholderNickname() {
         return placeholderNickname;
+    }
+
+    @Override
+    @JsonProperty("LabelEmail")
+    public String getLabelEmail() {
+        return LabelEmail;
+    }
+
+    @Override
+    @JsonProperty("PlaceholderEmail")
+    public String getPlaceholderEmail() {
+        return PlaceholderEmail;
+    }
+
+    @Override
+    @JsonProperty("InvalidTextEmail")
+    public String getInvalidTextEmail() {
+        return InvalidTextEmail;
     }
 
     @Override
