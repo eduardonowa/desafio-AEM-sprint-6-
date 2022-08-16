@@ -36,6 +36,9 @@
             :fontFamilyButtonZero="fontFamilyButtonZero"
             :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
+            :labelFullname="labelFullname"
+            :placeholderFullname="placeholderFullname"
+            :spanFullname="spanFullname"
           />
         </template>
 
@@ -96,6 +99,9 @@ export default {
   // eslint-disable-next-line
   name: 'Tabs',
   props: {
+    spanFullname: String,
+    labelFullname: String,
+    placeholderFullname: String,
     description: {
       type: String,
       default: 'Forms'

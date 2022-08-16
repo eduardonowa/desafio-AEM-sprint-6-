@@ -39,7 +39,7 @@
       {
         "id": "basic-properties",
         "label": "Basic",
-        "fields": ["colorButtonZero", "fontFamilyButtonZero", "formatButtonFontSizeZero", "backgroundButtonZero", "msgZero"]
+        "fields": ["colorButtonZero", "fontFamilyButtonZero", "formatButtonFontSizeZero", "backgroundButtonZero", "msgZero", "labelFullname", "placeholderFullname", "spanFullname"]
       },
       {
         "id": "social-properties",
@@ -58,6 +58,27 @@
       }
     ],
     "properties": [
+      {
+        "field": "labelFullname",
+        "label": "Label first input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelFullname"
+      },
+      {
+        "field": "placeholderFullname",
+        "label": "Placeholder first input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderFullname"
+      },
+      {
+        "field": "spanFullname",
+        "label": "Span first input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanFullname"
+      },
       {
         "field": "description",
         "label": "Text Description",

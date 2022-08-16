@@ -102,4 +102,13 @@ public interface TabsRed
     @JsonProperty("msgZero")
     String getMsgZero();
 
+    @JsonProperty("spanFullname")
+    String getSpanFullname();
+
+    @JsonProperty("labelFullname")
+    String getLabelFullname();
+
+    @JsonProperty("placeholderFullname")
+    String getPlaceholderFullname();
+
 }

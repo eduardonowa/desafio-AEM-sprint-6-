@@ -48,7 +48,7 @@
                                              fieldLabel="Color"
                                              jcr:primaryType="nt:unstructured"
                                              name="./colorDescription"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textAlignHeader cq-msm-lockable="./textAlignHeader"
                                             defaultValue="textAlignHeader"
                                             fieldLabel="Content Position:"
@@ -129,7 +129,7 @@
                                             fieldLabel="Color Basic Tab Text"
                                             jcr:primaryType="nt:unstructured"
                                             name="./titleColorBasic"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <titleTextSocial cq-msm-lockable="./titleTextSocial"
                                             fieldLabel="Text Description Social Tab"
                                             jcr:primaryType="nt:unstructured"
@@ -168,7 +168,7 @@
                                              fieldLabel="Color Social Tab Text"
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <titleTextCertificates cq-msm-lockable="./titleTextCertificates"
                                                   fieldLabel="Text Description Certificates Tab"
                                                   jcr:primaryType="nt:unstructured"
@@ -207,7 +207,7 @@
                                                    fieldLabel="Color Certificates Tab Text"
                                                    jcr:primaryType="nt:unstructured"
                                                    name="./titleColorCertificates"
-                                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <titleTextSuccess cq-msm-lockable="./titleTextSuccess"
                                              fieldLabel="Text Description Succes Tab"
                                              jcr:primaryType="nt:unstructured"
@@ -246,7 +246,7 @@
                                               fieldLabel="Color Succes Tab Title"
                                               jcr:primaryType="nt:unstructured"
                                               name="./titleColorSuccess"
-                                              sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -264,7 +264,7 @@
                                             fieldLabel="Button text color"
                                             jcr:primaryType="nt:unstructured"
                                             name="./colorButtonZero"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <fontFamilyButtonZero cq-msm-lockable="./fontFamilyButtonZero"
                                                  fieldLabel="Description Font Family:"
                                                  jcr:primaryType="nt:unstructured"
@@ -293,12 +293,27 @@
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
                                                  name="./backgroundButtonZero"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <msgZero cq-msm-lockable="./msgZero"
                                     fieldLabel="Text Description"
                                     jcr:primaryType="nt:unstructured"
                                     name="./msgZero"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanFullname cq-msm-lockable="./spanFullname"
+                                         fieldLabel="Span first input"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanFullname"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelFullname cq-msm-lockable="./labelFullname"
+                                          fieldLabel="Label first input"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelFullname"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderFullname cq-msm-lockable="./placeholderFullname"
+                                                fieldLabel="Placeholder first input"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderFullname"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

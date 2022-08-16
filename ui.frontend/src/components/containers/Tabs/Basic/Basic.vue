@@ -3,10 +3,10 @@
     <Inputs
       ClassField="fullname"
       Type="text"
-      LabelInput="Fullname *"
-      InvalidText="Please enter your name"
+      :LabelInput="labelFullname"
+      :InvalidText="spanFullname"
       :valueInput="fullnameValue"
-      Placeholder="Foo Bar"
+      :Placeholder="placeholderFullname"
       aria-label="Full name"
     />
     <Inputs
@@ -36,11 +36,20 @@
       Type="tel"
       aria-label="Phone"
     />
-    <Birthday aria-label="Birthday"/>
+    <Birthday aria-label="Birthday" />
     <div class="footer">
-      <CheckBox aria-label="Contract terms"/>
+      <CheckBox aria-label="Contract terms" />
       <div class="button-next">
-        <Buttons :event="validate" type="0" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" aria-label="Next Form"/>
+        <Buttons
+          :event="validate"
+          type="0"
+          :msgZero="msgZero"
+          :colorButtonZero="colorButtonZero"
+          :fontFamilyButtonZero="fontFamilyButtonZero"
+          :formatButtonFontSizeZero="formatButtonFontSizeZero"
+          :backgroundButtonZero="backgroundButtonZero"
+          aria-label="Next Form"
+        />
       </div>
     </div>
   </div>
@@ -54,9 +63,21 @@ import { mapActions } from 'vuex'
 import Buttons from '@/components/micro/Buttons/Buttons.vue'
 export default {
   // eslint-disable-next-line
-  name: "Basic",
+  name: 'Basic',
   components: { Inputs, CheckBox, Birthday, Buttons },
   props: {
+    labelFullname: {
+      type: String,
+      default: 'Fullname *'
+    },
+    placeholderFullname: {
+      type: String,
+      default: 'Foo Bar'
+    },
+    spanFullname: {
+      type: String,
+      default: 'Please enter your name'
+    },
     colorButtonZero: {
       type: String
     },
@@ -110,7 +131,7 @@ export default {
         ) {
           this.nextTab()
         } else {
-          ['nickname', 'phone'].forEach((input) => {
+          ;['nickname', 'phone'].forEach((input) => {
             const inpVal = document.querySelector(`.${input} input`).value
             const error = document.querySelector(`.${input} .ClassSpan`)
             if (inpVal !== '' && window.localStorage[input] === '') {
@@ -121,15 +142,15 @@ export default {
           })
         }
       } else {
-        ['fullname', 'email'].forEach((input) => {
+        ;['fullname', 'email'].forEach((input) => {
           const error = document.querySelector(`.${input} .ClassSpan`)
           if (!window.localStorage[input]) {
             error.style.visibility = 'visible'
           } else {
             error.style.visibility = 'hidden'
           }
-        });
-        ['nickname', 'phone'].forEach((input) => {
+        })
+        ;['nickname', 'phone'].forEach((input) => {
           const inpVal = document.querySelector(`.${input} input`).value
           const error = document.querySelector(`.${input} .ClassSpan`)
           if (inpVal !== '' && window.localStorage[input] === '') {
@@ -160,5 +181,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Basic.scss";
+@import './Basic.scss';
 </style>
