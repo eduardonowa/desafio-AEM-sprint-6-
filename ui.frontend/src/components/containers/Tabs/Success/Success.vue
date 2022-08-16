@@ -1,5 +1,9 @@
 <template>
-  <div class="success-container" aria-label="Success tab with all informations" role="main">
+  <div
+    class="success-container"
+    aria-label="Success tab with all informations"
+    role="main"
+  >
     <Texts description="Your data has been sent successfully!" />
     <Texts description="Full Name: " :text="this.fullname" />
     <Texts
@@ -7,7 +11,7 @@
       description="Nickname: "
       :text="this.nickname"
     />
-    <Texts description="Email: " :text="this.email" />
+    <Texts :description="emailSuccess" :text="this.email" />
     <Texts v-if="this.phone" description="Phone: " :text="this.phone" />
     <Texts description="Birthday: " :text="this.birthday" />
     <Texts description="Age: " :text="this.age" />
@@ -34,7 +38,15 @@
     <Texts description="Institution: " :text="this.institution" />
     <Texts description="Graduation: " :text="this.graduation" />
     <div class="button">
-      <Buttons type="1" :event="clearStorage" :msgOne="msgOne" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
+      <Buttons
+        type="1"
+        :event="clearStorage"
+        :msgOne="msgOne"
+        :colorButtonOne="colorButtonOne"
+        :fontFamilyButtonOne="fontFamilyButtonOne"
+        :formatButtonFontSizeOne="formatButtonFontSizeOne"
+        :backgroundButtonOne="backgroundButtonOne"
+      />
     </div>
   </div>
 </template>
@@ -44,7 +56,7 @@ import Buttons from '@/components/micro/Buttons/Buttons.vue'
 import Texts from '@/components/micro/Texts/Texts.vue'
 export default {
   // eslint-disable-next-line
-  name: "Success",
+  name: 'Success',
   components: {
     Buttons,
     Texts
@@ -65,6 +77,10 @@ export default {
     msgOne: {
       type: String,
       default: 'Return'
+    },
+    emailSuccess: {
+      type: String,
+      default: 'Email: '
     }
   },
   data () {
@@ -121,5 +137,5 @@ export default {
 </script>
 
 <style lang="scss" scooped>
-@import "./Success.scss";
+@import './Success.scss';
 </style>

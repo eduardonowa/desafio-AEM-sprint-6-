@@ -299,7 +299,20 @@
                   <items jcr:primaryType="nt:unstructured">
                      <column jcr:primaryType="nt:unstructured"
                              sling:resourceType="granite/ui/components/coral/foundation/container">
-                        <items jcr:primaryType="nt:unstructured"/>
+                        <items jcr:primaryType="nt:unstructured">
+                           <labelCertificates cq-msm-lockable="./labelCertificates"
+                                              fieldLabel="Label Input"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./labelCertificates"
+                                              emptyText="Fullname"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderCertificates cq-msm-lockable="./placeholderCertificates"
+                                                    fieldLabel="Placeholder First Input"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    name="./placeholderCertificates"
+                                                    emptyText="https://www.linkedin.com/in/foo-bar-3a0560104/"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
                      </column>
                   </items>
                </certificates-properties>

@@ -29,17 +29,41 @@
       {
         "id": "header-properties",
         "label": "Header",
-        "fields": ["description", "colorDescription", "textAlignHeader", "fontFamilyDescription",
-        "fontSizeDescription", "titleTextBasic", "fontSizeTitleBasic", "fontFamilyTitleBasic", "titleColorBasic",
-        "titleTextSocial", "fontSizeTitleSocial", "fontFamilyTitleSocial", "titleColorSocial",
-        "titleTextCertificates", "fontSizeTitleCertificates", "fontFamilyTitleCertificates", "titleColorCertificates",
-        "titleTextSuccess", "fontSizeTitleSuccess", "fontFamilyTitleSuccess", "titleColorSuccess"
-      ]
+        "fields": [
+          "description",
+          "colorDescription",
+          "textAlignHeader",
+          "fontFamilyDescription",
+          "fontSizeDescription",
+          "titleTextBasic",
+          "fontSizeTitleBasic",
+          "fontFamilyTitleBasic",
+          "titleColorBasic",
+          "titleTextSocial",
+          "fontSizeTitleSocial",
+          "fontFamilyTitleSocial",
+          "titleColorSocial",
+          "titleTextCertificates",
+          "fontSizeTitleCertificates",
+          "fontFamilyTitleCertificates",
+          "titleColorCertificates",
+          "titleTextSuccess",
+          "fontSizeTitleSuccess",
+          "fontFamilyTitleSuccess",
+          "titleColorSuccess"
+        ]
       },
       {
         "id": "basic-properties",
         "label": "Basic",
-        "fields": ["backgroundButtonZero", "msgZero", "labelCheckbox"]
+        "fields": [
+          "colorButtonZero",
+          "fontFamilyButtonZero",
+          "formatButtonFontSizeZero",
+          "backgroundButtonZero",
+          "msgZero",
+          "labelCheckbox"
+        ]
       },
       {
         "id": "social-properties",
@@ -49,7 +73,7 @@
       {
         "id": "certificates-properties",
         "label": "Certificates",
-        "fields": []
+        "fields": ["labelCertificates", "placeholderCertificates"]
       },
       {
         "id": "success-properties",
@@ -58,6 +82,20 @@
       }
     ],
     "properties": [
+      {
+        "field": "labelCertificates",
+        "label": "Label Input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelCertificates"
+      },
+      {
+        "field": "placeholderCertificates",
+        "label": "Placeholder First Input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderCertificates"
+      },
       {
         "field": "description",
         "label": "Text Description",
@@ -79,29 +117,29 @@
         "json-expose": true,
         "json-property": "textAlignHeader",
         "attributes": {
-        "defaultValue": "textAlignHeader",
-        "value": false
+          "defaultValue": "textAlignHeader",
+          "value": false
         },
         "items": [
           {
-          "field": "flex-start",
-          "attributes": {
-          "text": "Left",
-          "value": "flex-start"
+            "field": "flex-start",
+            "attributes": {
+              "text": "Left",
+              "value": "flex-start"
             }
           },
           {
-          "field": "center",
-          "attributes": {
-          "text": "Center",
-          "value": "center"
+            "field": "center",
+            "attributes": {
+              "text": "Center",
+              "value": "center"
             }
           },
           {
-          "field": "flex-end",
-          "attributes": {
-          "text": "Right",
-          "value": "flex-end"
+            "field": "flex-end",
+            "attributes": {
+              "text": "Right",
+              "value": "flex-end"
             }
           }
         ]
@@ -112,37 +150,37 @@
         "label": "Description Font Family:",
         "json-expose": true,
         "attributes": {
-        "vertical": "{Boolean}false"
+          "vertical": "{Boolean}false"
         },
         "items": [
           {
             "field": "Inter",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyDescription",
-            "text": "Inter",
-            "value": "Inter"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyDescription",
+              "text": "Inter",
+              "value": "Inter"
             }
           },
           {
             "field": "Arial",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyDescription",
-            "text": "Arial",
-            "value": "Arial"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyDescription",
+              "text": "Arial",
+              "value": "Arial"
             }
           },
           {
             "field": "Nunito",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyDescription",
-            "text": "Nunito",
-            "value": "Nunito"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyDescription",
+              "text": "Nunito",
+              "value": "Nunito"
             }
           }
         ]
@@ -174,37 +212,37 @@
         "label": "Description Font Family Basic Tab:",
         "json-expose": true,
         "attributes": {
-        "vertical": "{Boolean}false"
+          "vertical": "{Boolean}false"
         },
         "items": [
           {
             "field": "Inter",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleBasic",
-            "text": "Inter",
-            "value": "Inter"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleBasic",
+              "text": "Inter",
+              "value": "Inter"
             }
           },
           {
             "field": "Arial",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleBasic",
-            "text": "Arial",
-            "value": "Arial"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleBasic",
+              "text": "Arial",
+              "value": "Arial"
             }
           },
           {
             "field": "Nunito",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleBasic",
-            "text": "Nunito",
-            "value": "Nunito"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleBasic",
+              "text": "Nunito",
+              "value": "Nunito"
             }
           }
         ]
@@ -236,37 +274,37 @@
         "label": "Description Font Family Social Tab:",
         "json-expose": true,
         "attributes": {
-        "vertical": "{Boolean}false"
+          "vertical": "{Boolean}false"
         },
         "items": [
           {
             "field": "Inter",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSocial",
-            "text": "Inter",
-            "value": "Inter"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSocial",
+              "text": "Inter",
+              "value": "Inter"
             }
           },
           {
             "field": "Arial",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSocial",
-            "text": "Arial",
-            "value": "Arial"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSocial",
+              "text": "Arial",
+              "value": "Arial"
             }
           },
           {
             "field": "Nunito",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSocial",
-            "text": "Nunito",
-            "value": "Nunito"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSocial",
+              "text": "Nunito",
+              "value": "Nunito"
             }
           }
         ]
@@ -298,37 +336,37 @@
         "label": "Description Font Family Certificates Tab:",
         "json-expose": true,
         "attributes": {
-        "vertical": "{Boolean}false"
+          "vertical": "{Boolean}false"
         },
         "items": [
           {
             "field": "Inter",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleCertificates",
-            "text": "Inter",
-            "value": "Inter"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleCertificates",
+              "text": "Inter",
+              "value": "Inter"
             }
           },
           {
             "field": "Arial",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleCertificates",
-            "text": "Arial",
-            "value": "Arial"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleCertificates",
+              "text": "Arial",
+              "value": "Arial"
             }
           },
           {
             "field": "Nunito",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleCertificates",
-            "text": "Nunito",
-            "value": "Nunito"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleCertificates",
+              "text": "Nunito",
+              "value": "Nunito"
             }
           }
         ]
@@ -360,37 +398,37 @@
         "label": "Description Font Family Succes Tab:",
         "json-expose": true,
         "attributes": {
-        "vertical": "{Boolean}false"
+          "vertical": "{Boolean}false"
         },
         "items": [
           {
             "field": "Inter",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSuccess",
-            "text": "Inter",
-            "value": "Inter"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSuccess",
+              "text": "Inter",
+              "value": "Inter"
             }
           },
           {
             "field": "Arial",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSuccess",
-            "text": "Arial",
-            "value": "Arial"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSuccess",
+              "text": "Arial",
+              "value": "Arial"
             }
           },
           {
             "field": "Nunito",
             "type": "radio",
             "attributes": {
-            "checked": "{Boolean}true",
-            "name": "fontFamilyTitleSuccess",
-            "text": "Nunito",
-            "value": "Nunito"
+              "checked": "{Boolean}true",
+              "name": "fontFamilyTitleSuccess",
+              "text": "Nunito",
+              "value": "Nunito"
             }
           }
         ]
