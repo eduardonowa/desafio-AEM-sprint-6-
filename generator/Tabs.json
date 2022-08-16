@@ -65,7 +65,9 @@
           "labelCheckbox",
           "labelFullname",
           "placeholderFullname",
-          "spanFullname"
+          "spanFullname",
+          "labelNickname",
+          "placeholderNickname"
         ]
       },
       {
@@ -85,6 +87,20 @@
       }
     ],
     "properties": [
+      {
+        "field": "labelNickname",
+        "label": "Label second input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelNickname"
+      },
+      {
+        "field": "placeholderNickname",
+        "label": "Label second input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderNickname"
+      },
       {
         "field": "labelFullname",
         "label": "Label first input",

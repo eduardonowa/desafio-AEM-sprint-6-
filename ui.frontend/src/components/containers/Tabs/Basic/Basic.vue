@@ -12,10 +12,10 @@
     <Inputs
       ClassField="nickname"
       Type="text"
-      LabelInput="Nickname"
+      :LabelInput="labelNickname"
       InvalidText="Invalid"
       :valueInput="nicknameValue"
-      Placeholder="Juanito"
+      :Placeholder="placeholderNickname"
       aria-label="Nickname"
     />
     <Inputs
@@ -69,6 +69,14 @@ export default {
   name: 'Basic',
   components: { Inputs, CheckBox, Birthday, Buttons },
   props: {
+    labelNickname: {
+      type: String,
+      default: 'Nickname'
+    },
+    placeholderNickname: {
+      type: String,
+      default: 'Juanito'
+    },
     labelFullname: {
       type: String,
       default: 'Fullname *'
