@@ -45,6 +45,7 @@
             :PlaceholderEmail="PlaceholderEmail"
             :InvalidTextEmail="InvalidTextEmail"
             :LabelEmail="LabelEmail"
+            :LabelPhone="LabelPhone"
           />
         </template>
 
@@ -117,6 +118,7 @@ export default {
     PlaceholderEmail: String,
     InvalidTextEmail: String,
     LabelEmail: String,
+    LabelPhone: String,
     description: {
       type: String,
       default: 'Forms'
