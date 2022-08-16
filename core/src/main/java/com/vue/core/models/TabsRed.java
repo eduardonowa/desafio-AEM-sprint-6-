@@ -91,15 +91,13 @@ public interface TabsRed
     @JsonProperty("titleColorSuccess")
     String getTitleColorSuccess();
 
-    @JsonProperty("colorButtonZero")
-    String getColorButtonZero();
-
-    String getFontFamilyButtonZero();
-
     @JsonProperty("backgroundButtonZero")
     String getBackgroundButtonZero();
 
     @JsonProperty("msgZero")
     String getMsgZero();
+
+    @JsonProperty("labelCheckbox")
+    String getLabelCheckbox();
 
 }

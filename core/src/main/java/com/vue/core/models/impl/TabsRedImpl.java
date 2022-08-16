@@ -84,13 +84,11 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String colorButtonZero;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String fontFamilyButtonZero;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelCheckbox;
     @SlingObject
     private Resource resource;
 
@@ -216,17 +214,6 @@ public class TabsRedImpl
     }
 
     @Override
-    @JsonProperty("colorButtonZero")
-    public String getColorButtonZero() {
-        return colorButtonZero;
-    }
-
-    @Override
-    public String getFontFamilyButtonZero() {
-        return fontFamilyButtonZero;
-    }
-
-    @Override
     @JsonProperty("backgroundButtonZero")
     public String getBackgroundButtonZero() {
         return backgroundButtonZero;
@@ -236,6 +223,12 @@ public class TabsRedImpl
     @JsonProperty("msgZero")
     public String getMsgZero() {
         return msgZero;
+    }
+
+    @Override
+    @JsonProperty("labelCheckbox")
+    public String getLabelCheckbox() {
+        return labelCheckbox;
     }
 
     @Override
