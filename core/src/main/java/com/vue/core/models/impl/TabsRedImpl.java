@@ -91,6 +91,10 @@ public class TabsRedImpl
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelCertificates;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderCertificates;
     @SlingObject
     private Resource resource;
 
@@ -236,6 +240,18 @@ public class TabsRedImpl
     @JsonProperty("msgZero")
     public String getMsgZero() {
         return msgZero;
+    }
+
+    @Override
+    @JsonProperty("labelCertificates")
+    public String getLabelCertificates() {
+        return labelCertificates;
+    }
+
+    @Override
+    @JsonProperty("placeholderCertificates")
+    public String getPlaceholderCertificates() {
+        return placeholderCertificates;
     }
 
     @Override

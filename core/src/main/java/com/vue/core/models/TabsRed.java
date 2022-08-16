@@ -102,4 +102,10 @@ public interface TabsRed
     @JsonProperty("msgZero")
     String getMsgZero();
 
+    @JsonProperty("labelCertificates")
+    String getLabelCertificates();
+
+    @JsonProperty("placeholderCertificates")
+    String getPlaceholderCertificates();
+
 }
