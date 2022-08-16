@@ -42,6 +42,9 @@
             :labelCheckbox="labelCheckbox"
             :labelNickname="labelNickname"
             :placeholderNickname="placeholderNickname"
+            :PlaceholderEmail="PlaceholderEmail"
+            :InvalidTextEmail="InvalidTextEmail"
+            :LabelEmail="LabelEmail"
           />
         </template>
 
@@ -111,6 +114,9 @@ export default {
     placeholderFullname: String,
     placeholderCertificates: String,
     labelCertificates: String,
+    PlaceholderEmail: String,
+    InvalidTextEmail: String,
+    LabelEmail: String,
     description: {
       type: String,
       default: 'Forms'

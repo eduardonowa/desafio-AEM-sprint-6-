@@ -21,10 +21,10 @@
     <Inputs
       ClassField="email"
       Type="email"
-      LabelInput="Email *"
-      InvalidText="Please enter your email"
+      :LabelInput="LabelEmail"
+      :InvalidText="InvalidTextEmail"
       :valueInput="emailValue"
-      Placeholder="foo@bar.com"
+      :Placeholder="PlaceholderEmail"
       aria-label="Email"
     />
     <Inputs
@@ -38,7 +38,6 @@
     />
     <Birthday aria-label="Birthday" />
     <div class="footer">
-      <CheckBox aria-label="Contract terms" />
       <CheckBox
       aria-label="Contract terms"
       :labelCheckbox="labelCheckbox"/>
@@ -108,6 +107,18 @@ export default {
     labelCheckbox: {
       type: String,
       default: 'terms'
+    },
+    LabelEmail: {
+      type: String,
+      default: 'Email *'
+    },
+    InvalidTextEmail: {
+      type: String,
+      default: 'Please enter your email'
+    },
+    PlaceholderEmail: {
+      type: String,
+      default: 'foo@bar.com'
     }
   },
   data () {

@@ -115,6 +115,15 @@ public interface TabsRed
     @JsonProperty("placeholderNickname")
     String getPlaceholderNickname();
 
+    @JsonProperty("LabelEmail")
+    String getLabelEmail();
+
+    @JsonProperty("PlaceholderEmail")
+    String getPlaceholderEmail();
+
+    @JsonProperty("InvalidTextEmail")
+    String getInvalidTextEmail();
+
     @JsonProperty("labelCertificates")
     String getLabelCertificates();
 

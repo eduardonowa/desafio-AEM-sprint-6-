@@ -300,6 +300,21 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderNickname"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <LabelEmail cq-msm-lockable="./LabelEmail"
+                                       fieldLabel="Email Label"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./LabelEmail"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <PlaceholderEmail cq-msm-lockable="./PlaceholderEmail"
+                                             fieldLabel="Placeholder Email"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./PlaceholderEmail"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <InvalidTextEmail cq-msm-lockable="./InvalidTextEmail"
+                                             fieldLabel="Span Email"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./InvalidTextEmail"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

@@ -67,7 +67,11 @@
           "placeholderFullname",
           "spanFullname",
           "labelNickname",
-          "placeholderNickname"
+          "placeholderNickname",
+          "LabelEmail",
+          "PlaceholderEmail",
+          "InvalidTextEmail"
+
         ]
       },
       {
@@ -500,6 +504,27 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelCheckbox"
+      },
+      {
+        "field": "PlaceholderEmail",
+        "label": "Placeholder Email",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "PlaceholderEmail"
+      },
+      {
+        "field": "LabelEmail",
+        "label": "Email Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "LabelEmail"
+      },
+      {
+        "field": "InvalidTextEmail",
+        "label": "Span Email",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "InvalidTextEmail"
       }
     ]
   }
