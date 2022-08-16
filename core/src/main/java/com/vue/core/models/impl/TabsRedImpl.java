@@ -106,6 +106,8 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String InvalidTextEmail;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String LabelPhone;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
@@ -297,6 +299,12 @@ public class TabsRedImpl
     @JsonProperty("InvalidTextEmail")
     public String getInvalidTextEmail() {
         return InvalidTextEmail;
+    }
+
+    @Override
+    @JsonProperty("LabelPhone")
+    public String getLabelPhone() {
+        return LabelPhone;
     }
 
     @Override

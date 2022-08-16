@@ -124,6 +124,9 @@ public interface TabsRed
     @JsonProperty("InvalidTextEmail")
     String getInvalidTextEmail();
 
+    @JsonProperty("LabelPhone")
+    String getLabelPhone();
+
     @JsonProperty("labelCertificates")
     String getLabelCertificates();
 

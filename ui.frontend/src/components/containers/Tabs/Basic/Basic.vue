@@ -29,7 +29,7 @@
     />
     <Inputs
       ClassField="phone"
-      LabelInput="Phone"
+      :LabelInput="LabelPhone"
       InvalidText="Invalid"
       :valueInput="phoneValue"
       Placeholder="(83) 00000-0000"
@@ -119,6 +119,10 @@ export default {
     PlaceholderEmail: {
       type: String,
       default: 'foo@bar.com'
+    },
+    LabelPhone: {
+      type: String,
+      default: 'Phone'
     }
   },
   data () {

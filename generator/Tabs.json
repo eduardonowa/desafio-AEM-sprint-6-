@@ -70,7 +70,8 @@
           "placeholderNickname",
           "LabelEmail",
           "PlaceholderEmail",
-          "InvalidTextEmail"
+          "InvalidTextEmail",
+          "LabelPhone"
 
         ]
       },
@@ -525,6 +526,13 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "InvalidTextEmail"
+      },
+      {
+        "field": "LabelPhone",
+        "label": "Phone Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "LabelPhone"
       }
     ]
   }
