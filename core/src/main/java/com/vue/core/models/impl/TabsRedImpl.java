@@ -105,10 +105,18 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+
+    private String spanFullname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelFullname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderFullname;
+    
     private String labelCheckbox;
     private String labelCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
+
     @SlingObject
     private Resource resource;
 
@@ -246,6 +254,22 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("spanFullname")
+    public String getSpanFullname() {
+        return spanFullname;
+    }
+
+    @Override
+    @JsonProperty("labelFullname")
+    public String getLabelFullname() {
+        return labelFullname;
+    }
+
+    @Override
+    @JsonProperty("placeholderFullname")
+    public String getPlaceholderFullname() {
+        return placeholderFullname;
+
     @JsonProperty("labelCheckbox")
     public String getLabelCheckbox() {
         return labelCheckbox;

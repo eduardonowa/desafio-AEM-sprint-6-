@@ -36,6 +36,9 @@
             :fontFamilyButtonZero="fontFamilyButtonZero"
             :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
+            :labelFullname="labelFullname"
+            :placeholderFullname="placeholderFullname"
+            :spanFullname="spanFullname"
             :labelCheckbox="labelCheckbox"
           />
         </template>
@@ -99,6 +102,9 @@ export default {
   // eslint-disable-next-line
   name: 'Tabs',
   props: {
+    spanFullname: String,
+    labelFullname: String,
+    placeholderFullname: String,
     placeholderCertificates: String,
     labelCertificates: String,
     description: {

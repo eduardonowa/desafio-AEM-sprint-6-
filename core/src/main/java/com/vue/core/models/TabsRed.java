@@ -115,6 +115,15 @@ public interface TabsRed
     String getMsgZero();
 
 
+    @JsonProperty("spanFullname")
+    String getSpanFullname();
+
+    @JsonProperty("labelFullname")
+    String getLabelFullname();
+
+    @JsonProperty("placeholderFullname")
+    String getPlaceholderFullname();
+
     @JsonProperty("labelCheckbox")
     String getLabelCheckbox();
 
@@ -123,5 +132,6 @@ public interface TabsRed
 
     @JsonProperty("placeholderCertificates")
     String getPlaceholderCertificates();
+
 
 }
