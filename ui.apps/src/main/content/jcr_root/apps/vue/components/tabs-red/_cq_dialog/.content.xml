@@ -260,35 +260,6 @@
                      <column jcr:primaryType="nt:unstructured"
                              sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                           <colorButtonZero cq-msm-lockable="./colorButtonZero"
-                                            fieldLabel="Button text color"
-                                            jcr:primaryType="nt:unstructured"
-                                            name="./colorButtonZero"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                           <fontFamilyButtonZero cq-msm-lockable="./fontFamilyButtonZero"
-                                                 fieldLabel="Description Font Family:"
-                                                 jcr:primaryType="nt:unstructured"
-                                                 name="./fontFamilyButtonZero"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
-                                                 vertical="{Boolean}false">
-                              <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
-                                        jcr:primaryType="nt:unstructured"
-                                        name="fontFamilyButtonZero"
-                                        text="Inter"
-                                        value="Inter"/>
-                                 <Arial checked="{Boolean}true"
-                                        jcr:primaryType="nt:unstructured"
-                                        name="fontFamilyButtonZero"
-                                        text="Arial"
-                                        value="Arial"/>
-                                 <Nunito checked="{Boolean}true"
-                                         jcr:primaryType="nt:unstructured"
-                                         name="fontFamilyButtonZero"
-                                         text="Nunito"
-                                         value="Nunito"/>
-                              </items>
-                           </fontFamilyButtonZero>
                            <backgroundButtonZero cq-msm-lockable="./backgroundButtonZero"
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
@@ -299,6 +270,11 @@
                                     jcr:primaryType="nt:unstructured"
                                     name="./msgZero"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelCheckbox cq-msm-lockable="./labelCheckbox"
+                                          fieldLabel="Checkbox Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelCheckbox"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
