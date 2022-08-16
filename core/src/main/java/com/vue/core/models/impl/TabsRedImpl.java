@@ -84,6 +84,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontFamilyNav;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String bgColorSpanNav;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textNavColor;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
@@ -225,6 +231,23 @@ public class TabsRedImpl
     @JsonProperty("titleColorSuccess")
     public String getTitleColorSuccess() {
         return titleColorSuccess;
+    }
+
+    @Override
+    public String getFontFamilyNav() {
+        return fontFamilyNav;
+    }
+
+    @Override
+    @JsonProperty("bgColorSpanNav")
+    public String getBgColorSpanNav() {
+        return bgColorSpanNav;
+    }
+
+    @Override
+    @JsonProperty("textNavColor")
+    public String getTextNavColor() {
+        return textNavColor;
     }
 
     @Override

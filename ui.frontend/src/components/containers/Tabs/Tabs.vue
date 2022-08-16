@@ -27,7 +27,11 @@
     <div class="card">
       <template v-if="actualTab !== 'success'">
         <h2 class="teamSign">Team Sign Up</h2>
-        <MenuComponent />
+        <MenuComponent
+          :bgColorSpanNav="bgColorSpanNav"
+          :fontFamilyNav="fontFamilyNav"
+          :textNavColor="textNavColor"
+        />
 
         <template v-if="getActualTab === 'basic'">
           <Basic
@@ -104,6 +108,9 @@ export default {
   // eslint-disable-next-line
   name: 'Tabs',
   props: {
+    textNavColor: String,
+    fontFamilyNav: String,
+    bgColorSpanNav: String,
     labelNickname: String,
     placeholderNickname: String,
     spanFullname: String,

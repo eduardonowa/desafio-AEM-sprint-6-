@@ -2,10 +2,11 @@
   <nav class="menu" role="navigation">
     <div class="menu-tab" v-for="(tab, i) in $store.state.menuTabs" :key="i">
       <button
+        :style="{ 'font-family': fontFamilyNav, '&:focus': textNavColor }"
         v-if="i === 0"
         :class="tab + ' focus'"
-          @click="loadTab(tab)"
-         :disabled="!abledTabs.includes(tab)"
+        @click="loadTab(tab)"
+        :disabled="!abledTabs.includes(tab)"
       >
         {{ capitalize(tab) }}
       </button>
@@ -14,10 +15,14 @@
         :class="tab"
         @click="loadTab(tab)"
         :disabled="!abledTabs.includes(tab)"
+        :style="{ 'font-family': fontFamilyNav }"
       >
         {{ capitalize(tab) }}
       </button>
-      <span class="focus-border"></span>
+      <span
+        :style="{ 'background-color': bgColorSpanNav }"
+        class="focus-border"
+      ></span>
     </div>
   </nav>
 </template>
@@ -26,6 +31,11 @@
 import { mapActions } from 'vuex'
 export default {
   name: 'MenuComponent',
+  props: {
+    bgColorSpanNav: String,
+    fontFamilyNav: String,
+    textNavColor: String
+  },
   data () {
     return {
       abledTabs: this.$store.state.abledTabs,
@@ -63,5 +73,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Menu.scss";
+@import './Menu.scss';
 </style>
