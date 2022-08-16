@@ -36,6 +36,7 @@
             :fontFamilyButtonZero="fontFamilyButtonZero"
             :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
+            :labelCheckbox="labelCheckbox"
           />
         </template>
 
@@ -219,6 +220,10 @@ export default {
     },
     msgThree: {
       type: String
+    },
+    labelCheckbox: {
+      type: String,
+      default: 'terms'
     }
   },
   data () {
