@@ -315,6 +315,11 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./InvalidTextEmail"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <LabelPhone cq-msm-lockable="./LabelPhone"
+                                       fieldLabel="Phone Label"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./LabelPhone"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
