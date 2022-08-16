@@ -1,9 +1,9 @@
 <template>
   <div class="certificate-container" role="form">
     <Inputs
-      LabelInput="Certificates"
+      :LabelInput="labelCertificates"
       ClassField="certificates"
-      Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
+      :Placeholder="placeholderCertificates"
       Type="text"
       :valueInput="getCertificateValue"
       aria-label="Certificate addition"
@@ -15,7 +15,10 @@
           type="3"
           class="certificateButton"
           :event="openCertificates"
-          :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree" :formatButtonFontSizeThree="formatButtonFontSizeThree" :backgroundButtonThree="backgroundButtonThree"
+          :colorButtonThree="colorButtonThree"
+          :fontFamilyButtonThree="fontFamilyButtonThree"
+          :formatButtonFontSizeThree="formatButtonFontSizeThree"
+          :backgroundButtonThree="backgroundButtonThree"
         />
         <div v-show="isOpenCertificates" class="certificatesList" id="idList">
           <div
@@ -25,7 +28,7 @@
           >
             <p>{{ certificate }}</p>
             <button class="removeButton" @click="removeFromCertificates(index)">
-              <img src="/content/dam/vue/whitex.png" alt="white x">
+              <img src="/content/dam/vue/whitex.png" alt="white x" />
             </button>
           </div>
         </div>
@@ -36,7 +39,10 @@
           type="2"
           class="moreButton"
           :event="addCertificates"
-          :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo" :formatButtonFontSizeTwo="formatButtonFontSizeTwo" :backgroundButtonTwo="backgroundButtonTwo"
+          :colorButtonTwo="colorButtonTwo"
+          :fontFamilyButtonTwo="fontFamilyButtonTwo"
+          :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
+          :backgroundButtonTwo="backgroundButtonTwo"
         />
         <span> {{ spanMsg }} </span>
       </div>
@@ -73,7 +79,16 @@
     />
     <div class="footer-certificates">
       <span> {{ spanGeneral }}</span>
-      <Buttons class="finish" :msgOne="msgOne" type="1" :event="validate" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" />
+      <Buttons
+        class="finish"
+        :msgOne="msgOne"
+        type="1"
+        :event="validate"
+        :colorButtonOne="colorButtonOne"
+        :fontFamilyButtonOne="fontFamilyButtonOne"
+        :formatButtonFontSizeOne="formatButtonFontSizeOne"
+        :backgroundButtonOne="backgroundButtonOne"
+      />
     </div>
   </div>
 </template>
@@ -86,6 +101,14 @@ export default {
   name: 'Certificates',
   components: { Inputs, Buttons },
   props: {
+    labelCertificates: {
+      type: String,
+      default: 'Certificates'
+    },
+    placeholderCertificates: {
+      type: String,
+      default: 'https://www.linkedin.com/in/foo-bar-3a0560104/'
+    },
     colorButtonOne: {
       type: String
     },
@@ -204,10 +227,9 @@ export default {
         this.spanMsg = ''
         this.$store.state.certificate = ''
       } else if (!this.$store.state.certificate) {
-        this.spanMsg = 'Empty certificate is not allowed.'
+        this.spanMsg = `Empty ${this.labelCertificates.toLowerCase()} is not allowed.`
       } else if (this.certificates.length === 5) {
-        this.spanMsg =
-          'Sorry, only 5 certificates are allowed. You can remove one certificate instead.'
+        this.spanMsg = `Sorry, only 5 ${this.labelCertificates.toLowerCase()} are allowed. You can remove one certificate instead.`
       } else if (
         // eslint-disable-next-line
         !/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/.test(
@@ -246,7 +268,6 @@ export default {
       'certificates',
       JSON.stringify(this.certificates)
     )
-    console.log('updated', this.$store.state.certificate)
   },
   mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Certificates`
@@ -265,5 +286,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./Certificates.scss";
+@import './Certificates.scss';
 </style>

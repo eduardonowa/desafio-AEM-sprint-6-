@@ -1,20 +1,37 @@
-/*
- * ***********************************************************************
- * SPA Vue Project CONFIDENTIAL
- * ___________________
- *
- * Copyright 2022 SPA Vue Project.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains the property
- * of SPA Vue Project and its suppliers, if any. The intellectual and
- * technical concepts contained herein are proprietary to SPA Vue Project
- * and its suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from SPA Vue Project.
- * ***********************************************************************
- */
+/*
+
+ * ***********************************************************************
+
+ * SPA Vue Project CONFIDENTIAL
+
+ * ___________________
+
+ *
+
+ * Copyright 2022 SPA Vue Project.
+
+ * All Rights Reserved.
+
+ *
+
+ * NOTICE:  All information contained herein is, and remains the property
+
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+
+ * technical concepts contained herein are proprietary to SPA Vue Project
+
+ * and its suppliers and are protected by trade secret or copyright law.
+
+ * Dissemination of this information or reproduction of this material
+
+ * is strictly forbidden unless prior written permission is obtained
+
+ * from SPA Vue Project.
+
+ * ***********************************************************************
+
+ */
+
 
 package com.vue.core.models.impl;
 
@@ -84,19 +101,22 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String colorButtonZero;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String fontFamilyButtonZero;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+
     private String spanFullname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelFullname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderFullname;
+    
+    private String labelCheckbox;
+    private String labelCertificates;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderCertificates;
+
     @SlingObject
     private Resource resource;
 
@@ -222,17 +242,6 @@ public class TabsRedImpl
     }
 
     @Override
-    @JsonProperty("colorButtonZero")
-    public String getColorButtonZero() {
-        return colorButtonZero;
-    }
-
-    @Override
-    public String getFontFamilyButtonZero() {
-        return fontFamilyButtonZero;
-    }
-
-    @Override
     @JsonProperty("backgroundButtonZero")
     public String getBackgroundButtonZero() {
         return backgroundButtonZero;
@@ -260,6 +269,20 @@ public class TabsRedImpl
     @JsonProperty("placeholderFullname")
     public String getPlaceholderFullname() {
         return placeholderFullname;
+
+    @JsonProperty("labelCheckbox")
+    public String getLabelCheckbox() {
+        return labelCheckbox;
+    }
+    @JsonProperty("labelCertificates")
+    public String getLabelCertificates() {
+        return labelCertificates;
+    }
+
+    @Override
+    @JsonProperty("placeholderCertificates")
+    public String getPlaceholderCertificates() {
+        return placeholderCertificates;
     }
 
     @Override

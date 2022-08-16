@@ -11,9 +11,9 @@
         @change="getValue"
       />
       <span class="geekmark"></span>
-      <span class="label-text">I accept the terms and privacy</span>
+      <span class="label-text">I accept the {{ labelCheckbox }}</span>
     </label>
-    <small id="chkError" class="classSpan">Please confirm the terms</small>
+    <small id="chkError" class="classSpan">Please confirm the {{ labelCheckbox }}</small>
   </div>
 </template>
 
@@ -22,6 +22,12 @@ import { mapActions } from 'vuex'
 export default {
   // eslint-disable-next-line
   name: "CheckBox",
+  props: {
+    labelCheckbox: {
+      type: String,
+      default: 'terms'
+    }
+  },
   data () {
     return {
       status: null

@@ -39,6 +39,9 @@
     <Birthday aria-label="Birthday" />
     <div class="footer">
       <CheckBox aria-label="Contract terms" />
+      <CheckBox
+      aria-label="Contract terms"
+      :labelCheckbox="labelCheckbox"/>
       <div class="button-next">
         <Buttons
           :event="validate"
@@ -93,6 +96,10 @@ export default {
     msgZero: {
       type: String,
       default: 'Next'
+    },
+    labelCheckbox: {
+      type: String,
+      default: 'terms'
     }
   },
   data () {

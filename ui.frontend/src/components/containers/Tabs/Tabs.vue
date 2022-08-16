@@ -39,6 +39,7 @@
             :labelFullname="labelFullname"
             :placeholderFullname="placeholderFullname"
             :spanFullname="spanFullname"
+            :labelCheckbox="labelCheckbox"
           />
         </template>
 
@@ -69,6 +70,8 @@
             :fontFamilyButtonThree="fontFamilyButtonThree"
             :formatButtonFontSizeThree="formatButtonFontSizeThree"
             :backgroundButtonThree="backgroundButtonThree"
+            :labelCertificates="labelCertificates"
+            :placeholderCertificates="placeholderCertificates"
           />
         </template>
       </template>
@@ -102,6 +105,8 @@ export default {
     spanFullname: String,
     labelFullname: String,
     placeholderFullname: String,
+    placeholderCertificates: String,
+    labelCertificates: String,
     description: {
       type: String,
       default: 'Forms'
@@ -225,6 +230,10 @@ export default {
     },
     msgThree: {
       type: String
+    },
+    labelCheckbox: {
+      type: String,
+      default: 'terms'
     }
   },
   data () {
