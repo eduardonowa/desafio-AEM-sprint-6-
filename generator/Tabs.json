@@ -56,17 +56,17 @@
       {
         "id": "basic-properties",
         "label": "Basic",
-        "fields": ["colorButtonZero", "fontFamilyButtonZero", "formatButtonFontSizeZero", "backgroundButtonZero", "msgZero", "labelFullname", "placeholderFullname", "spanFullname"]
-
         "fields": [
           "colorButtonZero",
           "fontFamilyButtonZero",
           "formatButtonFontSizeZero",
           "backgroundButtonZero",
           "msgZero",
-          "labelCheckbox"
+          "labelCheckbox",
+          "labelFullname",
+          "placeholderFullname",
+          "spanFullname"
         ]
-
       },
       {
         "id": "social-properties",
@@ -86,7 +86,6 @@
     ],
     "properties": [
       {
-
         "field": "labelFullname",
         "label": "Label first input",
         "type": "textfield",
@@ -106,6 +105,8 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "spanFullname"
+      },
+      {
         "field": "labelCertificates",
         "label": "Label Input",
         "type": "textfield",
