@@ -59,12 +59,9 @@
           "PlaceholderEmail",
           "InvalidTextEmail",
           "LabelPhone",
-
           "testMask",
-
           "labelBirthday",
           "spanBirthday",
-
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
@@ -80,9 +77,7 @@
           "titleTextSocial",
           "fontSizeTitleSocial",
           "fontFamilyTitleSocial",
-
-          "titleColorSocial"
-
+          "titleColorSocial",
           "titleColorSocial",
           "labelLinkedin",
           "placeholderLinkedin"
