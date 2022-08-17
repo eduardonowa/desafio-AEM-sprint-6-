@@ -1,37 +1,20 @@
-/*
-
- * ***********************************************************************
-
- * SPA Vue Project CONFIDENTIAL
-
- * ___________________
-
- *
-
- * Copyright 2022 SPA Vue Project.
-
- * All Rights Reserved.
-
- *
-
- * NOTICE:  All information contained herein is, and remains the property
-
- * of SPA Vue Project and its suppliers, if any. The intellectual and
-
- * technical concepts contained herein are proprietary to SPA Vue Project
-
- * and its suppliers and are protected by trade secret or copyright law.
-
- * Dissemination of this information or reproduction of this material
-
- * is strictly forbidden unless prior written permission is obtained
-
- * from SPA Vue Project.
-
- * ***********************************************************************
-
- */
-
+/*
+ * ***********************************************************************
+ * SPA Vue Project CONFIDENTIAL
+ * ___________________
+ *
+ * Copyright 2022 SPA Vue Project.
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+ * technical concepts contained herein are proprietary to SPA Vue Project
+ * and its suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from SPA Vue Project.
+ * ***********************************************************************
+ */
 
 package com.vue.core.models.impl;
 
@@ -143,6 +126,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelTeamname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderTeamname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String spanTeamname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelInstitution;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderInstitution;
@@ -154,11 +143,6 @@ public class TabsRedImpl
     private String placeholderGraduation;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String spanGraduation;
-    private String labelTeamname;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String placeholderTeamname;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String spanTeamname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -422,6 +406,24 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("labelTeamname")
+    public String getLabelTeamname() {
+        return labelTeamname;
+    }
+
+    @Override
+    @JsonProperty("placeholderTeamname")
+    public String getPlaceholderTeamname() {
+        return placeholderTeamname;
+    }
+
+    @Override
+    @JsonProperty("spanTeamname")
+    public String getSpanTeamname() {
+        return spanTeamname;
+    }
+
+    @Override
     @JsonProperty("labelInstitution")
     public String getLabelInstitution() {
         return labelInstitution;
@@ -455,22 +457,6 @@ public class TabsRedImpl
     @JsonProperty("spanGraduation")
     public String getSpanGraduation() {
         return spanGraduation;
-
-    @JsonProperty("labelTeamname")
-    public String getLabelTeamname() {
-        return labelTeamname;
-    }
-
-    @Override
-    @JsonProperty("placeholderTeamname")
-    public String getPlaceholderTeamname() {
-        return placeholderTeamname;
-    }
-
-    @Override
-    @JsonProperty("spanTeamname")
-    public String getSpanTeamname() {
-        return spanTeamname;
     }
 
     @Override

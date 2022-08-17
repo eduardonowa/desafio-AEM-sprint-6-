@@ -96,15 +96,15 @@
           "titleColorCertificates",
           "labelCertificates",
           "placeholderCertificates",
+          "labelTeamname",
+          "placeholderTeamname",
+          "spanTeamname",
           "labelInstitution",
           "placeholderInstitution",
           "spanInstitution",
           "labelGraduation",
           "placeholderGraduation",
           "spanGraduation"
-          "labelTeamname",
-          "placeholderTeamname",
-          "spanTeamname"
         ]
       },
       {
