@@ -36,7 +36,11 @@
       Type="tel"
       aria-label="Phone"
     />
-    <Birthday aria-label="Birthday" />
+    <Birthday
+    aria-label="Birthday"
+    :labelBirthday="labelBirthday"
+    :spanBirthday="spanBirthday"
+    />
     <div class="footer">
       <CheckBox
       aria-label="Contract terms"
@@ -123,6 +127,14 @@ export default {
     LabelPhone: {
       type: String,
       default: 'Phone'
+    },
+    labelBirthday: {
+      type: String,
+      default: 'Birthday *'
+    },
+    spanBirthday: {
+      type: String,
+      default: 'Please enter your age'
     }
   },
   data () {

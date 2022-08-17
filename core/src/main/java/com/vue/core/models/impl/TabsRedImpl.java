@@ -84,6 +84,10 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String LabelPhone;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelBirthday;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String spanBirthday;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelCheckbox;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
@@ -307,6 +311,18 @@ public class TabsRedImpl
     @JsonProperty("LabelPhone")
     public String getLabelPhone() {
         return LabelPhone;
+    }
+
+    @Override
+    @JsonProperty("labelBirthday")
+    public String getLabelBirthday() {
+        return labelBirthday;
+    }
+
+    @Override
+    @JsonProperty("spanBirthday")
+    public String getSpanBirthday() {
+        return spanBirthday;
     }
 
     @Override

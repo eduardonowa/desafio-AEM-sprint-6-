@@ -48,7 +48,7 @@
                                              fieldLabel="Color"
                                              jcr:primaryType="nt:unstructured"
                                              name="./colorDescription"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <fontFamilyDescription cq-msm-lockable="./fontFamilyDescription"
                                                   fieldLabel="Description Font Family:"
                                                   jcr:primaryType="nt:unstructured"
@@ -132,12 +132,12 @@
                                            fieldLabel="Select border color"
                                            jcr:primaryType="nt:unstructured"
                                            name="./bgColorSpanNav"
-                                           sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textNavColor cq-msm-lockable="./textNavColor"
                                          fieldLabel="Select text color"
                                          jcr:primaryType="nt:unstructured"
                                          name="./textNavColor"
-                                         sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -189,7 +189,7 @@
                                             fieldLabel="Color Basic Tab Text"
                                             jcr:primaryType="nt:unstructured"
                                             name="./titleColorBasic"
-                                            sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelFullname cq-msm-lockable="./labelFullname"
                                           fieldLabel="Label first input"
                                           jcr:primaryType="nt:unstructured"
@@ -235,6 +235,16 @@
                                        jcr:primaryType="nt:unstructured"
                                        name="./LabelPhone"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelBirthday cq-msm-lockable="./labelBirthday"
+                                          fieldLabel="Birthday Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelBirthday"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanBirthday cq-msm-lockable="./spanBirthday"
+                                         fieldLabel="Birthday Span"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanBirthday"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelCheckbox cq-msm-lockable="./labelCheckbox"
                                           fieldLabel="Checkbox Label"
                                           jcr:primaryType="nt:unstructured"
@@ -249,7 +259,7 @@
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
                                                  name="./backgroundButtonZero"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -301,7 +311,7 @@
                                              fieldLabel="Color Social Tab Text"
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
-                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -353,7 +363,7 @@
                                                    fieldLabel="Color Certificates Tab Text"
                                                    jcr:primaryType="nt:unstructured"
                                                    name="./titleColorCertificates"
-                                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelCertificates cq-msm-lockable="./labelCertificates"
                                               fieldLabel="Label Input"
                                               jcr:primaryType="nt:unstructured"
@@ -415,7 +425,7 @@
                                               fieldLabel="Color Succes Tab Title"
                                               jcr:primaryType="nt:unstructured"
                                               name="./titleColorSuccess"
-                                              sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessFullName cq-msm-lockable="./textFontSizeSuccessFullName"
                                                         fieldLabel="Fullname Font-Size (px): "
                                                         jcr:primaryType="nt:unstructured"
@@ -449,7 +459,7 @@
                                                      fieldLabel="Fullname color: "
                                                      jcr:primaryType="nt:unstructured"
                                                      name="./textColorSuccessFullName"
-                                                     sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessNickname cq-msm-lockable="./textFontSizeSuccessNickname"
                                                         fieldLabel="Nickname Font-Size (px): "
                                                         jcr:primaryType="nt:unstructured"
@@ -483,7 +493,7 @@
                                                      fieldLabel="Nickname color: "
                                                      jcr:primaryType="nt:unstructured"
                                                      name="./textColorSuccessNickname"
-                                                     sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessEmail cq-msm-lockable="./textFontSizeSuccessEmail"
                                                      fieldLabel="Email Font-Size (px): "
                                                      jcr:primaryType="nt:unstructured"
@@ -517,7 +527,7 @@
                                                   fieldLabel="Email color: "
                                                   jcr:primaryType="nt:unstructured"
                                                   name="./textColorSuccessEmail"
-                                                  sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessPhone cq-msm-lockable="./textFontSizeSuccessPhone"
                                                      fieldLabel="Phone Font-Size (px): "
                                                      jcr:primaryType="nt:unstructured"
@@ -551,7 +561,7 @@
                                                   fieldLabel="Phone color: "
                                                   jcr:primaryType="nt:unstructured"
                                                   name="./textColorSuccessPhone"
-                                                  sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessBirthday cq-msm-lockable="./textFontSizeSuccessBirthday"
                                                         fieldLabel="Birthday Font-Size (px): "
                                                         jcr:primaryType="nt:unstructured"
@@ -585,7 +595,7 @@
                                                      fieldLabel="Birthday color: "
                                                      jcr:primaryType="nt:unstructured"
                                                      name="./textColorSuccessBirthday"
-                                                     sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessAge cq-msm-lockable="./textFontSizeSuccessAge"
                                                    fieldLabel="Age Font-Size (px): "
                                                    jcr:primaryType="nt:unstructured"
@@ -619,7 +629,7 @@
                                                 fieldLabel="Age color: "
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./textColorSuccessAge"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessLinkedin cq-msm-lockable="./textFontSizeSuccessLinkedin"
                                                         fieldLabel="Linkedin Font-Size (px): "
                                                         jcr:primaryType="nt:unstructured"
@@ -653,7 +663,7 @@
                                                      fieldLabel="Linkedin color: "
                                                      jcr:primaryType="nt:unstructured"
                                                      name="./textColorSuccessLinkedin"
-                                                     sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessGithub cq-msm-lockable="./textFontSizeSuccessGithub"
                                                       fieldLabel="Github Font-Size (px): "
                                                       jcr:primaryType="nt:unstructured"
@@ -687,7 +697,7 @@
                                                    fieldLabel="Github color: "
                                                    jcr:primaryType="nt:unstructured"
                                                    name="./textColorSuccessGithub"
-                                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessTeam cq-msm-lockable="./textFontSizeSuccessTeam"
                                                     fieldLabel="Teamname Font-Size (px): "
                                                     jcr:primaryType="nt:unstructured"
@@ -721,7 +731,7 @@
                                                  fieldLabel="Teamname color: "
                                                  jcr:primaryType="nt:unstructured"
                                                  name="./textColorSuccessTeam"
-                                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessInstitution cq-msm-lockable="./textFontSizeSuccessInstitution"
                                                            fieldLabel="Institution Font-Size (px): "
                                                            jcr:primaryType="nt:unstructured"
@@ -755,7 +765,7 @@
                                                         fieldLabel="Institution color: "
                                                         jcr:primaryType="nt:unstructured"
                                                         name="./textColorSuccessInstitution"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <textFontSizeSuccessGraduation cq-msm-lockable="./textFontSizeSuccessGraduation"
                                                           fieldLabel="Graduation Font-Size (px): "
                                                           jcr:primaryType="nt:unstructured"
@@ -789,7 +799,7 @@
                                                        fieldLabel="Graduation color: "
                                                        jcr:primaryType="nt:unstructured"
                                                        name="./textColorSuccessGraduation"
-                                                       sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
