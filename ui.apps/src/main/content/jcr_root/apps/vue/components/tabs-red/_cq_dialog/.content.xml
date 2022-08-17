@@ -235,7 +235,6 @@
                                        jcr:primaryType="nt:unstructured"
                                        name="./LabelPhone"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <testMask cq-msm-lockable="./testMask"
                                      defaultValue="testMask"
                                      fieldLabel="Posição profissional"
@@ -251,7 +250,6 @@
                                  <no jcr:primaryType="nt:unstructured" text="No" value="no"/>
                               </items>
                            </testMask>
-
                            <labelBirthday cq-msm-lockable="./labelBirthday"
                                           fieldLabel="Birthday Label"
                                           jcr:primaryType="nt:unstructured"
@@ -262,7 +260,6 @@
                                          jcr:primaryType="nt:unstructured"
                                          name="./spanBirthday"
                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <labelCheckbox cq-msm-lockable="./labelCheckbox"
                                           fieldLabel="Checkbox Label"
                                           jcr:primaryType="nt:unstructured"
@@ -330,7 +327,6 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <labelLinkedin cq-msm-lockable="./labelLinkedin"
                                           fieldLabel="Linkedin Label"
                                           jcr:primaryType="nt:unstructured"
@@ -341,7 +337,6 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderLinkedin"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                         </items>
                      </column>
                   </items>
@@ -404,6 +399,21 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     name="./placeholderCertificates"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelTeamname cq-msm-lockable="./labelTeamname"
+                                          fieldLabel="Label second input"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelTeamname"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderTeamname cq-msm-lockable="./placeholderTeamname"
+                                                fieldLabel="Placeholder second input"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderTeamname"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanTeamname cq-msm-lockable="./spanTeamname"
+                                         fieldLabel="Span second input"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanTeamname"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
