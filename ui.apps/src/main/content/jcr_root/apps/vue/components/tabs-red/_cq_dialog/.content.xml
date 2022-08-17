@@ -312,6 +312,16 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelLinkedin cq-msm-lockable="./labelLinkedin"
+                                          fieldLabel="Linkedin Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelLinkedin"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderLinkedin cq-msm-lockable="./placeholderLinkedin"
+                                                fieldLabel="Linkedin Placeholder"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderLinkedin"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

@@ -76,8 +76,9 @@
           "titleTextSocial",
           "fontSizeTitleSocial",
           "fontFamilyTitleSocial",
-          "titleColorSocial"
-          
+          "titleColorSocial",
+          "labelLinkedin",
+          "placeholderLinkedin"
         ]
       },
       {
@@ -1252,6 +1253,20 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "spanBirthday"
+      },
+      {
+        "field": "labelLinkedin",
+        "label": "Linkedin Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelLinkedin"
+      },
+      {
+        "field": "placeholderLinkedin",
+        "label": "Linkedin Placeholder",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderLinkedin"
       }
     ]
   }

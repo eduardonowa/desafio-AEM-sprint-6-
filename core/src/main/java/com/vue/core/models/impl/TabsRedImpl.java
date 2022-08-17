@@ -102,6 +102,10 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleCertificates;
@@ -364,6 +368,18 @@ public class TabsRedImpl
     @JsonProperty("titleColorSocial")
     public String getTitleColorSocial() {
         return titleColorSocial;
+    }
+
+    @Override
+    @JsonProperty("labelLinkedin")
+    public String getLabelLinkedin() {
+        return labelLinkedin;
+    }
+
+    @Override
+    @JsonProperty("placeholderLinkedin")
+    public String getPlaceholderLinkedin() {
+        return placeholderLinkedin;
     }
 
     @Override
