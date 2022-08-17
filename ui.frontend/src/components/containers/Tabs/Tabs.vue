@@ -91,6 +91,12 @@
             :backgroundButtonThree="backgroundButtonThree"
             :labelCertificates="labelCertificates"
             :placeholderCertificates="placeholderCertificates"
+            :labelGraduation="labelGraduation"
+            :spanGraduation="spanGraduation"
+            :placeholderGraduation="placeholderGraduation"
+            :labelInstitution="labelInstitution"
+            :spanInstitution="spanInstitution"
+            :placeholderInstitution="placeholderInstitution"
           />
         </template>
       </template>
@@ -153,6 +159,12 @@ export default {
     labelGithub: String,
     placeholderGithub: String,
     InvalidTextGithub: String,
+    labelGraduation: String,
+    spanGraduation: String,
+    placeholderGraduation: String,
+    labelInstitution: String,
+    spanInstitution: String,
+    placeholderInstitution: String,
 
     colorDescription: {
       type: String

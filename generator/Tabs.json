@@ -95,7 +95,14 @@
           "fontFamilyTitleCertificates",
           "titleColorCertificates",
           "labelCertificates",
-          "placeholderCertificates"
+          "placeholderCertificates",
+          "labelInstitution",
+          "placeholderInstitution",
+          "spanInstitution",
+          "labelGraduation",
+          "placeholderGraduation",
+          "spanGraduation"
+
         ]
       },
       {
@@ -734,6 +741,48 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "InvalidTextGithub"
+      },
+      {
+        "field": "labelGraduation",
+        "label": "Graduation Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelGraduation"
+      },
+      {
+        "field": "spanGraduation",
+        "label": "Graduation Span",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanGraduation"
+      },
+      {
+        "field": "placeholderGraduation",
+        "label": "Graduation Placeholder",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderGraduation"
+      },
+      {
+        "field": "labelInstitution",
+        "label": "Institution Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelInstitution"
+      },
+      {
+        "field": "placeholderInstitution",
+        "label": "Institution Placeholder",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderInstitution"
+      },
+      {
+        "field": "spanInstitution",
+        "label": "Institution Span",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanInstitution"
       }
     ]
   }

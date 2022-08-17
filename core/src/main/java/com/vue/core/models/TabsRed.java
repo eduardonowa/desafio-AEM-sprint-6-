@@ -154,6 +154,24 @@ public interface TabsRed
     @JsonProperty("placeholderCertificates")
     String getPlaceholderCertificates();
 
+    @JsonProperty("labelInstitution")
+    String getLabelInstitution();
+
+    @JsonProperty("placeholderInstitution")
+    String getPlaceholderInstitution();
+
+    @JsonProperty("spanInstitution")
+    String getSpanInstitution();
+
+    @JsonProperty("labelGraduation")
+    String getLabelGraduation();
+
+    @JsonProperty("placeholderGraduation")
+    String getPlaceholderGraduation();
+
+    @JsonProperty("spanGraduation")
+    String getSpanGraduation();
+
     @JsonProperty("titleTextSuccess")
     String getTitleTextSuccess();
 
