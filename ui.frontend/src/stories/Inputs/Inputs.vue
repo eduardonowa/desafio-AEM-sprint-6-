@@ -66,9 +66,7 @@ export default {
     }
   },
   methods: {
-    teste () {
-      console.log('testee')
-    }
+
   },
   computed: {
     style () {

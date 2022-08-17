@@ -9,7 +9,7 @@
     "model-impl-pkg": "com.vue.core.models.impl"
   },
   "name": "tabs-red",
-  "title": "Properties Tabs",
+  "title": "VUE - Form Tabs",
   "group": "SPA Vue Project - Content",
   "type": "components",
   "options": {
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "id": "hmenu-nav-properties",
+        "id": "menu-nav-properties",
         "label": "Menu Nav",
         "fields": ["fontFamilyNav", "bgColorSpanNav", "textNavColor"]
       },
@@ -59,8 +59,12 @@
           "PlaceholderEmail",
           "InvalidTextEmail",
           "LabelPhone",
+
+          "testMask",
+
           "labelBirthday",
           "spanBirthday",
+
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
@@ -76,9 +80,13 @@
           "titleTextSocial",
           "fontSizeTitleSocial",
           "fontFamilyTitleSocial",
+
+          "titleColorSocial"
+
           "titleColorSocial",
           "labelLinkedin",
           "placeholderLinkedin"
+
         ]
       },
       {
@@ -100,11 +108,49 @@
           "titleTextSuccess",
           "fontSizeTitleSuccess",
           "fontFamilyTitleSuccess",
-          "titleColorSuccess"
+          "titleColorSuccess",
+          "subTitleSuccess",
+          "fontFamilySuccess"
         ]
       }
     ],
     "properties": [
+      {
+        "field": "testMask",
+        "type": "select",
+        "label": "Posição profissional",
+        "json-expose": true,
+        "json-property": "testMask",
+        "attributes": {
+          "defaultValue": "testMask",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "yes",
+            "attributes": {
+              "selected": "true",
+              "text": "Yes",
+              "value": "yes"
+            }
+          },
+          {
+            "field": "no",
+            "attributes": {
+              "text": "No",
+              "value": "no"
+            }
+          }
+        ]
+      },
+
+      {
+        "field": "subTitleSuccess",
+        "label": "Card Title Text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "subTitleSuccess"
+      },
       {
         "field": "textNavColor",
         "label": "Select text color",
@@ -120,9 +166,9 @@
         "json-property": "bgColorSpanNav"
       },
       {
-        "field": "fontFamilyNav",
+        "field": "fontFamilySuccess",
         "type": "radiogroup",
-        "label": "Font Family:",
+        "label": "Text font family:",
         "json-expose": true,
         "attributes": {
           "vertical": "{Boolean}false"
@@ -132,7 +178,48 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
+              "checked": "{Boolean}false",
+              "name": "fontFamilySuccess",
+              "text": "Inter",
+              "value": "Inter"
+            }
+          },
+          {
+            "field": "Arial",
+            "type": "radio",
+            "attributes": {
+              "checked": "{Boolean}false",
+              "name": "fontFamilySuccess",
+              "text": "Arial",
+              "value": "Arial"
+            }
+          },
+          {
+            "field": "Nunito",
+            "type": "radio",
+            "attributes": {
               "checked": "{Boolean}true",
+              "name": "fontFamilySuccess",
+              "text": "Nunito",
+              "value": "Nunito"
+            }
+          }
+        ]
+      },
+      {
+        "field": "fontFamilyNav",
+        "type": "radiogroup",
+        "label": "Font family:",
+        "json-expose": true,
+        "attributes": {
+          "vertical": "{Boolean}false"
+        },
+        "items": [
+          {
+            "field": "Inter",
+            "type": "radio",
+            "attributes": {
+              "checked": "{Boolean}false",
               "name": "fontFamilyNav",
               "text": "Inter",
               "value": "Inter"
@@ -142,7 +229,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyNav",
               "text": "Arial",
               "value": "Arial"
@@ -197,7 +284,7 @@
       },
       {
         "field": "labelCertificates",
-        "label": "Label Input",
+        "label": "Label First Input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelCertificates"
@@ -270,7 +357,7 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyDescription",
               "text": "Inter",
               "value": "Inter"
@@ -280,7 +367,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyDescription",
               "text": "Arial",
               "value": "Arial"
@@ -332,7 +419,7 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleBasic",
               "text": "Inter",
               "value": "Inter"
@@ -342,7 +429,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleBasic",
               "text": "Arial",
               "value": "Arial"
@@ -394,7 +481,7 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleSocial",
               "text": "Inter",
               "value": "Inter"
@@ -404,7 +491,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleSocial",
               "text": "Arial",
               "value": "Arial"
@@ -456,7 +543,7 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleCertificates",
               "text": "Inter",
               "value": "Inter"
@@ -466,7 +553,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleCertificates",
               "text": "Arial",
               "value": "Arial"
@@ -518,7 +605,7 @@
             "field": "Inter",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleSuccess",
               "text": "Inter",
               "value": "Inter"
@@ -528,7 +615,7 @@
             "field": "Arial",
             "type": "radio",
             "attributes": {
-              "checked": "{Boolean}true",
+              "checked": "{Boolean}false",
               "name": "fontFamilyTitleSuccess",
               "text": "Arial",
               "value": "Arial"
@@ -597,7 +684,7 @@
       },
       {
         "field": "LabelPhone",
-        "label": "Phone Label",
+        "label": "Label fourth input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "LabelPhone"

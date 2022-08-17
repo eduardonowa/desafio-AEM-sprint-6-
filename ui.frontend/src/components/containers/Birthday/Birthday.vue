@@ -53,7 +53,7 @@
 <script>
 export default {
   // eslint-disable-next-line
-  name: "Birthday",
+  name: 'Birthday',
   components: {},
   data () {
     return {
@@ -116,6 +116,9 @@ export default {
     this.getActualYear()
     this.age = window.localStorage.age
   },
+  updated () {
+    this.$store.state.labelBirthday = this.labelBirthday
+  },
   computed: {
     selectedDay () {
       return window.localStorage.getItem('day')
@@ -137,5 +140,5 @@ export default {
 </script>
 
 <style lang="scss" scooped>
-@import "./Birthday.scss";
+@import './Birthday.scss';
 </style>

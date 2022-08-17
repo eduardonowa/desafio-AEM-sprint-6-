@@ -22,7 +22,7 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Properties Tabs"
+          jcr:title="VUE - Form Tabs"
           sling:resourceType="cq/gui/components/authoring/dialog">
    <content jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -56,12 +56,12 @@
                                                   sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                   vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyDescription"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyDescription"
                                         text="Arial"
@@ -95,9 +95,9 @@
                      </column>
                   </items>
                </header-properties>
-               <hmenu-nav-properties jcr:primaryType="nt:unstructured"
-                                     jcr:title="Menu Nav"
-                                     sling:resourceType="granite/ui/components/coral/foundation/container">
+               <menu-nav-properties jcr:primaryType="nt:unstructured"
+                                    jcr:title="Menu Nav"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
                   <layout jcr:primaryType="nt:unstructured"
                           sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
                   <items jcr:primaryType="nt:unstructured">
@@ -105,18 +105,18 @@
                              sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                            <fontFamilyNav cq-msm-lockable="./fontFamilyNav"
-                                          fieldLabel="Font Family:"
+                                          fieldLabel="Font family:"
                                           jcr:primaryType="nt:unstructured"
                                           name="./fontFamilyNav"
                                           sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                           vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyNav"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyNav"
                                         text="Arial"
@@ -141,7 +141,7 @@
                         </items>
                      </column>
                   </items>
-               </hmenu-nav-properties>
+               </menu-nav-properties>
                <basic-properties jcr:primaryType="nt:unstructured"
                                  jcr:title="Basic"
                                  sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -168,12 +168,12 @@
                                                  sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                  vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleBasic"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleBasic"
                                         text="Arial"
@@ -231,10 +231,27 @@
                                              name="./InvalidTextEmail"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <LabelPhone cq-msm-lockable="./LabelPhone"
-                                       fieldLabel="Phone Label"
+                                       fieldLabel="Label fourth input"
                                        jcr:primaryType="nt:unstructured"
                                        name="./LabelPhone"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
+                           <testMask cq-msm-lockable="./testMask"
+                                     defaultValue="testMask"
+                                     fieldLabel="Posição profissional"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./testMask"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                     value="false">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <yes jcr:primaryType="nt:unstructured"
+                                      selected="true"
+                                      text="Yes"
+                                      value="yes"/>
+                                 <no jcr:primaryType="nt:unstructured" text="No" value="no"/>
+                              </items>
+                           </testMask>
+
                            <labelBirthday cq-msm-lockable="./labelBirthday"
                                           fieldLabel="Birthday Label"
                                           jcr:primaryType="nt:unstructured"
@@ -245,6 +262,7 @@
                                          jcr:primaryType="nt:unstructured"
                                          name="./spanBirthday"
                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                            <labelCheckbox cq-msm-lockable="./labelCheckbox"
                                           fieldLabel="Checkbox Label"
                                           jcr:primaryType="nt:unstructured"
@@ -290,12 +308,12 @@
                                                   sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                   vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleSocial"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleSocial"
                                         text="Arial"
@@ -312,6 +330,7 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                            <labelLinkedin cq-msm-lockable="./labelLinkedin"
                                           fieldLabel="Linkedin Label"
                                           jcr:primaryType="nt:unstructured"
@@ -322,6 +341,7 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderLinkedin"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                         </items>
                      </column>
                   </items>
@@ -352,12 +372,12 @@
                                                         sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                         vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleCertificates"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleCertificates"
                                         text="Arial"
@@ -375,7 +395,7 @@
                                                    name="./titleColorCertificates"
                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelCertificates cq-msm-lockable="./labelCertificates"
-                                              fieldLabel="Label Input"
+                                              fieldLabel="Label First Input"
                                               jcr:primaryType="nt:unstructured"
                                               name="./labelCertificates"
                                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
@@ -414,12 +434,12 @@
                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
                                                    vertical="{Boolean}false">
                               <items jcr:primaryType="nt:unstructured">
-                                 <Inter checked="{Boolean}true"
+                                 <Inter checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleSuccess"
                                         text="Inter"
                                         value="Inter"/>
-                                 <Arial checked="{Boolean}true"
+                                 <Arial checked="{Boolean}false"
                                         jcr:primaryType="nt:unstructured"
                                         name="fontFamilyTitleSuccess"
                                         text="Arial"
@@ -436,6 +456,35 @@
                                               jcr:primaryType="nt:unstructured"
                                               name="./titleColorSuccess"
                                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <subTitleSuccess cq-msm-lockable="./subTitleSuccess"
+                                            fieldLabel="Card Title Text"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./subTitleSuccess"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <fontFamilySuccess cq-msm-lockable="./fontFamilySuccess"
+                                              fieldLabel="Text font family:"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./fontFamilySuccess"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                              vertical="{Boolean}false">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <Inter checked="{Boolean}false"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilySuccess"
+                                        text="Inter"
+                                        value="Inter"/>
+                                 <Arial checked="{Boolean}false"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="fontFamilySuccess"
+                                        text="Arial"
+                                        value="Arial"/>
+                                 <Nunito checked="{Boolean}true"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="fontFamilySuccess"
+                                         text="Nunito"
+                                         value="Nunito"/>
+                              </items>
+                           </fontFamilySuccess>
                         </items>
                      </column>
                   </items>

@@ -1,20 +1,37 @@
-/*
- * ***********************************************************************
- * SPA Vue Project CONFIDENTIAL
- * ___________________
- *
- * Copyright 2022 SPA Vue Project.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains the property
- * of SPA Vue Project and its suppliers, if any. The intellectual and
- * technical concepts contained herein are proprietary to SPA Vue Project
- * and its suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from SPA Vue Project.
- * ***********************************************************************
- */
+/*
+
+ * ***********************************************************************
+
+ * SPA Vue Project CONFIDENTIAL
+
+ * ___________________
+
+ *
+
+ * Copyright 2022 SPA Vue Project.
+
+ * All Rights Reserved.
+
+ *
+
+ * NOTICE:  All information contained herein is, and remains the property
+
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+
+ * technical concepts contained herein are proprietary to SPA Vue Project
+
+ * and its suppliers and are protected by trade secret or copyright law.
+
+ * Dissemination of this information or reproduction of this material
+
+ * is strictly forbidden unless prior written permission is obtained
+
+ * from SPA Vue Project.
+
+ * ***********************************************************************
+
+ */
+
 
 package com.vue.core.models.impl;
 
@@ -84,9 +101,13 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String LabelPhone;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+
+    private String testMask;
+
     private String labelBirthday;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String spanBirthday;
+
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelCheckbox;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -102,10 +123,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+
     private String labelLinkedin;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderLinkedin;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleCertificates;
@@ -125,6 +148,10 @@ public class TabsRedImpl
     private String fontFamilyTitleSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String subTitleSuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontFamilySuccess;
     @SlingObject
     private Resource resource;
 
@@ -252,6 +279,11 @@ public class TabsRedImpl
     }
 
     @Override
+
+    @JsonProperty("testMask")
+    public String getTestMask() {
+        return testMask;
+
     @JsonProperty("labelBirthday")
     public String getLabelBirthday() {
         return labelBirthday;
@@ -261,6 +293,7 @@ public class TabsRedImpl
     @JsonProperty("spanBirthday")
     public String getSpanBirthday() {
         return spanBirthday;
+
     }
 
     @Override
@@ -305,6 +338,7 @@ public class TabsRedImpl
     }
 
     @Override
+
     @JsonProperty("labelLinkedin")
     public String getLabelLinkedin() {
         return labelLinkedin;
@@ -317,6 +351,7 @@ public class TabsRedImpl
     }
 
     @Override
+
     @JsonProperty("titleTextCertificates")
     public String getTitleTextCertificates() {
         return titleTextCertificates;
@@ -372,6 +407,17 @@ public class TabsRedImpl
     @JsonProperty("titleColorSuccess")
     public String getTitleColorSuccess() {
         return titleColorSuccess;
+    }
+
+    @Override
+    @JsonProperty("subTitleSuccess")
+    public String getSubTitleSuccess() {
+        return subTitleSuccess;
+    }
+
+    @Override
+    public String getFontFamilySuccess() {
+        return fontFamilySuccess;
     }
 
     @Override

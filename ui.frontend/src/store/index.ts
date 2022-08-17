@@ -23,7 +23,19 @@ const store = new Store({
     graduation: '',
     day: '',
     month: '',
-    year: ''
+    year: '',
+    labelName: '',
+    labelEmail: '',
+    labelPhone: '',
+    labelBirthday: '',
+    labelNickname: '',
+    labelLinkedin: '',
+    labelGithub: '',
+    labelCertificates: '',
+    labelTeamname: '',
+    labelGraduation: '',
+    labelInstitution: ''
+
   },
   getters: {},
   mutations: {
