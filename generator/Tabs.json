@@ -59,6 +59,8 @@
           "PlaceholderEmail",
           "InvalidTextEmail",
           "LabelPhone",
+          "labelBirthday",
+          "spanBirthday",
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
@@ -1236,6 +1238,20 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "LabelPhone"
+      },
+      {
+        "field": "labelBirthday",
+        "label": "Birthday Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelBirthday"
+      },
+      {
+        "field": "spanBirthday",
+        "label": "Birthday Span",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanBirthday"
       }
     ]
   }

@@ -93,6 +93,12 @@ public interface TabsRed
     @JsonProperty("LabelPhone")
     String getLabelPhone();
 
+    @JsonProperty("labelBirthday")
+    String getLabelBirthday();
+
+    @JsonProperty("spanBirthday")
+    String getSpanBirthday();
+
     @JsonProperty("labelCheckbox")
     String getLabelCheckbox();
 
