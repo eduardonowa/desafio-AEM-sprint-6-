@@ -58,13 +58,13 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String textNavColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleTextBasic;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String fontFamilyTitleBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorBasic;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String titleTextBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelFullname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -90,13 +90,13 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleTextSocial;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String fontFamilyTitleSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSocial;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String titleTextSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -117,6 +117,72 @@ public class TabsRedImpl
     private String fontFamilyTitleSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessFullName;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessFullName;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessFullName;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessNickname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessNickname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessNickname;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessEmail;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessPhone;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessPhone;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessPhone;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessBirthday;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessBirthday;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessBirthday;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessAge;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessAge;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessAge;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessGithub;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessGithub;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessGithub;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessTeam;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessTeam;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessTeam;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private Long textFontSizeSuccessGraduation;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textFontFamilySuccessGraduation;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String textColorSuccessGraduation;
     @SlingObject
     private Resource resource;
 
@@ -167,6 +233,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("titleTextBasic")
+    public String getTitleTextBasic() {
+        return titleTextBasic;
+    }
+
+    @Override
     @JsonProperty("fontSizeTitleBasic")
     public Long getFontSizeTitleBasic() {
         return fontSizeTitleBasic;
@@ -181,12 +253,6 @@ public class TabsRedImpl
     @JsonProperty("titleColorBasic")
     public String getTitleColorBasic() {
         return titleColorBasic;
-    }
-
-    @Override
-    @JsonProperty("titleTextBasic")
-    public String getTitleTextBasic() {
-        return titleTextBasic;
     }
 
     @Override
@@ -262,6 +328,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("titleTextSocial")
+    public String getTitleTextSocial() {
+        return titleTextSocial;
+    }
+
+    @Override
     @JsonProperty("fontSizeTitleSocial")
     public Long getFontSizeTitleSocial() {
         return fontSizeTitleSocial;
@@ -276,12 +348,6 @@ public class TabsRedImpl
     @JsonProperty("titleColorSocial")
     public String getTitleColorSocial() {
         return titleColorSocial;
-    }
-
-    @Override
-    @JsonProperty("titleTextSocial")
-    public String getTitleTextSocial() {
-        return titleTextSocial;
     }
 
     @Override
@@ -340,6 +406,193 @@ public class TabsRedImpl
     @JsonProperty("titleColorSuccess")
     public String getTitleColorSuccess() {
         return titleColorSuccess;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessFullName")
+    public Long getTextFontSizeSuccessFullName() {
+        return textFontSizeSuccessFullName;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessFullName() {
+        return textFontFamilySuccessFullName;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessFullName")
+    public String getTextColorSuccessFullName() {
+        return textColorSuccessFullName;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessNickname")
+    public Long getTextFontSizeSuccessNickname() {
+        return textFontSizeSuccessNickname;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessNickname() {
+        return textFontFamilySuccessNickname;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessNickname")
+    public String getTextColorSuccessNickname() {
+        return textColorSuccessNickname;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessEmail")
+    public Long getTextFontSizeSuccessEmail() {
+        return textFontSizeSuccessEmail;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessEmail() {
+        return textFontFamilySuccessEmail;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessEmail")
+    public String getTextColorSuccessEmail() {
+        return textColorSuccessEmail;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessPhone")
+    public Long getTextFontSizeSuccessPhone() {
+        return textFontSizeSuccessPhone;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessPhone() {
+        return textFontFamilySuccessPhone;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessPhone")
+    public String getTextColorSuccessPhone() {
+        return textColorSuccessPhone;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessBirthday")
+    public Long getTextFontSizeSuccessBirthday() {
+        return textFontSizeSuccessBirthday;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessBirthday() {
+        return textFontFamilySuccessBirthday;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessBirthday")
+    public String getTextColorSuccessBirthday() {
+        return textColorSuccessBirthday;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessAge")
+    public Long getTextFontSizeSuccessAge() {
+        return textFontSizeSuccessAge;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessAge() {
+        return textFontFamilySuccessAge;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessAge")
+    public String getTextColorSuccessAge() {
+        return textColorSuccessAge;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessLinkedin")
+    public Long getTextFontSizeSuccessLinkedin() {
+        return textFontSizeSuccessLinkedin;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessLinkedin() {
+        return textFontFamilySuccessLinkedin;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessLinkedin")
+    public String getTextColorSuccessLinkedin() {
+        return textColorSuccessLinkedin;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessGithub")
+    public Long getTextFontSizeSuccessGithub() {
+        return textFontSizeSuccessGithub;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessGithub() {
+        return textFontFamilySuccessGithub;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessGithub")
+    public String getTextColorSuccessGithub() {
+        return textColorSuccessGithub;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessTeam")
+    public Long getTextFontSizeSuccessTeam() {
+        return textFontSizeSuccessTeam;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessTeam() {
+        return textFontFamilySuccessTeam;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessTeam")
+    public String getTextColorSuccessTeam() {
+        return textColorSuccessTeam;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessInstitution")
+    public Long getTextFontSizeSuccessInstitution() {
+        return textFontSizeSuccessInstitution;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessInstitution() {
+        return textFontFamilySuccessInstitution;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessInstitution")
+    public String getTextColorSuccessInstitution() {
+        return textColorSuccessInstitution;
+    }
+
+    @Override
+    @JsonProperty("textFontSizeSuccessGraduation")
+    public Long getTextFontSizeSuccessGraduation() {
+        return textFontSizeSuccessGraduation;
+    }
+
+    @Override
+    public String getTextFontFamilySuccessGraduation() {
+        return textFontFamilySuccessGraduation;
+    }
+
+    @Override
+    @JsonProperty("textColorSuccessGraduation")
+    public String getTextColorSuccessGraduation() {
+        return textColorSuccessGraduation;
     }
 
     @Override
