@@ -282,8 +282,8 @@ export default {
     )
     this.$store.state.labelCertificates = this.labelCertificates.replace('*', '') + ': '
     this.$store.state.labelTeamname = this.labelTeamname.replace('*', '') + ': '
-    this.$store.state.labelGraduation = this.LabelGraduation.replace('*', '') + ': '
-    this.$store.state.labelInstitution = this.labelFullname.replace('*', '') + ': '
+    this.$store.state.labelGraduation = this.labelGraduation.replace('*', '') + ': '
+    this.$store.state.labelInstitution = this.labelInstitution.replace('*', '') + ': '
   },
   mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Certificates`

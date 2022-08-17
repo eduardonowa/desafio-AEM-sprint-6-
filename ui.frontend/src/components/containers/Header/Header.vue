@@ -108,13 +108,13 @@ export default {
     fontSizeTitleCertificates: {
       type: String
     },
-    titleColorSucess: {
+    titleColorSuccess: {
       type: String
     },
-    fontFamilyTitleSucess: {
+    fontFamilyTitleSuccess: {
       type: String
     },
-    fontSizeTitleSucess: {
+    fontSizeTitleSuccess: {
       type: String
     }
   }

@@ -26,7 +26,7 @@
     />
     <div class="card">
       <template v-if="actualTab !== 'success'">
-        <h2 class="teamSign">Team Sign Up</h2>
+        <h2 class="teamSign">{{descriptionCard}}</h2>
         <MenuComponent
           :bgColorSpanNav="bgColorSpanNav"
           :fontFamilyNav="fontFamilyNav"
@@ -121,6 +121,10 @@ export default {
   name: 'Tabs',
   components: { MenuComponent, Social, Basic, Certificates, Success, Header },
   props: {
+    descriptionCard: {
+      type: String,
+      default: 'Team Sign Up'
+    },
     placeholderTeamname: String,
     spanTeamname: String,
     labelTeamname: String,
@@ -165,6 +169,7 @@ export default {
     labelInstitution: String,
     spanInstitution: String,
     placeholderInstitution: String,
+    labelFullname: String,
 
     colorDescription: {
       type: String

@@ -138,6 +138,11 @@
                                          jcr:primaryType="nt:unstructured"
                                          name="./textNavColor"
                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <descriptionCard cq-msm-lockable="./descriptionCard"
+                                            fieldLabel="Text card description"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./descriptionCard"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

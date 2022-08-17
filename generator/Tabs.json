@@ -40,7 +40,7 @@
       {
         "id": "menu-nav-properties",
         "label": "Menu Nav",
-        "fields": ["fontFamilyNav", "bgColorSpanNav", "textNavColor"]
+        "fields": ["fontFamilyNav", "bgColorSpanNav", "textNavColor", "descriptionCard"]
       },
       {
         "id": "basic-properties",
@@ -65,6 +65,7 @@
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
+          "fontFamilyButtonZero",
           "backgroundButtonZero"
         ]
       },
@@ -161,7 +162,13 @@
           }
         ]
       },
-
+      {
+        "field": "descriptionCard",
+        "label": "Text card description",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "descriptionCard"
+      },
       {
         "field": "labelTeamname",
         "label": "Label second input",

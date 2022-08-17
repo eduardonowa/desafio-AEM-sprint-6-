@@ -38,9 +38,9 @@
       :testMask="testMask"
     />
     <Birthday
-    aria-label="Birthday"
-    :labelBirthday="labelBirthday"
-    :spanBirthday="spanBirthday"
+      aria-label="Birthday"
+      :labelBirthday="labelBirthday"
+      :spanBirthday="spanBirthday"
     />
     <div class="footer">
       <CheckBox aria-label="Contract terms" :labelCheckbox="labelCheckbox" />
@@ -160,9 +160,6 @@ export default {
   beforeUpdate () {
     if (this.classPhone === 'phone' && this.testMask === 'yes') {
       $(`.${this.classPhone} input`).mask('(00) 00000-0000')
-      console.log(this.testMask)
-    } else if (this.testMask === 'no') {
-      console.log(this.testMask)
     }
   },
   methods: {
