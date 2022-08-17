@@ -50,6 +50,8 @@
             :InvalidTextEmail="InvalidTextEmail"
             :LabelEmail="LabelEmail"
             :LabelPhone="LabelPhone"
+            :labelBirthday="labelBirthday"
+            :spanBirthday="spanBirthday"
           />
         </template>
 
@@ -127,6 +129,8 @@ export default {
     LabelEmail: String,
     LabelPhone: String,
     description: String,
+    labelBirthday: String,
+    spanBirthday: String,
 
     colorDescription: {
       type: String
