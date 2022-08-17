@@ -6,6 +6,7 @@
       id="button0"
       @click.prevent="onClick"
       :style="style"
+      
     >
       {{ Text }}
       <img class="img0" src="../assets/next.png" alt="next image" />
@@ -94,8 +95,8 @@ export default {
         color: this.color,
         backgroundColor: this.backgroundColor,
         fontFamily: this.fontFamily,
-        width: (this.width / 16) + 'em',
-        height: (this.height / 16) + 'em',
+        width: (this.width ) + 'px',
+        height: (this.height ) + 'px',
         fontSize: (this.fontSize / 16) + 'em'
       }
     }

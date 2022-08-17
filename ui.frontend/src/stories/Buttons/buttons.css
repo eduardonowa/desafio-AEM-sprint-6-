@@ -10,16 +10,17 @@
     justify-content: center;
     color: #ffffff;
     gap: 5px;
+    width: 100px;
+    height: 40px;
+  
   }
+
   
   #button3 {
-    width: 100%;
     font-size: 1em;
     padding: 5px 5px;
     visibility: hidden;
-    @media(max-width:768px){
-      width: 100%;
-    }
+
   }
   .img0 {
     width: 7px;

@@ -62,6 +62,7 @@ input[type='checkbox'] {
 }
 
 #box-terms {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }

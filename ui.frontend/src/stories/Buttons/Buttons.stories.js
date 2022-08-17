@@ -30,6 +30,5 @@ const Template = (args, { argTypes }) => ({
 
 export const Types = Template.bind({})
 Types.args = {
-  primary: true,
   type: '0'
 }

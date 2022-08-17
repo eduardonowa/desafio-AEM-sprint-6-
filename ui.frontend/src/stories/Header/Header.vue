@@ -26,9 +26,6 @@ export default {
       type: String,
       default: 'title'
     },
-    color: {
-      type: String
-    },
     fontFamily: {
       type: String,
       default: 'Inter',
@@ -44,13 +41,17 @@ export default {
     },
     backgroundColor: {
       type: String
-    }
+    },
+    borderColor:String,
+    borderWidth:String
   },
 
   computed: {
     style () {
       return {
-        backgroundColor: this.backgroundColor
+        backgroundColor: this.backgroundColor,
+        borderColor: this.borderColor,
+        borderWidth: this.borderWidth + 'px'
       }
     },
     styleTitle () {
