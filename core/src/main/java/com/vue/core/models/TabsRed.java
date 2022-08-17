@@ -55,6 +55,9 @@ public interface TabsRed
     @JsonProperty("textNavColor")
     String getTextNavColor();
 
+    @JsonProperty("titleTextBasic")
+    String getTitleTextBasic();
+
     @JsonProperty("fontSizeTitleBasic")
     Long getFontSizeTitleBasic();
 
@@ -62,9 +65,6 @@ public interface TabsRed
 
     @JsonProperty("titleColorBasic")
     String getTitleColorBasic();
-
-    @JsonProperty("titleTextBasic")
-    String getTitleTextBasic();
 
     @JsonProperty("labelFullname")
     String getLabelFullname();
@@ -93,6 +93,9 @@ public interface TabsRed
     @JsonProperty("LabelPhone")
     String getLabelPhone();
 
+    @JsonProperty("testMask")
+    String getTestMask();
+
     @JsonProperty("labelCheckbox")
     String getLabelCheckbox();
 
@@ -102,6 +105,9 @@ public interface TabsRed
     @JsonProperty("backgroundButtonZero")
     String getBackgroundButtonZero();
 
+    @JsonProperty("titleTextSocial")
+    String getTitleTextSocial();
+
     @JsonProperty("fontSizeTitleSocial")
     Long getFontSizeTitleSocial();
 
@@ -109,9 +115,6 @@ public interface TabsRed
 
     @JsonProperty("titleColorSocial")
     String getTitleColorSocial();
-
-    @JsonProperty("titleTextSocial")
-    String getTitleTextSocial();
 
     @JsonProperty("titleTextCertificates")
     String getTitleTextCertificates();
@@ -140,5 +143,10 @@ public interface TabsRed
 
     @JsonProperty("titleColorSuccess")
     String getTitleColorSuccess();
+
+    @JsonProperty("subTitleSuccess")
+    String getSubTitleSuccess();
+
+    String getFontFamilySuccess();
 
 }

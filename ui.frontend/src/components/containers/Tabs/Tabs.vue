@@ -50,6 +50,7 @@
             :InvalidTextEmail="InvalidTextEmail"
             :LabelEmail="LabelEmail"
             :LabelPhone="LabelPhone"
+            :testMask="testMask"
           />
         </template>
 
@@ -93,6 +94,8 @@
           :fontFamilyButtonOne="fontFamilyButtonOne"
           :formatButtonFontSizeOne="formatButtonFontSizeOne"
           :backgroundButtonOne="backgroundButtonOne"
+          :fontFamilySuccess="fontFamilySuccess"
+          :subTitleSuccess="subTitleSuccess"
         />
       </template>
     </div>
@@ -111,14 +114,22 @@ import Header from '@/components/containers/Header/Header.vue'
 export default {
   // eslint-disable-next-line
   name: 'Tabs',
+  components: { MenuComponent, Social, Basic, Certificates, Success, Header },
   props: {
+    testMask: String,
+    placeholderPhone: String,
+    subTitleSuccess: String,
+    fontFamilySuccess: String,
     textNavColor: String,
     fontFamilyNav: String,
     bgColorSpanNav: String,
     labelNickname: String,
     placeholderNickname: String,
     spanFullname: String,
-    labelFullname: String,
+    labelFullname: {
+      type: String,
+      default: 'default'
+    },
     placeholderFullname: String,
     placeholderCertificates: String,
     labelCertificates: String,
@@ -266,8 +277,6 @@ export default {
       return this.$store.state.actualTab
     }
   },
-  components: { MenuComponent, Social, Basic, Certificates, Success, Header },
-
   methods: {
     ...mapActions(['nextTab'])
   }

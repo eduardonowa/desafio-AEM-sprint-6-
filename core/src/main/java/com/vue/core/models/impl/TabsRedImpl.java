@@ -58,13 +58,13 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String textNavColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleTextBasic;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String fontFamilyTitleBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorBasic;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String titleTextBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelFullname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -84,19 +84,21 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String LabelPhone;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String testMask;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelCheckbox;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String titleTextSocial;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String fontFamilyTitleSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSocial;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String titleTextSocial;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -117,6 +119,10 @@ public class TabsRedImpl
     private String fontFamilyTitleSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleColorSuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String subTitleSuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String fontFamilySuccess;
     @SlingObject
     private Resource resource;
 
@@ -167,6 +173,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("titleTextBasic")
+    public String getTitleTextBasic() {
+        return titleTextBasic;
+    }
+
+    @Override
     @JsonProperty("fontSizeTitleBasic")
     public Long getFontSizeTitleBasic() {
         return fontSizeTitleBasic;
@@ -181,12 +193,6 @@ public class TabsRedImpl
     @JsonProperty("titleColorBasic")
     public String getTitleColorBasic() {
         return titleColorBasic;
-    }
-
-    @Override
-    @JsonProperty("titleTextBasic")
-    public String getTitleTextBasic() {
-        return titleTextBasic;
     }
 
     @Override
@@ -244,6 +250,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("testMask")
+    public String getTestMask() {
+        return testMask;
+    }
+
+    @Override
     @JsonProperty("labelCheckbox")
     public String getLabelCheckbox() {
         return labelCheckbox;
@@ -262,6 +274,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("titleTextSocial")
+    public String getTitleTextSocial() {
+        return titleTextSocial;
+    }
+
+    @Override
     @JsonProperty("fontSizeTitleSocial")
     public Long getFontSizeTitleSocial() {
         return fontSizeTitleSocial;
@@ -276,12 +294,6 @@ public class TabsRedImpl
     @JsonProperty("titleColorSocial")
     public String getTitleColorSocial() {
         return titleColorSocial;
-    }
-
-    @Override
-    @JsonProperty("titleTextSocial")
-    public String getTitleTextSocial() {
-        return titleTextSocial;
     }
 
     @Override
@@ -340,6 +352,17 @@ public class TabsRedImpl
     @JsonProperty("titleColorSuccess")
     public String getTitleColorSuccess() {
         return titleColorSuccess;
+    }
+
+    @Override
+    @JsonProperty("subTitleSuccess")
+    public String getSubTitleSuccess() {
+        return subTitleSuccess;
+    }
+
+    @Override
+    public String getFontFamilySuccess() {
+        return fontFamilySuccess;
     }
 
     @Override

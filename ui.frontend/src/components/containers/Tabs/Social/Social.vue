@@ -76,6 +76,9 @@ export default {
     this.linkedinValue = localStorage.getItem('linkedin')
     this.githubValue = localStorage.getItem('github')
     document.title = `${process.env.VUE_APP_TITLE} | Social`
+  },
+  updated () {
+    this.$store.state.labelLinkedin = this.labelLinkedin
   }
 }
 </script>

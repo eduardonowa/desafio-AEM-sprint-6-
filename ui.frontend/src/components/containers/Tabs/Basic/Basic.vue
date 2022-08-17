@@ -28,19 +28,18 @@
       aria-label="Email"
     />
     <Inputs
-      ClassField="phone"
+      :ClassField="classPhone"
       :LabelInput="LabelPhone"
       InvalidText="Invalid"
       :valueInput="phoneValue"
-      Placeholder="(83) 00000-0000"
+      :Placeholder="placeholderPhone"
       Type="tel"
       aria-label="Phone"
+      :testMask="testMask"
     />
     <Birthday aria-label="Birthday" />
     <div class="footer">
-      <CheckBox
-      aria-label="Contract terms"
-      :labelCheckbox="labelCheckbox"/>
+      <CheckBox aria-label="Contract terms" :labelCheckbox="labelCheckbox" />
       <div class="button-next">
         <Buttons
           :event="validate"
@@ -63,14 +62,21 @@ import CheckBox from '@/components/CheckBox/CheckBox.vue'
 import Birthday from '@/components/containers/Birthday/Birthday.vue'
 import { mapActions } from 'vuex'
 import Buttons from '@/components/micro/Buttons/Buttons.vue'
+import $ from 'jquery'
+import {} from 'jquery-mask-plugin'
 export default {
   // eslint-disable-next-line
   name: 'Basic',
   components: { Inputs, CheckBox, Birthday, Buttons },
   props: {
+    testMask: String,
     labelNickname: {
       type: String,
       default: 'Nickname'
+    },
+    placeholderPhone: {
+      type: String,
+      default: '(83) 00000-0000'
     },
     placeholderNickname: {
       type: String,
@@ -130,16 +136,30 @@ export default {
       fullnameValue: '',
       nicknameValue: '',
       emailValue: '',
-      phoneValue: ''
+      phoneValue: '',
+      classPhone: 'phone'
     }
   },
   mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Basic`
-
     this.fullnameValue = window.localStorage.fullname
     this.nicknameValue = window.localStorage.nickname
     this.emailValue = window.localStorage.email
     this.phoneValue = window.localStorage.phone
+  },
+  updated () {
+    this.$store.state.labelName = this.labelFullname.replace('*', '') + ': '
+    this.$store.state.labelEmail = this.LabelEmail.replace('*', '') + ': '
+    this.$store.state.labelPhone = this.labelFullname.replace('*', '') + ': '
+    this.$store.state.labelNickname = this.labelNickname.replace('*', '') + ': '
+  },
+  beforeUpdate () {
+    if (this.classPhone === 'phone' && this.testMask === 'yes') {
+      $(`.${this.classPhone} input`).mask('(00) 00000-0000')
+      console.log(this.testMask)
+    } else if (this.testMask === 'no') {
+      console.log(this.testMask)
+    }
   },
   methods: {
     ...mapActions(['nextTab']),

@@ -1,17 +1,23 @@
 <template>
   <div :class="ClassField">
-    <label :class="ClassLabel">{{ LabelInput }} </label>
+    <label :class="ClassLabel">{{ LabelInput }}</label>
     <span :id="idSpan" class="ClassSpan">{{ InvalidText }}</span>
 
-    <input :type="Type" :class="ClassInput" :placeholder="Placeholder" :id="idInputs" @input="getValue"
-      :value="valueInput" />
+    <input
+      :type="Type"
+      :class="ClassInput"
+      :placeholder="Placeholder"
+      :id="idInputs"
+      @input="getValue"
+      :value="valueInput"
+    />
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
-import $ from 'jquery'
-import { } from 'jquery-mask-plugin'
+// import $ from 'jquery'
+// import {} from 'jquery-mask-plugin'
 export default {
   name: 'Inputs',
   props: {
@@ -29,11 +35,8 @@ export default {
     idInputs: String,
     valueInput: String
   },
-  mounted () {
-    if (this.ClassField === 'phone') {
-      $(`.${this.ClassField} input`).mask('(00) 00000-0000')
-    }
-  },
+  mounted () {},
+  updated () {},
   methods: {
     ...mapActions([
       'setFullname',
@@ -74,5 +77,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "./Inputs.scss";
+@import './Inputs.scss';
 </style>

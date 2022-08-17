@@ -133,8 +133,6 @@ export default {
         this.actualYear = this.actualYear - 1
       }
       this.age = this.actualYear - this.year
-
-      console.log(this.age)
     },
     padStart (date) {
       return String(date).padStart(2, '0')
