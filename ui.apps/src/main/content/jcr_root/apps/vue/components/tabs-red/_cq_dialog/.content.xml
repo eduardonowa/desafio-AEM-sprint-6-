@@ -235,7 +235,6 @@
                                        jcr:primaryType="nt:unstructured"
                                        name="./LabelPhone"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <testMask cq-msm-lockable="./testMask"
                                      defaultValue="testMask"
                                      fieldLabel="Posição profissional"
@@ -251,7 +250,6 @@
                                  <no jcr:primaryType="nt:unstructured" text="No" value="no"/>
                               </items>
                            </testMask>
-
                            <labelBirthday cq-msm-lockable="./labelBirthday"
                                           fieldLabel="Birthday Label"
                                           jcr:primaryType="nt:unstructured"
@@ -262,7 +260,6 @@
                                          jcr:primaryType="nt:unstructured"
                                          name="./spanBirthday"
                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <labelCheckbox cq-msm-lockable="./labelCheckbox"
                                           fieldLabel="Checkbox Label"
                                           jcr:primaryType="nt:unstructured"
@@ -330,7 +327,6 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
                            <labelLinkedin cq-msm-lockable="./labelLinkedin"
                                           fieldLabel="Linkedin Label"
                                           jcr:primaryType="nt:unstructured"
@@ -341,7 +337,21 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderLinkedin"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-
+                           <labelGithub cq-msm-lockable="./labelGithub"
+                                        fieldLabel="GitHub Label"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./labelGithub"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderGithub cq-msm-lockable="./placeholderGithub"
+                                              fieldLabel="GitHub Placeholder"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./placeholderGithub"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <InvalidTextGithub cq-msm-lockable="./InvalidTextGithub"
+                                              fieldLabel="GitHub Span"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./InvalidTextGithub"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

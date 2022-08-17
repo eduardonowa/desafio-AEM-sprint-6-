@@ -78,9 +78,11 @@
           "fontSizeTitleSocial",
           "fontFamilyTitleSocial",
           "titleColorSocial",
-          "titleColorSocial",
           "labelLinkedin",
-          "placeholderLinkedin"
+          "placeholderLinkedin",
+          "labelGithub",
+          "placeholderGithub",
+          "InvalidTextGithub"
 
         ]
       },
@@ -711,6 +713,27 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderLinkedin"
+      },
+      {
+        "field": "labelGithub",
+        "label": "GitHub Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelGithub"
+      },
+      {
+        "field": "placeholderGithub",
+        "label": "GitHub Placeholder",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderGithub"
+      },
+      {
+        "field": "InvalidTextGithub",
+        "label": "GitHub Span",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "InvalidTextGithub"
       }
     ]
   }
