@@ -18,7 +18,14 @@
           :colorButtonThree="colorButtonThree"
           :backgroundButtonThree="backgroundButtonThree"
         />
-        <div v-show="isOpenCertificates" class="certificatesList" id="idList">
+        <div
+          v-show="isOpenCertificates"
+          class="certificatesList"
+          id="idList"
+          :style="{
+            'background': dropdownBgColor
+          }"
+        >
           <div
             id="listOfCertificates"
             v-for="(certificate, index) in certificates"
@@ -95,6 +102,7 @@ export default {
   name: 'Certificates',
   components: { Inputs, Buttons },
   props: {
+    dropdownBgColor: String,
     spanTeamname: {
       type: String,
       default: 'Please enter your Team Name'
@@ -280,10 +288,13 @@ export default {
       'certificates',
       JSON.stringify(this.certificates)
     )
-    this.$store.state.labelCertificates = this.labelCertificates.replace('*', '') + ': '
+    this.$store.state.labelCertificates =
+      this.labelCertificates.replace('*', '') + ': '
     this.$store.state.labelTeamname = this.labelTeamname.replace('*', '') + ': '
-    this.$store.state.labelGraduation = this.labelGraduation.replace('*', '') + ': '
-    this.$store.state.labelInstitution = this.labelInstitution.replace('*', '') + ': '
+    this.$store.state.labelGraduation =
+      this.labelGraduation.replace('*', '') + ': '
+    this.$store.state.labelInstitution =
+      this.labelInstitution.replace('*', '') + ': '
   },
   mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Certificates`

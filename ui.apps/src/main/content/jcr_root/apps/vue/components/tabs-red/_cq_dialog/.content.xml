@@ -44,7 +44,8 @@
                                         jcr:primaryType="nt:unstructured"
                                         name="./description"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        emptyText="Forms"/>
+                                        emptyText="Forms"
+                                        />
                                         
                            <colorDescription cq-msm-lockable="./colorDescription"
                                              fieldLabel="Color"
@@ -514,6 +515,12 @@
                                                   name="./backgroundButtonThree"
                                                   emptyText="color"
                                                   sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
+                           <dropdownBgColor cq-msm-lockable="./dropdownBgColor"
+                                                  fieldLabel="Dropdown background"
+                                                  jcr:primaryType="nt:unstructured"
+                                                  name="./dropdownBgColor"
+                                                  emptyText="color dropdown"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                            <labelTeamname cq-msm-lockable="./labelTeamname"
                                           fieldLabel="Label second input"
                                           jcr:primaryType="nt:unstructured"
@@ -671,7 +678,7 @@
                               </items>
                            </fontFamilySuccess>
                            <msgOneS cq-msm-lockable="./msgOneS"
-                                    fieldLabel="Right bottom button text"
+                                    fieldLabel="Button text"
                                     jcr:primaryType="nt:unstructured"
                                     name="./msgOneS"
                                     emptyText="Return"
@@ -683,7 +690,7 @@
                                             emptyText="color"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"/>
                            <backgroundButtonOneS cq-msm-lockable="./backgroundButtonOneS"
-                                                 fieldLabel="Right bottom button background"
+                                                 fieldLabel="Button background"
                                                  jcr:primaryType="nt:unstructured"
                                                  name="./backgroundButtonOneS"
                                                  emptyText="color"

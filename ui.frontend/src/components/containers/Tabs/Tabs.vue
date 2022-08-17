@@ -90,6 +90,7 @@
             :labelTeamname="labelTeamname"
             :spanTeamname="spanTeamname"
             :placeholderTeamname="placeholderTeamname"
+            :dropdownBgColor = "dropdownBgColor"
           />
         </template>
       </template>
@@ -121,6 +122,7 @@ export default {
   name: 'Tabs',
   components: { MenuComponent, Social, Basic, Certificates, Success, Header },
   props: {
+    dropdownBgColor: String,
     descriptionCard: {
       type: String,
       default: 'Team Sign Up'

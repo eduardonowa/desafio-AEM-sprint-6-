@@ -1,20 +1,37 @@
-/*
- * ***********************************************************************
- * SPA Vue Project CONFIDENTIAL
- * ___________________
- *
- * Copyright 2022 SPA Vue Project.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains the property
- * of SPA Vue Project and its suppliers, if any. The intellectual and
- * technical concepts contained herein are proprietary to SPA Vue Project
- * and its suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from SPA Vue Project.
- * ***********************************************************************
- */
+/*
+
+ * ***********************************************************************
+
+ * SPA Vue Project CONFIDENTIAL
+
+ * ___________________
+
+ *
+
+ * Copyright 2022 SPA Vue Project.
+
+ * All Rights Reserved.
+
+ *
+
+ * NOTICE:  All information contained herein is, and remains the property
+
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+
+ * technical concepts contained herein are proprietary to SPA Vue Project
+
+ * and its suppliers and are protected by trade secret or copyright law.
+
+ * Dissemination of this information or reproduction of this material
+
+ * is strictly forbidden unless prior written permission is obtained
+
+ * from SPA Vue Project.
+
+ * ***********************************************************************
+
+ */
+
 
 package com.vue.core.models.impl;
 
@@ -41,6 +58,8 @@ public class TabsRedImpl
     implements TabsRed
 {
 
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String dropdownBgColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String description;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -192,6 +211,11 @@ public class TabsRedImpl
     @SlingObject
     private Resource resource;
 
+    @Override
+    @JsonProperty("dropdownBgColor")
+    public String getdropdownBgColor() {
+        return dropdownBgColor;
+    }
     @Override
     @JsonProperty("description")
     public String getDescription() {

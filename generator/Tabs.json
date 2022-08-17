@@ -104,6 +104,7 @@
           "msgThree",
           "colorButtonThree",
           "backgroundButtonThree",
+          "dropwdownBgColor",
           "labelTeamname",
           "placeholderTeamname",
           "spanTeamname",
@@ -162,6 +163,13 @@
             }
           }
         ]
+      },
+      {
+        "field": "dropwdownBgColor",
+        "label": "Drodpwon background",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "dropwdownBgColor"
       },
       {
         "field": "descriptionCard",
@@ -865,7 +873,7 @@
       },
       {
         "field": "backgroundButtonOneS",
-        "label": "Right bottom button background",
+        "label": "Button background",
         "type": "textfield",
         "json-expose": true,
         "json-property": "backgroundButtonOneS"
@@ -879,7 +887,7 @@
       },
       {
         "field": "msgOne",
-        "label": "Right bottom button text",
+        "label": "Button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgOne"
