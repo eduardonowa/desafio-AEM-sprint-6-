@@ -58,21 +58,21 @@
       aria-label="Team Name"
     />
     <Inputs
-      LabelInput="Institution *"
+      :LabelInput="labelInstitution"
       idSpan="institutionSpan"
       ClassField="institution"
-      InvalidText="Please enter your Institution"
-      Placeholder="Universidade Federal da Paraíba"
+      :InvalidText="spanInstitution"
+      :Placeholder="placeholderInstitution"
       Type="text"
       :valueInput="institutionValue"
       aria-label="Institution"
     />
     <Inputs
-      LabelInput="Graduation *"
+      :LabelInput="labelGraduation"
       idSpan="graduationSpan"
       ClassField="graduation"
-      InvalidText="Please enter your Graduation"
-      Placeholder="Ciências da Computação"
+      :InvalidText="spanGraduation"
+      :Placeholder="placeholderGraduation"
       Type="text"
       :valueInput="graduationValue"
       aria-label="Graduation"
@@ -168,6 +168,30 @@ export default {
     msgThree: {
       type: String,
       default: 'Certificates'
+    },
+    labelGraduation: {
+      type: String,
+      default: 'Graduation *'
+    },
+    spanGraduation: {
+      type: String,
+      default: 'Please enter your Graduation'
+    },
+    placeholderGraduation: {
+      type: String,
+      default: 'Ciência da Computação'
+    },
+    labelInstitution: {
+      type: String,
+      default: 'Institution *'
+    },
+    spanInstitution: {
+      type: String,
+      default: 'Please enter your Institution'
+    },
+    placeholderInstitution: {
+      type: String,
+      default: 'Universidade Federal da Paraíba'
     }
   },
   data () {

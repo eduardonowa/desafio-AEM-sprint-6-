@@ -1,20 +1,37 @@
-/*
- * ***********************************************************************
- * SPA Vue Project CONFIDENTIAL
- * ___________________
- *
- * Copyright 2022 SPA Vue Project.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains the property
- * of SPA Vue Project and its suppliers, if any. The intellectual and
- * technical concepts contained herein are proprietary to SPA Vue Project
- * and its suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from SPA Vue Project.
- * ***********************************************************************
- */
+/*
+
+ * ***********************************************************************
+
+ * SPA Vue Project CONFIDENTIAL
+
+ * ___________________
+
+ *
+
+ * Copyright 2022 SPA Vue Project.
+
+ * All Rights Reserved.
+
+ *
+
+ * NOTICE:  All information contained herein is, and remains the property
+
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+
+ * technical concepts contained herein are proprietary to SPA Vue Project
+
+ * and its suppliers and are protected by trade secret or copyright law.
+
+ * Dissemination of this information or reproduction of this material
+
+ * is strictly forbidden unless prior written permission is obtained
+
+ * from SPA Vue Project.
+
+ * ***********************************************************************
+
+ */
+
 
 package com.vue.core.models;
 
@@ -154,6 +171,24 @@ public interface TabsRed
     @JsonProperty("placeholderCertificates")
     String getPlaceholderCertificates();
 
+    @JsonProperty("labelInstitution")
+    String getLabelInstitution();
+
+    @JsonProperty("placeholderInstitution")
+    String getPlaceholderInstitution();
+
+    @JsonProperty("spanInstitution")
+    String getSpanInstitution();
+
+    @JsonProperty("labelGraduation")
+    String getLabelGraduation();
+
+    @JsonProperty("placeholderGraduation")
+    String getPlaceholderGraduation();
+
+    @JsonProperty("spanGraduation")
+    String getSpanGraduation();
+    
     @JsonProperty("labelTeamname")
     String getLabelTeamname();
 
@@ -162,7 +197,6 @@ public interface TabsRed
 
     @JsonProperty("spanTeamname")
     String getSpanTeamname();
-
     @JsonProperty("titleTextSuccess")
     String getTitleTextSuccess();
 

@@ -143,6 +143,17 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String spanInstitution;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelGraduation;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderGraduation;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String spanGraduation;
     private String labelTeamname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderTeamname;
@@ -411,6 +422,40 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("labelInstitution")
+    public String getLabelInstitution() {
+        return labelInstitution;
+    }
+
+    @Override
+    @JsonProperty("placeholderInstitution")
+    public String getPlaceholderInstitution() {
+        return placeholderInstitution;
+    }
+
+    @Override
+    @JsonProperty("spanInstitution")
+    public String getSpanInstitution() {
+        return spanInstitution;
+    }
+
+    @Override
+    @JsonProperty("labelGraduation")
+    public String getLabelGraduation() {
+        return labelGraduation;
+    }
+
+    @Override
+    @JsonProperty("placeholderGraduation")
+    public String getPlaceholderGraduation() {
+        return placeholderGraduation;
+    }
+
+    @Override
+    @JsonProperty("spanGraduation")
+    public String getSpanGraduation() {
+        return spanGraduation;
+
     @JsonProperty("labelTeamname")
     public String getLabelTeamname() {
         return labelTeamname;
