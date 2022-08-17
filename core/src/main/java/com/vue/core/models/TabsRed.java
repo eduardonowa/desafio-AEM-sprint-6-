@@ -55,6 +55,9 @@ public interface TabsRed
     @JsonProperty("textNavColor")
     String getTextNavColor();
 
+    @JsonProperty("titleTextBasic")
+    String getTitleTextBasic();
+
     @JsonProperty("fontSizeTitleBasic")
     Long getFontSizeTitleBasic();
 
@@ -62,9 +65,6 @@ public interface TabsRed
 
     @JsonProperty("titleColorBasic")
     String getTitleColorBasic();
-
-    @JsonProperty("titleTextBasic")
-    String getTitleTextBasic();
 
     @JsonProperty("labelFullname")
     String getLabelFullname();
@@ -102,6 +102,9 @@ public interface TabsRed
     @JsonProperty("backgroundButtonZero")
     String getBackgroundButtonZero();
 
+    @JsonProperty("titleTextSocial")
+    String getTitleTextSocial();
+
     @JsonProperty("fontSizeTitleSocial")
     Long getFontSizeTitleSocial();
 
@@ -109,9 +112,6 @@ public interface TabsRed
 
     @JsonProperty("titleColorSocial")
     String getTitleColorSocial();
-
-    @JsonProperty("titleTextSocial")
-    String getTitleTextSocial();
 
     @JsonProperty("titleTextCertificates")
     String getTitleTextCertificates();
@@ -140,5 +140,93 @@ public interface TabsRed
 
     @JsonProperty("titleColorSuccess")
     String getTitleColorSuccess();
+
+    @JsonProperty("textFontSizeSuccessFullName")
+    Long getTextFontSizeSuccessFullName();
+
+    String getTextFontFamilySuccessFullName();
+
+    @JsonProperty("textColorSuccessFullName")
+    String getTextColorSuccessFullName();
+
+    @JsonProperty("textFontSizeSuccessNickname")
+    Long getTextFontSizeSuccessNickname();
+
+    String getTextFontFamilySuccessNickname();
+
+    @JsonProperty("textColorSuccessNickname")
+    String getTextColorSuccessNickname();
+
+    @JsonProperty("textFontSizeSuccessEmail")
+    Long getTextFontSizeSuccessEmail();
+
+    String getTextFontFamilySuccessEmail();
+
+    @JsonProperty("textColorSuccessEmail")
+    String getTextColorSuccessEmail();
+
+    @JsonProperty("textFontSizeSuccessPhone")
+    Long getTextFontSizeSuccessPhone();
+
+    String getTextFontFamilySuccessPhone();
+
+    @JsonProperty("textColorSuccessPhone")
+    String getTextColorSuccessPhone();
+
+    @JsonProperty("textFontSizeSuccessBirthday")
+    Long getTextFontSizeSuccessBirthday();
+
+    String getTextFontFamilySuccessBirthday();
+
+    @JsonProperty("textColorSuccessBirthday")
+    String getTextColorSuccessBirthday();
+
+    @JsonProperty("textFontSizeSuccessAge")
+    Long getTextFontSizeSuccessAge();
+
+    String getTextFontFamilySuccessAge();
+
+    @JsonProperty("textColorSuccessAge")
+    String getTextColorSuccessAge();
+
+    @JsonProperty("textFontSizeSuccessLinkedin")
+    Long getTextFontSizeSuccessLinkedin();
+
+    String getTextFontFamilySuccessLinkedin();
+
+    @JsonProperty("textColorSuccessLinkedin")
+    String getTextColorSuccessLinkedin();
+
+    @JsonProperty("textFontSizeSuccessGithub")
+    Long getTextFontSizeSuccessGithub();
+
+    String getTextFontFamilySuccessGithub();
+
+    @JsonProperty("textColorSuccessGithub")
+    String getTextColorSuccessGithub();
+
+    @JsonProperty("textFontSizeSuccessTeam")
+    Long getTextFontSizeSuccessTeam();
+
+    String getTextFontFamilySuccessTeam();
+
+    @JsonProperty("textColorSuccessTeam")
+    String getTextColorSuccessTeam();
+
+    @JsonProperty("textFontSizeSuccessInstitution")
+    Long getTextFontSizeSuccessInstitution();
+
+    String getTextFontFamilySuccessInstitution();
+
+    @JsonProperty("textColorSuccessInstitution")
+    String getTextColorSuccessInstitution();
+
+    @JsonProperty("textFontSizeSuccessGraduation")
+    Long getTextFontSizeSuccessGraduation();
+
+    String getTextFontFamilySuccessGraduation();
+
+    @JsonProperty("textColorSuccessGraduation")
+    String getTextColorSuccessGraduation();
 
 }

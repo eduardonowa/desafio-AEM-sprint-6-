@@ -1,6 +1,6 @@
 <template>
   <div class="text-container">
-    <p>{{ description }} {{ text }}</p>
+    <p :style="{ 'color': textColor , 'font-family': textFontFamily , 'font-size': textFontSize}">{{ description }} {{ text }}</p>
   </div>
 </template>
 
@@ -8,8 +8,21 @@
 export default {
   name: 'Texts',
   props: {
-    description: String,
-    text: String
+    description: {
+      type: String
+    },
+    text: {
+      type: String
+    },
+    textColor: {
+      type: String
+    },
+    textFontFamily: {
+      type: String
+    },
+    textFontSize: {
+      type: String
+    }
   }
 }
 </script>
