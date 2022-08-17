@@ -119,6 +119,12 @@ public interface TabsRed
     @JsonProperty("titleColorSocial")
     String getTitleColorSocial();
 
+    @JsonProperty("labelLinkedin")
+    String getLabelLinkedin();
+
+    @JsonProperty("placeholderLinkedin")
+    String getPlaceholderLinkedin();
+
     @JsonProperty("titleTextCertificates")
     String getTitleTextCertificates();
 
