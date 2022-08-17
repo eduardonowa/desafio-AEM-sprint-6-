@@ -37,7 +37,11 @@
       aria-label="Phone"
       :testMask="testMask"
     />
-    <Birthday aria-label="Birthday" />
+    <Birthday
+    aria-label="Birthday"
+    :labelBirthday="labelBirthday"
+    :spanBirthday="spanBirthday"
+    />
     <div class="footer">
       <CheckBox aria-label="Contract terms" :labelCheckbox="labelCheckbox" />
       <div class="button-next">
@@ -129,6 +133,14 @@ export default {
     LabelPhone: {
       type: String,
       default: 'Phone'
+    },
+    labelBirthday: {
+      type: String,
+      default: 'Birthday *'
+    },
+    spanBirthday: {
+      type: String,
+      default: 'Please enter your age'
     }
   },
   data () {

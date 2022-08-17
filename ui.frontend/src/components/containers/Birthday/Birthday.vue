@@ -1,7 +1,7 @@
 <template>
   <div class="birthday-container">
-    <label class="title">Birthday *</label>
-    <span id="spanBirthday">Please enter your Age</span>
+    <label class="title">{{ labelBirthday }}</label>
+    <span id="spanBirthday">{{ spanBirthday }}</span>
     <div class="inputs-container">
       <div class="select">
         <label>Day</label>
@@ -63,6 +63,16 @@ export default {
       age: '',
       actualYear: '',
       rangeYears: ''
+    }
+  },
+  props: {
+    labelBirthday: {
+      type: String,
+      default: 'Birthday *'
+    },
+    spanBirthday: {
+      type: String,
+      default: 'Please enter your age'
     }
   },
   methods: {

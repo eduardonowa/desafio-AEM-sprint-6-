@@ -235,6 +235,7 @@
                                        jcr:primaryType="nt:unstructured"
                                        name="./LabelPhone"
                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                            <testMask cq-msm-lockable="./testMask"
                                      defaultValue="testMask"
                                      fieldLabel="Posição profissional"
@@ -250,6 +251,18 @@
                                  <no jcr:primaryType="nt:unstructured" text="No" value="no"/>
                               </items>
                            </testMask>
+
+                           <labelBirthday cq-msm-lockable="./labelBirthday"
+                                          fieldLabel="Birthday Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelBirthday"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanBirthday cq-msm-lockable="./spanBirthday"
+                                         fieldLabel="Birthday Span"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanBirthday"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                            <labelCheckbox cq-msm-lockable="./labelCheckbox"
                                           fieldLabel="Checkbox Label"
                                           jcr:primaryType="nt:unstructured"
@@ -317,6 +330,18 @@
                                              jcr:primaryType="nt:unstructured"
                                              name="./titleColorSocial"
                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
+                           <labelLinkedin cq-msm-lockable="./labelLinkedin"
+                                          fieldLabel="Linkedin Label"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelLinkedin"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderLinkedin cq-msm-lockable="./placeholderLinkedin"
+                                                fieldLabel="Linkedin Placeholder"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderLinkedin"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                         </items>
                      </column>
                   </items>

@@ -1,8 +1,8 @@
 <template>
   <div class="social-container" role="form">
     <Inputs
-      LabelInput="Linkedin"
-      Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
+      :LabelInput="labelLinkedin"
+      :Placeholder=placeholderLinkedin
       Type="linkedin"
       ClassInput="linkedin"
       :valueInput="linkedinValue"
@@ -53,6 +53,14 @@ export default {
     msgZero: {
       type: String,
       default: 'Next'
+    },
+    placeholderLinkedin: {
+      type: String,
+      default: 'https://www.linkedin.com/in/foo-bar-3a0560104/'
+    },
+    labelLinkedin: {
+      type: String,
+      default: 'Linkedin'
     }
   },
   data () {

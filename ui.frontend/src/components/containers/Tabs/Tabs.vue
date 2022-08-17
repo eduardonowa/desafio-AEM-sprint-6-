@@ -51,6 +51,9 @@
             :LabelEmail="LabelEmail"
             :LabelPhone="LabelPhone"
             :testMask="testMask"
+            :labelBirthday="labelBirthday"
+            :spanBirthday="spanBirthday"
+
           />
         </template>
 
@@ -61,6 +64,8 @@
             :fontFamilyButtonZero="fontFamilyButtonZero"
             :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
+            :placeholderLinkedin="placeholderLinkedin"
+            :labelLinkedin="labelLinkedin"
           />
         </template>
 
@@ -138,6 +143,10 @@ export default {
     LabelEmail: String,
     LabelPhone: String,
     description: String,
+    labelBirthday: String,
+    spanBirthday: String,
+    placeholderLinkedin: String,
+    labelLinkedin: String,
 
     colorDescription: {
       type: String

@@ -59,7 +59,12 @@
           "PlaceholderEmail",
           "InvalidTextEmail",
           "LabelPhone",
+
           "testMask",
+
+          "labelBirthday",
+          "spanBirthday",
+
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
@@ -75,7 +80,13 @@
           "titleTextSocial",
           "fontSizeTitleSocial",
           "fontFamilyTitleSocial",
+
           "titleColorSocial"
+
+          "titleColorSocial",
+          "labelLinkedin",
+          "placeholderLinkedin"
+
         ]
       },
       {
@@ -677,6 +688,34 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "LabelPhone"
+      },
+      {
+        "field": "labelBirthday",
+        "label": "Birthday Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelBirthday"
+      },
+      {
+        "field": "spanBirthday",
+        "label": "Birthday Span",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanBirthday"
+      },
+      {
+        "field": "labelLinkedin",
+        "label": "Linkedin Label",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelLinkedin"
+      },
+      {
+        "field": "placeholderLinkedin",
+        "label": "Linkedin Placeholder",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderLinkedin"
       }
     ]
   }
