@@ -283,6 +283,7 @@ public class TabsRedImpl
     @JsonProperty("testMask")
     public String getTestMask() {
         return testMask;
+    }
 
     @JsonProperty("labelBirthday")
     public String getLabelBirthday() {
