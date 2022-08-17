@@ -37,8 +37,6 @@
           <Basic
             :msgZero="msgZero"
             :colorButtonZero="colorButtonZero"
-            :fontFamilyButtonZero="fontFamilyButtonZero"
-            :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
             :labelFullname="labelFullname"
             :placeholderFullname="placeholderFullname"
@@ -59,11 +57,9 @@
 
         <template v-else-if="getActualTab === 'social'">
           <Social
-            :msgZero="msgZero"
-            :colorButtonZero="colorButtonZero"
-            :fontFamilyButtonZero="fontFamilyButtonZero"
-            :formatButtonFontSizeZero="formatButtonFontSizeZero"
-            :backgroundButtonZero="backgroundButtonZero"
+            :msgZero="msgZeroS"
+            :colorButtonZero="colorButtonZeroS"
+            :backgroundButtonZero="backgroundButtonZeroS"
             :placeholderLinkedin="placeholderLinkedin"
             :labelLinkedin="labelLinkedin"
             :labelGithub="labelGithub"
@@ -78,16 +74,10 @@
             :msgTwo="msgTwo"
             :msgThree="msgThree"
             :colorButtonOne="colorButtonOne"
-            :fontFamilyButtonOne="fontFamilyButtonOne"
-            :formatButtonFontSizeOne="formatButtonFontSizeOne"
             :backgroundButtonOne="backgroundButtonOne"
             :colorButtonTwo="colorButtonTwo"
-            :fontFamilyButtonTwo="fontFamilyButtonTwo"
-            :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
             :backgroundButtonTwo="backgroundButtonTwo"
             :colorButtonThree="colorButtonThree"
-            :fontFamilyButtonThree="fontFamilyButtonThree"
-            :formatButtonFontSizeThree="formatButtonFontSizeThree"
             :backgroundButtonThree="backgroundButtonThree"
             :labelCertificates="labelCertificates"
             :placeholderCertificates="placeholderCertificates"
@@ -106,11 +96,9 @@
 
       <template v-else-if="getActualTab === 'success'">
         <Success
-          :msgOne="msgOne"
-          :colorButtonOne="colorButtonOne"
-          :fontFamilyButtonOne="fontFamilyButtonOne"
-          :formatButtonFontSizeOne="formatButtonFontSizeOne"
-          :backgroundButtonOne="backgroundButtonOne"
+          :msgOne="msgOneS"
+          :colorButtonOne="colorButtonOneS"
+          :backgroundButtonOne="backgroundButtonOneS"
           :fontFamilySuccess="fontFamilySuccess"
           :subTitleSuccess="subTitleSuccess"
         />
@@ -146,6 +134,12 @@ export default {
     labelNickname: String,
     placeholderNickname: String,
     spanFullname: String,
+    msgZeroS: String,
+    colorButtonZeroS: String,
+    backgroundButtonZeroS: String,
+    msgOneS: String,
+    colorButtonOneS: String,
+    backgroundButtonOneS: String,
     labelFullname: {
       type: String,
       default: 'default'
@@ -235,22 +229,10 @@ export default {
     colorButtonZero: {
       type: String
     },
-    fontFamilyButtonZero: {
-      type: String
-    },
-    formatButtonFontSizeZero: {
-      type: String
-    },
     backgroundButtonZero: {
       type: String
     },
     colorButtonOne: {
-      type: String
-    },
-    fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
       type: String
     },
     backgroundButtonOne: {
@@ -259,22 +241,10 @@ export default {
     colorButtonTwo: {
       type: String
     },
-    fontFamilyButtonTwo: {
-      type: String
-    },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
     colorButtonThree: {
-      type: String
-    },
-    fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {

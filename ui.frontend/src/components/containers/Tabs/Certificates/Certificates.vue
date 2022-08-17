@@ -16,8 +16,6 @@
           class="certificateButton"
           :event="openCertificates"
           :colorButtonThree="colorButtonThree"
-          :fontFamilyButtonThree="fontFamilyButtonThree"
-          :formatButtonFontSizeThree="formatButtonFontSizeThree"
           :backgroundButtonThree="backgroundButtonThree"
         />
         <div v-show="isOpenCertificates" class="certificatesList" id="idList">
@@ -40,8 +38,6 @@
           class="moreButton"
           :event="addCertificates"
           :colorButtonTwo="colorButtonTwo"
-          :fontFamilyButtonTwo="fontFamilyButtonTwo"
-          :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
           :backgroundButtonTwo="backgroundButtonTwo"
         />
         <span> {{ spanMsg }} </span>
@@ -85,8 +81,6 @@
         type="1"
         :event="validate"
         :colorButtonOne="colorButtonOne"
-        :fontFamilyButtonOne="fontFamilyButtonOne"
-        :formatButtonFontSizeOne="formatButtonFontSizeOne"
         :backgroundButtonOne="backgroundButtonOne"
       />
     </div>
@@ -124,34 +118,16 @@ export default {
     colorButtonOne: {
       type: String
     },
-    fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
-      type: String
-    },
     backgroundButtonOne: {
       type: String
     },
     colorButtonTwo: {
       type: String
     },
-    fontFamilyButtonTwo: {
-      type: String
-    },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
     colorButtonThree: {
-      type: String
-    },
-    fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {

@@ -22,7 +22,12 @@
     />
 
     <div class="button">
-      <Buttons type="0" :event="verify" :msgZero="msgZero" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" />
+      <Buttons
+       type="0"
+       :event="verify"
+       :msgZero="msgZero"
+       :colorButtonZero="colorButtonZero"
+       :backgroundButtonZero="backgroundButtonZero" />
     </div>
   </div>
 </template>
@@ -39,12 +44,6 @@ export default {
   },
   props: {
     colorButtonZero: {
-      type: String
-    },
-    fontFamilyButtonZero: {
-      type: String
-    },
-    formatButtonFontSizeZero: {
       type: String
     },
     backgroundButtonZero: {

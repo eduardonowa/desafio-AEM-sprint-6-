@@ -108,6 +108,9 @@ public interface TabsRed
     @JsonProperty("msgZero")
     String getMsgZero();
 
+    @JsonProperty("colorButtonZero")
+    String getColorButtonZero();
+
     @JsonProperty("backgroundButtonZero")
     String getBackgroundButtonZero();
 
@@ -137,6 +140,15 @@ public interface TabsRed
     @JsonProperty("InvalidTextGithub")
     String getInvalidTextGithub();
 
+    @JsonProperty("msgZeroS")
+    String getMsgZeroS();
+
+    @JsonProperty("colorButtonZeroS")
+    String getColorButtonZeroS();
+
+    @JsonProperty("backgroundButtonZeroS")
+    String getBackgroundButtonZeroS();
+
     @JsonProperty("titleTextCertificates")
     String getTitleTextCertificates();
 
@@ -153,6 +165,24 @@ public interface TabsRed
 
     @JsonProperty("placeholderCertificates")
     String getPlaceholderCertificates();
+
+    @JsonProperty("msgTwo")
+    String getMsgTwo();
+
+    @JsonProperty("colorButtonTwo")
+    String getColorButtonTwo();
+
+    @JsonProperty("backgroundButtonTwo")
+    String getBackgroundButtonTwo();
+
+    @JsonProperty("msgThree")
+    String getMsgThree();
+
+    @JsonProperty("colorButtonThree")
+    String getColorButtonThree();
+
+    @JsonProperty("backgroundButtonThree")
+    String getBackgroundButtonThree();
 
     @JsonProperty("labelTeamname")
     String getLabelTeamname();
@@ -181,6 +211,15 @@ public interface TabsRed
     @JsonProperty("spanGraduation")
     String getSpanGraduation();
 
+    @JsonProperty("msgOne")
+    String getMsgOne();
+
+    @JsonProperty("colorButtonOne")
+    String getColorButtonOne();
+
+    @JsonProperty("backgroundButtonOne")
+    String getBackgroundButtonOne();
+
     @JsonProperty("titleTextSuccess")
     String getTitleTextSuccess();
 
@@ -196,5 +235,14 @@ public interface TabsRed
     String getSubTitleSuccess();
 
     String getFontFamilySuccess();
+
+    @JsonProperty("msgOneS")
+    String getMsgOneS();
+
+    @JsonProperty("colorButtonOneS")
+    String getColorButtonOneS();
+
+    @JsonProperty("backgroundButtonOneS")
+    String getBackgroundButtonOneS();
 
 }

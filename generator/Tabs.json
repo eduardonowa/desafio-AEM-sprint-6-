@@ -65,8 +65,6 @@
           "labelCheckbox",
           "msgZero",
           "colorButtonZero",
-          "fontFamilyButtonZero",
-          "formatButtonFontSizeZero",
           "backgroundButtonZero"
         ]
       },
@@ -82,8 +80,10 @@
           "placeholderLinkedin",
           "labelGithub",
           "placeholderGithub",
-          "InvalidTextGithub"
-
+          "InvalidTextGithub",
+          "msgZeroS",
+          "colorButtonZeroS",
+          "backgroundButtonZeroS"
         ]
       },
       {
@@ -96,6 +96,12 @@
           "titleColorCertificates",
           "labelCertificates",
           "placeholderCertificates",
+          "msgTwo",
+          "colorButtonTwo",
+          "backgroundButtonTwo",
+          "msgThree",
+          "colorButtonThree",
+          "backgroundButtonThree",
           "labelTeamname",
           "placeholderTeamname",
           "spanTeamname",
@@ -104,7 +110,10 @@
           "spanInstitution",
           "labelGraduation",
           "placeholderGraduation",
-          "spanGraduation"
+          "spanGraduation",
+          "msgOne",
+          "colorButtonOne",
+          "backgroundButtonOne"
         ]
       },
       {
@@ -116,7 +125,10 @@
           "fontFamilyTitleSuccess",
           "titleColorSuccess",
           "subTitleSuccess",
-          "fontFamilySuccess"
+          "fontFamilySuccess",
+          "msgOneS",
+          "colorButtonOneS",
+          "backgroundButtonOneS"
         ]
       }
     ],
@@ -682,6 +694,13 @@
         "json-property": "backgroundButtonZero"
       },
       {
+        "field": "colorButtonZero",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonZero"
+      },
+      {
         "field": "labelCheckbox",
         "label": "Checkbox Label",
         "type": "textfield",
@@ -766,6 +785,27 @@
         "json-property": "InvalidTextGithub"
       },
       {
+        "field": "msgZeroS",
+        "label": "Button text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgZeroS"
+      },
+      {
+        "field": "backgroundButtonZeroS",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonZeroS"
+      },
+      {
+        "field": "colorButtonZeroS",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonZeroS"
+      },
+      {
         "field": "labelGraduation",
         "label": "Graduation Label",
         "type": "textfield",
@@ -806,6 +846,90 @@
         "type": "textfield",
         "json-expose": true,
         "json-property": "spanInstitution"
+      },
+      {
+        "field": "msgOneS",
+        "label": "Button text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgOneS"
+      },
+      {
+        "field": "backgroundButtonOneS",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonOneS"
+      },
+      {
+        "field": "colorButtonOneS",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonOneS"
+      },
+      {
+        "field": "msgOne",
+        "label": "Button text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgOne"
+      },
+      {
+        "field": "backgroundButtonOne",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonOne"
+      },
+      {
+        "field": "colorButtonOne",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonOne"
+      },
+      {
+        "field": "msgTwo",
+        "label": "Button text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgTwo"
+      },
+      {
+        "field": "backgroundButtonTwo",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonTwo"
+      },
+      {
+        "field": "colorButtonTwo",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonTwo"
+      },
+      {
+        "field": "msgThree",
+        "label": "Button text",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "msgThree"
+      },
+      {
+        "field": "backgroundButtonThree",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "backgroundButtonThree"
+      },
+      {
+        "field": "colorButtonThree",
+        "label": "Button background color",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "colorButtonThree"
       }
     ]
   }

@@ -50,8 +50,6 @@
           type="0"
           :msgZero="msgZero"
           :colorButtonZero="colorButtonZero"
-          :fontFamilyButtonZero="fontFamilyButtonZero"
-          :formatButtonFontSizeZero="formatButtonFontSizeZero"
           :backgroundButtonZero="backgroundButtonZero"
           aria-label="Next Form"
         />
@@ -99,12 +97,6 @@ export default {
       default: 'Please enter your name'
     },
     colorButtonZero: {
-      type: String
-    },
-    fontFamilyButtonZero: {
-      type: String
-    },
-    formatButtonFontSizeZero: {
       type: String
     },
     backgroundButtonZero: {

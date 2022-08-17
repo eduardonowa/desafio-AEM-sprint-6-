@@ -7,8 +7,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonZero,
-      'font-family': fontFamilyButtonZero,
-      'font-size': formatButtonFontSizeZero,
       'background': backgroundButtonZero
     }"
     >
@@ -21,8 +19,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonOne,
-      'font-family': fontFamilyButtonOne,
-      'font-size': formatButtonFontSizeOne,
       'background': backgroundButtonOne
     }"
     >
@@ -35,8 +31,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonTwo,
-      'font-family': fontFamilyButtonTwo,
-      'font-size': formatButtonFontSizeTwo,
       'background': backgroundButtonTwo
     }"
     >
@@ -50,8 +44,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonThree,
-      'font-family': fontFamilyButtonThree,
-      'font-size': formatButtonFontSizeThree,
       'background': backgroundButtonThree
     }"
     >
@@ -73,12 +65,6 @@ export default {
     colorButtonZero: {
       type: String
     },
-    fontFamilyButtonZero: {
-      type: String
-    },
-    formatButtonFontSizeZero: {
-      type: String
-    },
     backgroundButtonZero: {
       type: String
     },
@@ -86,12 +72,6 @@ export default {
       type: String
     },
     colorButtonOne: {
-      type: String
-    },
-    fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
       type: String
     },
     backgroundButtonOne: {
@@ -103,12 +83,6 @@ export default {
     colorButtonTwo: {
       type: String
     },
-    fontFamilyButtonTwo: {
-      type: String
-    },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
@@ -116,12 +90,6 @@ export default {
       type: String
     },
     colorButtonThree: {
-      type: String
-    },
-    fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {
