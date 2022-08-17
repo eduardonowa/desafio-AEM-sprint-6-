@@ -161,6 +161,7 @@ export default {
     labelInstitution: String,
     spanInstitution: String,
     placeholderInstitution: String,
+    labelFullname: String,
 
     colorDescription: {
       type: String

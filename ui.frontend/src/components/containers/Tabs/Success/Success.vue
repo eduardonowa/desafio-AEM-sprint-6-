@@ -14,7 +14,7 @@
     />
     <Texts :description="this.$store.state.labelEmail" :text="this.email" />
     <Texts v-if="this.phone" :description="this.$store.state.labelPhone" :text="this.phone" />
-    <Texts description="Birthday: " :text="this.birthday" />
+    <Texts :description="this.$store.state.labelBirthday" :text="this.birthday" />
     <Texts description="Age: " :text="this.age" />
     <Texts
       v-if="this.linkedin"

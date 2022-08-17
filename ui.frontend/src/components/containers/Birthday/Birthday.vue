@@ -117,7 +117,7 @@ export default {
     this.age = window.localStorage.age
   },
   updated () {
-    this.$store.state.labelBirthday = this.labelBirthday
+    this.$store.state.labelBirthday = this.labelBirthday.replace('*', '') + ': '
   },
   computed: {
     selectedDay () {
