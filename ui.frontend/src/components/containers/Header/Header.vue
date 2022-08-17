@@ -76,7 +76,7 @@ export default {
       type: String
     },
     fontSizeDescription: {
-      type: String
+      type: Number
     },
     textAlignHeader: {
       type: String
@@ -88,7 +88,7 @@ export default {
       type: String
     },
     fontSizeTitleBasic: {
-      type: String
+      type: Number
     },
     titleColorSocial: {
       type: String
@@ -97,7 +97,7 @@ export default {
       type: String
     },
     fontSizeTitleSocial: {
-      type: String
+      type: Number
     },
     titleColorCertificates: {
       type: String
@@ -106,7 +106,7 @@ export default {
       type: String
     },
     fontSizeTitleCertificates: {
-      type: String
+      type: Number
     },
     titleColorSuccess: {
       type: String
@@ -115,7 +115,7 @@ export default {
       type: String
     },
     fontSizeTitleSuccess: {
-      type: String
+      type: Number
     }
   }
 }

@@ -19,7 +19,7 @@ export default {
       type: String
     },
     fontSizeTitle: {
-      type: String
+      type: Number
     }
   },
   computed: {

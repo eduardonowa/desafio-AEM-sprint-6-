@@ -27,7 +27,7 @@ export default {
       default: 'Inter'
     },
     fontSizeDescription: {
-      type: String
+      type: Number
     }
   },
   computed: {

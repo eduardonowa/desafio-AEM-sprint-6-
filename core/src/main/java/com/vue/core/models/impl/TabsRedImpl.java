@@ -56,8 +56,6 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String bgColorSpanNav;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
-    private String textNavColor;
-    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String descriptionCard;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextBasic;
@@ -85,6 +83,8 @@ public class TabsRedImpl
     private String InvalidTextEmail;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String LabelPhone;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderPhone;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String testMask;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -233,12 +233,6 @@ public class TabsRedImpl
     }
 
     @Override
-    @JsonProperty("textNavColor")
-    public String getTextNavColor() {
-        return textNavColor;
-    }
-
-    @Override
     @JsonProperty("descriptionCard")
     public String getDescriptionCard() {
         return descriptionCard;
@@ -319,6 +313,12 @@ public class TabsRedImpl
     @JsonProperty("LabelPhone")
     public String getLabelPhone() {
         return LabelPhone;
+    }
+
+    @Override
+    @JsonProperty("placeholderPhone")
+    public String getPlaceholderPhone() {
+        return placeholderPhone;
     }
 
     @Override

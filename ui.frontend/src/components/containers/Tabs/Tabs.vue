@@ -30,7 +30,6 @@
         <MenuComponent
           :bgColorSpanNav="bgColorSpanNav"
           :fontFamilyNav="fontFamilyNav"
-          :textNavColor="textNavColor"
         />
 
         <template v-if="getActualTab === 'basic'">
@@ -51,6 +50,7 @@
             :testMask="testMask"
             :labelBirthday="labelBirthday"
             :spanBirthday="spanBirthday"
+            :placeholderPhone="placeholderPhone"
 
           />
         </template>
@@ -125,11 +125,11 @@ export default {
       type: String,
       default: 'Team Sign Up'
     },
+    placeholderPhone: String,
     placeholderTeamname: String,
     spanTeamname: String,
     labelTeamname: String,
     testMask: String,
-    placeholderPhone: String,
     subTitleSuccess: String,
     fontFamilySuccess: String,
     textNavColor: String,
@@ -144,10 +144,7 @@ export default {
     msgOneS: String,
     colorButtonOneS: String,
     backgroundButtonOneS: String,
-    labelFullname: {
-      type: String,
-      default: 'default'
-    },
+    labelFullname: String,
     placeholderFullname: String,
     placeholderCertificates: String,
     labelCertificates: String,
@@ -169,7 +166,6 @@ export default {
     labelInstitution: String,
     spanInstitution: String,
     placeholderInstitution: String,
-    labelFullname: String,
 
     colorDescription: {
       type: String
@@ -181,7 +177,7 @@ export default {
       type: String
     },
     fontSizeDescription: {
-      type: String
+      type: Number
     },
     titleTextBasic: {
       type: String
@@ -193,7 +189,7 @@ export default {
       type: String
     },
     fontSizeTitleBasic: {
-      type: String
+      type: Number
     },
     titleTextSocial: {
       type: String
@@ -205,7 +201,7 @@ export default {
       type: String
     },
     fontSizeTitleSocial: {
-      type: String
+      type: Number
     },
     titleTextCertificates: {
       type: String
@@ -217,7 +213,7 @@ export default {
       type: String
     },
     fontSizeTitleCertificates: {
-      type: String
+      type: Number
     },
     titleTextSuccess: {
       type: String
@@ -229,7 +225,7 @@ export default {
       type: String
     },
     fontSizeTitleSuccess: {
-      type: String
+      type: Number
     },
     colorButtonZero: {
       type: String

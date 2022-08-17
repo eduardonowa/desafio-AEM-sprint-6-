@@ -52,9 +52,6 @@ public interface TabsRed
     @JsonProperty("bgColorSpanNav")
     String getBgColorSpanNav();
 
-    @JsonProperty("textNavColor")
-    String getTextNavColor();
-
     @JsonProperty("descriptionCard")
     String getDescriptionCard();
 
@@ -95,6 +92,9 @@ public interface TabsRed
 
     @JsonProperty("LabelPhone")
     String getLabelPhone();
+
+    @JsonProperty("placeholderPhone")
+    String getPlaceholderPhone();
 
     @JsonProperty("testMask")
     String getTestMask();

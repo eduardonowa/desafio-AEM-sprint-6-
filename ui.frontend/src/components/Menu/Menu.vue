@@ -2,7 +2,7 @@
   <nav class="menu" role="navigation">
     <div class="menu-tab" v-for="(tab, i) in $store.state.menuTabs" :key="i">
       <button
-        :style="{ 'font-family': fontFamilyNav, '&:focus': textNavColor }"
+        :style="{ 'font-family': fontFamilyNav }"
         v-if="i === 0"
         :class="tab + ' focus'"
         @click="loadTab(tab)"
@@ -33,8 +33,7 @@ export default {
   name: 'MenuComponent',
   props: {
     bgColorSpanNav: String,
-    fontFamilyNav: String,
-    textNavColor: String
+    fontFamilyNav: String
   },
   data () {
     return {

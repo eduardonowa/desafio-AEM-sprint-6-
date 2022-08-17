@@ -23,7 +23,7 @@
       :fontFamilyTitleSuccess="fontFamilyTitleSuccess"
       :titleColorSuccess="titleColorSuccess"
     />
-    <Tabs :msgZero="msgZero" :msgOne="msgOne" :msgTwo="msgTwo" :msgThree="msgThree" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero" :formatButtonFontSizeZero="formatButtonFontSizeZero" :backgroundButtonZero="backgroundButtonZero" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :formatButtonFontSizeOne="formatButtonFontSizeOne" :backgroundButtonOne="backgroundButtonOne" :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo" :formatButtonFontSizeTwo="formatButtonFontSizeTwo" :backgroundButtonTwo="backgroundButtonTwo" :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree" :formatButtonFontSizeThree="formatButtonFontSizeThree" :backgroundButtonThree="backgroundButtonThree" />
+    <Tabs :msgZero="msgZero" :msgOne="msgOne" :msgTwo="msgTwo" :msgThree="msgThree" :colorButtonZero="colorButtonZero" :fontFamilyButtonZero="fontFamilyButtonZero"  :backgroundButtonZero="backgroundButtonZero" :colorButtonOne="colorButtonOne" :fontFamilyButtonOne="fontFamilyButtonOne" :backgroundButtonOne="backgroundButtonOne" :colorButtonTwo="colorButtonTwo" :fontFamilyButtonTwo="fontFamilyButtonTwo"  :backgroundButtonTwo="backgroundButtonTwo" :colorButtonThree="colorButtonThree" :fontFamilyButtonThree="fontFamilyButtonThree"  :backgroundButtonThree="backgroundButtonThree" />
   </div>
 </template>
 
@@ -108,9 +108,6 @@ export default {
     fontFamilyButtonZero: {
       type: String
     },
-    formatButtonFontSizeZero: {
-      type: String
-    },
     backgroundButtonZero: {
       type: String
     },
@@ -118,9 +115,6 @@ export default {
       type: String
     },
     fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
       type: String
     },
     backgroundButtonOne: {
@@ -132,9 +126,6 @@ export default {
     fontFamilyButtonTwo: {
       type: String
     },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
@@ -142,9 +133,6 @@ export default {
       type: String
     },
     fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {

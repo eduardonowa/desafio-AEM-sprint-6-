@@ -40,7 +40,7 @@
       {
         "id": "menu-nav-properties",
         "label": "Menu Nav",
-        "fields": ["fontFamilyNav", "bgColorSpanNav", "textNavColor", "descriptionCard"]
+        "fields": ["fontFamilyNav", "bgColorSpanNav", "descriptionCard"]
       },
       {
         "id": "basic-properties",
@@ -59,6 +59,7 @@
           "PlaceholderEmail",
           "InvalidTextEmail",
           "LabelPhone",
+          "placeholderPhone",
           "testMask",
           "labelBirthday",
           "spanBirthday",
@@ -137,7 +138,7 @@
       {
         "field": "testMask",
         "type": "select",
-        "label": "Posição profissional",
+        "label": "Want phone mask?",
         "json-expose": true,
         "json-property": "testMask",
         "attributes": {
@@ -170,6 +171,13 @@
         "json-property": "descriptionCard"
       },
       {
+        "field": "placeholderPhone",
+        "label": "Placeholder fourth input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderPhone"
+      },
+      {
         "field": "labelTeamname",
         "label": "Label second input",
         "type": "textfield",
@@ -197,13 +205,7 @@
         "json-expose": true,
         "json-property": "subTitleSuccess"
       },
-      {
-        "field": "textNavColor",
-        "label": "Select text color",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "textNavColor"
-      },
+
       {
         "field": "bgColorSpanNav",
         "label": "Select border color",
@@ -302,7 +304,7 @@
       },
       {
         "field": "placeholderNickname",
-        "label": "Label second input",
+        "label": "Placeholder second input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderNickname"
@@ -495,7 +497,7 @@
       },
       {
         "field": "titleColorBasic",
-        "label": "Color Basic Tab Text",
+        "label": "Color Title Basic Tab Text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleColorBasic"
@@ -557,7 +559,7 @@
       },
       {
         "field": "titleColorSocial",
-        "label": "Color Social Tab Text",
+        "label": "Color Title Social Tab Text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleColorSocial"
@@ -619,7 +621,7 @@
       },
       {
         "field": "titleColorCertificates",
-        "label": "Color Certificates Tab Text",
+        "label": "Color Title Certificates Tab Text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleColorCertificates"
@@ -681,7 +683,7 @@
       },
       {
         "field": "titleColorSuccess",
-        "label": "Color Succes Tab Title",
+        "label": "Color Title Succes Tab Title",
         "type": "textfield",
         "json-expose": true,
         "json-property": "titleColorSuccess"
@@ -702,7 +704,7 @@
       },
       {
         "field": "colorButtonZero",
-        "label": "Button background color",
+        "label": "Button text color",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonZero"
@@ -716,21 +718,21 @@
       },
       {
         "field": "PlaceholderEmail",
-        "label": "Placeholder Email",
+        "label": "Placeholder third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "PlaceholderEmail"
       },
       {
         "field": "LabelEmail",
-        "label": "Email Label",
+        "label": "Label third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "LabelEmail"
       },
       {
         "field": "InvalidTextEmail",
-        "label": "Span Email",
+        "label": "Span third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "InvalidTextEmail"
@@ -758,35 +760,35 @@
       },
       {
         "field": "labelLinkedin",
-        "label": "Linkedin Label",
+        "label": "Label first input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelLinkedin"
       },
       {
         "field": "placeholderLinkedin",
-        "label": "Linkedin Placeholder",
+        "label": "Placeholder first input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderLinkedin"
       },
       {
         "field": "labelGithub",
-        "label": "GitHub Label",
+        "label": "Label second input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelGithub"
       },
       {
         "field": "placeholderGithub",
-        "label": "GitHub Placeholder",
+        "label": "Placeholder second input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderGithub"
       },
       {
         "field": "InvalidTextGithub",
-        "label": "GitHub Span",
+        "label": "Span second input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "InvalidTextGithub"
@@ -807,133 +809,133 @@
       },
       {
         "field": "colorButtonZeroS",
-        "label": "Button background color",
+        "label": "Button text color",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonZeroS"
       },
       {
         "field": "labelGraduation",
-        "label": "Graduation Label",
+        "label": "Label fourth input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelGraduation"
       },
       {
         "field": "spanGraduation",
-        "label": "Graduation Span",
+        "label": "Span fourth input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "spanGraduation"
       },
       {
         "field": "placeholderGraduation",
-        "label": "Graduation Placeholder",
+        "label": "Placeholder fourth input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderGraduation"
       },
       {
         "field": "labelInstitution",
-        "label": "Institution Label",
+        "label": "Label third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "labelInstitution"
       },
       {
         "field": "placeholderInstitution",
-        "label": "Institution Placeholder",
+        "label": "Placeholder third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "placeholderInstitution"
       },
       {
         "field": "spanInstitution",
-        "label": "Institution Span",
+        "label": "Span third input",
         "type": "textfield",
         "json-expose": true,
         "json-property": "spanInstitution"
       },
       {
         "field": "msgOneS",
-        "label": "Button text",
+        "label": "Right bottom button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgOneS"
       },
       {
         "field": "backgroundButtonOneS",
-        "label": "Button background color",
+        "label": "Right bottom button background",
         "type": "textfield",
         "json-expose": true,
         "json-property": "backgroundButtonOneS"
       },
       {
         "field": "colorButtonOneS",
-        "label": "Button background color",
+        "label": "Button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonOneS"
       },
       {
         "field": "msgOne",
-        "label": "Button text",
+        "label": "Right bottom button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgOne"
       },
       {
         "field": "backgroundButtonOne",
-        "label": "Button background color",
+        "label": "Right bottom button background",
         "type": "textfield",
         "json-expose": true,
         "json-property": "backgroundButtonOne"
       },
       {
         "field": "colorButtonOne",
-        "label": "Button background color",
+        "label": "Right bottom button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonOne"
       },
       {
         "field": "msgTwo",
-        "label": "Button text",
+        "label": "Right Top button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgTwo"
       },
       {
         "field": "backgroundButtonTwo",
-        "label": "Button background color",
+        "label": "Right top button background",
         "type": "textfield",
         "json-expose": true,
         "json-property": "backgroundButtonTwo"
       },
       {
         "field": "colorButtonTwo",
-        "label": "Button background color",
+        "label": "Right top button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonTwo"
       },
       {
         "field": "msgThree",
-        "label": "Button text",
+        "label": "Dropdown Button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "msgThree"
       },
       {
         "field": "backgroundButtonThree",
-        "label": "Button background color",
+        "label": "Dropdown button background",
         "type": "textfield",
         "json-expose": true,
         "json-property": "backgroundButtonThree"
       },
       {
         "field": "colorButtonThree",
-        "label": "Button background color",
+        "label": "Dropdown button text",
         "type": "textfield",
         "json-expose": true,
         "json-property": "colorButtonThree"
