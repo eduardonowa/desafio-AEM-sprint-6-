@@ -97,7 +97,8 @@ export default {
     document.title = `${process.env.VUE_APP_TITLE} | Social`
   },
   updated () {
-    this.$store.state.labelLinkedin = this.labelLinkedin
+    this.$store.state.labelLinkedin = this.labelLinkedin.replace('*', '') + ': '
+    this.$store.state.labelGithub = this.labelGithub.replace('*', '') + ': '
   }
 }
 </script>

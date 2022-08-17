@@ -154,7 +154,7 @@ export default {
   updated () {
     this.$store.state.labelName = this.labelFullname.replace('*', '') + ': '
     this.$store.state.labelEmail = this.LabelEmail.replace('*', '') + ': '
-    this.$store.state.labelPhone = this.labelFullname.replace('*', '') + ': '
+    this.$store.state.labelPhone = this.LabelPhone + ': '
     this.$store.state.labelNickname = this.labelNickname.replace('*', '') + ': '
   },
   beforeUpdate () {

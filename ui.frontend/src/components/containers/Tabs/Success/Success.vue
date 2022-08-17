@@ -22,7 +22,7 @@
       :text="this.linkedin"
       id="hide"
     />
-    <Texts description="Github: " :text="this.github" id="hide" />
+    <Texts :description="this.$store.state.labelGithub " :text="this.github" id="hide" />
 
     <div v-if="this.isCertificates" class="certificates">
       <div class="title">
