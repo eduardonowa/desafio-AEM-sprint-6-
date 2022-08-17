@@ -13,10 +13,6 @@ export default {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
     },
-    type: {
-      control: { type: 'select' },
-      options: ['text', 'phone', 'date', 'email', 'textarea']
-    },
     fontSize: { control: 'text' }
   }
 }

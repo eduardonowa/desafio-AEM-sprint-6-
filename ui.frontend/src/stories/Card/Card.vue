@@ -1,6 +1,6 @@
 <template>
   <div class="bodyType" :style="styleBody">
-    <Header :style="styleHeader" />
+    <Header :style="styleHeader" :titleText="titleText" :descriptionText="descriptionText" />
     <div class="card" :style="styleCard">
       <h2 class="teamSign">Team Sign Up</h2>
       <Menu />
@@ -26,21 +26,12 @@ export default {
       type: String,
       default: 'title'
     },
-    color: {
-      type: String
-    },
     fontFamily: {
       type: String,
       default: 'Inter',
       authenticator: function (value) {
         return ['Inter', 'Arial', 'Nunito'].indexOf(value) !== -1
       }
-    },
-    fontSizeTitle: {
-      type: String
-    },
-    fontSizeDescription: {
-      type: String
     },
     bodyBackground: {
       type: String
@@ -57,6 +48,7 @@ export default {
     styleBody () {
       return {
         backgroundColor: this.bodyBackground
+
       }
     },
     styleHeader () {

@@ -5,7 +5,6 @@ export default {
   component: Card,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    color: { control: 'color' },
     bodyBackground: { control: 'color' },
     cardBackground: { control: 'color' },
     fontFamily: {

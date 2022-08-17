@@ -14,6 +14,7 @@
     "@adobe/aem-spa-component-mapping": "^1.0.7",
     "@adobe/aem-spa-page-model-manager": "^1.0.0",
     "@mavice/aem-vue-editable-components": "^1.0.2",
+    "@storybook/addon-backgrounds": "^6.5.10",
     "core-js": "^3.6.5",
     "dompurify": "^2.2.6",
     "jquery": "^3.6.0",

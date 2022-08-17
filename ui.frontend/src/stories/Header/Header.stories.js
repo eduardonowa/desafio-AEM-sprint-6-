@@ -8,9 +8,7 @@ export default {
   ],
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    color: { control: 'color' },
-    headerBackground: { control: 'color' },
-    bodyBackground: { control: 'color' },
+    borderColor: { control: 'color' },
     fontFamily: {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
