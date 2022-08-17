@@ -10,9 +10,9 @@
       aria-label="Linkedin"
     />
     <Inputs
-      LabelInput="GitHub *"
-      InvalidText="Please enter your GitHub Link"
-      Placeholder="https://github.com/foobar"
+      :LabelInput="labelGithub"
+      :InvalidText="InvalidTextGithub"
+      :Placeholder="placeholderGithub"
       idSpan="spanGit"
       Type="git"
       ClassInput="git"
@@ -61,6 +61,18 @@ export default {
     labelLinkedin: {
       type: String,
       default: 'Linkedin'
+    },
+    placeholderGithub: {
+      type: String,
+      default: 'https://github.com/foobar'
+    },
+    labelGithub: {
+      type: String,
+      default: 'GitHub *'
+    },
+    InvalidTextGithub: {
+      type: String,
+      default: 'Please enter your GitHub Link'
     }
   },
   data () {
