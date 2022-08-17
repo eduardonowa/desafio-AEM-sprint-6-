@@ -337,6 +337,22 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderLinkedin"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
+                           <labelGithub cq-msm-lockable="./labelGithub"
+                                        fieldLabel="GitHub Label"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./labelGithub"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderGithub cq-msm-lockable="./placeholderGithub"
+                                              fieldLabel="GitHub Placeholder"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./placeholderGithub"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <InvalidTextGithub cq-msm-lockable="./InvalidTextGithub"
+                                              fieldLabel="GitHub Span"
+                                              jcr:primaryType="nt:unstructured"
+                                              name="./InvalidTextGithub"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

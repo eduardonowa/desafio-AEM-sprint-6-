@@ -128,6 +128,15 @@ public interface TabsRed
     @JsonProperty("placeholderLinkedin")
     String getPlaceholderLinkedin();
 
+    @JsonProperty("labelGithub")
+    String getLabelGithub();
+
+    @JsonProperty("placeholderGithub")
+    String getPlaceholderGithub();
+
+    @JsonProperty("InvalidTextGithub")
+    String getInvalidTextGithub();
+
     @JsonProperty("titleTextCertificates")
     String getTitleTextCertificates();
 

@@ -66,6 +66,9 @@
             :backgroundButtonZero="backgroundButtonZero"
             :placeholderLinkedin="placeholderLinkedin"
             :labelLinkedin="labelLinkedin"
+            :labelGithub="labelGithub"
+            :placeholderGithub="placeholderGithub"
+            :InvalidTextGithub="InvalidTextGithub"
           />
         </template>
 
@@ -153,6 +156,9 @@ export default {
     spanBirthday: String,
     placeholderLinkedin: String,
     labelLinkedin: String,
+    labelGithub: String,
+    placeholderGithub: String,
+    InvalidTextGithub: String,
 
     colorDescription: {
       type: String

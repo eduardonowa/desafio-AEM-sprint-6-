@@ -1,20 +1,37 @@
-/*
- * ***********************************************************************
- * SPA Vue Project CONFIDENTIAL
- * ___________________
- *
- * Copyright 2022 SPA Vue Project.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains the property
- * of SPA Vue Project and its suppliers, if any. The intellectual and
- * technical concepts contained herein are proprietary to SPA Vue Project
- * and its suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from SPA Vue Project.
- * ***********************************************************************
- */
+/*
+
+ * ***********************************************************************
+
+ * SPA Vue Project CONFIDENTIAL
+
+ * ___________________
+
+ *
+
+ * Copyright 2022 SPA Vue Project.
+
+ * All Rights Reserved.
+
+ *
+
+ * NOTICE:  All information contained herein is, and remains the property
+
+ * of SPA Vue Project and its suppliers, if any. The intellectual and
+
+ * technical concepts contained herein are proprietary to SPA Vue Project
+
+ * and its suppliers and are protected by trade secret or copyright law.
+
+ * Dissemination of this information or reproduction of this material
+
+ * is strictly forbidden unless prior written permission is obtained
+
+ * from SPA Vue Project.
+
+ * ***********************************************************************
+
+ */
+
 
 package com.vue.core.models.impl;
 
@@ -107,6 +124,12 @@ public class TabsRedImpl
     private String labelLinkedin;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderLinkedin;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String labelGithub;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String placeholderGithub;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String InvalidTextGithub;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -332,6 +355,24 @@ public class TabsRedImpl
     @JsonProperty("placeholderLinkedin")
     public String getPlaceholderLinkedin() {
         return placeholderLinkedin;
+    }
+
+    @Override
+    @JsonProperty("labelGithub")
+    public String getLabelGithub() {
+        return labelGithub;
+    }
+
+    @Override
+    @JsonProperty("placeholderGithub")
+    public String getPlaceholderGithub() {
+        return placeholderGithub;
+    }
+
+    @Override
+    @JsonProperty("InvalidTextGithub")
+    public String getInvalidTextGithub() {
+        return InvalidTextGithub;
     }
 
     @Override
