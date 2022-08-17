@@ -58,6 +58,8 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String textNavColor;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String descriptionCard;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextBasic;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleBasic;
@@ -202,6 +204,12 @@ public class TabsRedImpl
     @JsonProperty("textNavColor")
     public String getTextNavColor() {
         return textNavColor;
+    }
+
+    @Override
+    @JsonProperty("descriptionCard")
+    public String getDescriptionCard() {
+        return descriptionCard;
     }
 
     @Override

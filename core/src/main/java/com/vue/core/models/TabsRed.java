@@ -55,6 +55,9 @@ public interface TabsRed
     @JsonProperty("textNavColor")
     String getTextNavColor();
 
+    @JsonProperty("descriptionCard")
+    String getDescriptionCard();
+
     @JsonProperty("titleTextBasic")
     String getTitleTextBasic();
 

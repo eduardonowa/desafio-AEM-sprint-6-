@@ -140,7 +140,7 @@ export default {
       default: 'Please enter your age'
     }
   },
-  data() {
+  data () {
     return {
       fullnameValue: '',
       nicknameValue: '',
@@ -149,27 +149,27 @@ export default {
       classPhone: 'phone'
     }
   },
-  mounted() {
+  mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Basic`
     this.fullnameValue = window.localStorage.fullname
     this.nicknameValue = window.localStorage.nickname
     this.emailValue = window.localStorage.email
     this.phoneValue = window.localStorage.phone
   },
-  updated() {
+  updated () {
     this.$store.state.labelName = this.labelFullname.replace('*', '') + ': '
     this.$store.state.labelEmail = this.LabelEmail.replace('*', '') + ': '
     this.$store.state.labelPhone = this.labelFullname.replace('*', '') + ': '
     this.$store.state.labelNickname = this.labelNickname.replace('*', '') + ': '
   },
-  beforeUpdate() {
+  beforeUpdate () {
     if (this.classPhone === 'phone' && this.testMask === 'yes') {
       $(`.${this.classPhone} input`).mask('(00) 00000-0000')
     }
   },
   methods: {
     ...mapActions(['nextTab']),
-    validate() {
+    validate () {
       if (
         window.localStorage.fullname &&
         window.localStorage.email &&
