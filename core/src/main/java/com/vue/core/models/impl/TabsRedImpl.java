@@ -96,6 +96,8 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String msgZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonZero;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String backgroundButtonZero;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextSocial;
@@ -116,6 +118,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String InvalidTextGithub;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgZeroS;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonZeroS;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonZeroS;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleCertificates;
@@ -127,6 +135,18 @@ public class TabsRedImpl
     private String labelCertificates;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String placeholderCertificates;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgTwo;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonTwo;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonTwo;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgThree;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonThree;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonThree;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String labelTeamname;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -146,6 +166,12 @@ public class TabsRedImpl
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String spanGraduation;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgOne;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonOne;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonOne;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String titleTextSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Long fontSizeTitleSuccess;
@@ -157,6 +183,12 @@ public class TabsRedImpl
     private String subTitleSuccess;
     @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String fontFamilySuccess;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String msgOneS;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String colorButtonOneS;
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private String backgroundButtonOneS;
     @SlingObject
     private Resource resource;
 
@@ -320,6 +352,12 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("colorButtonZero")
+    public String getColorButtonZero() {
+        return colorButtonZero;
+    }
+
+    @Override
     @JsonProperty("backgroundButtonZero")
     public String getBackgroundButtonZero() {
         return backgroundButtonZero;
@@ -379,6 +417,24 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("msgZeroS")
+    public String getMsgZeroS() {
+        return msgZeroS;
+    }
+
+    @Override
+    @JsonProperty("colorButtonZeroS")
+    public String getColorButtonZeroS() {
+        return colorButtonZeroS;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonZeroS")
+    public String getBackgroundButtonZeroS() {
+        return backgroundButtonZeroS;
+    }
+
+    @Override
     @JsonProperty("titleTextCertificates")
     public String getTitleTextCertificates() {
         return titleTextCertificates;
@@ -411,6 +467,42 @@ public class TabsRedImpl
     @JsonProperty("placeholderCertificates")
     public String getPlaceholderCertificates() {
         return placeholderCertificates;
+    }
+
+    @Override
+    @JsonProperty("msgTwo")
+    public String getMsgTwo() {
+        return msgTwo;
+    }
+
+    @Override
+    @JsonProperty("colorButtonTwo")
+    public String getColorButtonTwo() {
+        return colorButtonTwo;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonTwo")
+    public String getBackgroundButtonTwo() {
+        return backgroundButtonTwo;
+    }
+
+    @Override
+    @JsonProperty("msgThree")
+    public String getMsgThree() {
+        return msgThree;
+    }
+
+    @Override
+    @JsonProperty("colorButtonThree")
+    public String getColorButtonThree() {
+        return colorButtonThree;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonThree")
+    public String getBackgroundButtonThree() {
+        return backgroundButtonThree;
     }
 
     @Override
@@ -468,6 +560,24 @@ public class TabsRedImpl
     }
 
     @Override
+    @JsonProperty("msgOne")
+    public String getMsgOne() {
+        return msgOne;
+    }
+
+    @Override
+    @JsonProperty("colorButtonOne")
+    public String getColorButtonOne() {
+        return colorButtonOne;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonOne")
+    public String getBackgroundButtonOne() {
+        return backgroundButtonOne;
+    }
+
+    @Override
     @JsonProperty("titleTextSuccess")
     public String getTitleTextSuccess() {
         return titleTextSuccess;
@@ -499,6 +609,24 @@ public class TabsRedImpl
     @Override
     public String getFontFamilySuccess() {
         return fontFamilySuccess;
+    }
+
+    @Override
+    @JsonProperty("msgOneS")
+    public String getMsgOneS() {
+        return msgOneS;
+    }
+
+    @Override
+    @JsonProperty("colorButtonOneS")
+    public String getColorButtonOneS() {
+        return colorButtonOneS;
+    }
+
+    @Override
+    @JsonProperty("backgroundButtonOneS")
+    public String getBackgroundButtonOneS() {
+        return backgroundButtonOneS;
     }
 
     @Override

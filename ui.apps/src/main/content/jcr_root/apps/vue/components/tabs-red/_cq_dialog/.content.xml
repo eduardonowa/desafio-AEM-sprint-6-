@@ -275,6 +275,11 @@
                                     jcr:primaryType="nt:unstructured"
                                     name="./msgZero"
                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonZero cq-msm-lockable="./colorButtonZero"
+                                            fieldLabel="Button background color"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./colorButtonZero"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <backgroundButtonZero cq-msm-lockable="./backgroundButtonZero"
                                                  fieldLabel="Button background color"
                                                  jcr:primaryType="nt:unstructured"
@@ -357,6 +362,21 @@
                                               jcr:primaryType="nt:unstructured"
                                               name="./InvalidTextGithub"
                                               sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <msgZeroS cq-msm-lockable="./msgZeroS"
+                                     fieldLabel="Button text"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./msgZeroS"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonZeroS cq-msm-lockable="./colorButtonZeroS"
+                                             fieldLabel="Button background color"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./colorButtonZeroS"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonZeroS cq-msm-lockable="./backgroundButtonZeroS"
+                                                  fieldLabel="Button background color"
+                                                  jcr:primaryType="nt:unstructured"
+                                                  name="./backgroundButtonZeroS"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -419,6 +439,36 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     name="./placeholderCertificates"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <msgTwo cq-msm-lockable="./msgTwo"
+                                   fieldLabel="Button text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./msgTwo"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonTwo cq-msm-lockable="./colorButtonTwo"
+                                           fieldLabel="Button background color"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./colorButtonTwo"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonTwo cq-msm-lockable="./backgroundButtonTwo"
+                                                fieldLabel="Button background color"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./backgroundButtonTwo"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <msgThree cq-msm-lockable="./msgThree"
+                                     fieldLabel="Button text"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./msgThree"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonThree cq-msm-lockable="./colorButtonThree"
+                                             fieldLabel="Button background color"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./colorButtonThree"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonThree cq-msm-lockable="./backgroundButtonThree"
+                                                  fieldLabel="Button background color"
+                                                  jcr:primaryType="nt:unstructured"
+                                                  name="./backgroundButtonThree"
+                                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                            <labelTeamname cq-msm-lockable="./labelTeamname"
                                           fieldLabel="Label second input"
                                           jcr:primaryType="nt:unstructured"
@@ -464,6 +514,21 @@
                                            jcr:primaryType="nt:unstructured"
                                            name="./spanGraduation"
                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <msgOne cq-msm-lockable="./msgOne"
+                                   fieldLabel="Button text"
+                                   jcr:primaryType="nt:unstructured"
+                                   name="./msgOne"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonOne cq-msm-lockable="./colorButtonOne"
+                                           fieldLabel="Button background color"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./colorButtonOne"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonOne cq-msm-lockable="./backgroundButtonOne"
+                                                fieldLabel="Button background color"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./backgroundButtonOne"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
@@ -545,6 +610,21 @@
                                          value="Nunito"/>
                               </items>
                            </fontFamilySuccess>
+                           <msgOneS cq-msm-lockable="./msgOneS"
+                                    fieldLabel="Button text"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./msgOneS"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <colorButtonOneS cq-msm-lockable="./colorButtonOneS"
+                                            fieldLabel="Button background color"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="./colorButtonOneS"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <backgroundButtonOneS cq-msm-lockable="./backgroundButtonOneS"
+                                                 fieldLabel="Button background color"
+                                                 jcr:primaryType="nt:unstructured"
+                                                 name="./backgroundButtonOneS"
+                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>

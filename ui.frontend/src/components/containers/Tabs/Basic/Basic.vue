@@ -50,7 +50,6 @@
           type="0"
           :msgZero="msgZero"
           :colorButtonZero="colorButtonZero"
-          :fontFamilyButtonZero="fontFamilyButtonZero"
           :backgroundButtonZero="backgroundButtonZero"
           aria-label="Next Form"
         />
@@ -100,10 +99,6 @@ export default {
     colorButtonZero: {
       type: String
     },
-    fontFamilyButtonZero: {
-      type: String
-    },
-
     backgroundButtonZero: {
       type: String
     },

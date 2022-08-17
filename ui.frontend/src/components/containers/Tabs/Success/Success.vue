@@ -44,7 +44,6 @@
         :event="clearStorage"
         :msgOne="msgOne"
         :colorButtonOne="colorButtonOne"
-        :fontFamilyButtonOne="fontFamilyButtonOne"
         :backgroundButtonOne="backgroundButtonOne"
       />
     </div>
@@ -68,9 +67,6 @@ export default {
       default: 'Your data has been sent successfully!'
     },
     colorButtonOne: {
-      type: String
-    },
-    fontFamilyButtonOne: {
       type: String
     },
     backgroundButtonOne: {

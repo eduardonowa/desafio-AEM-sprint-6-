@@ -7,7 +7,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonZero,
-      'font-family': fontFamilyButtonZero,
       'background': backgroundButtonZero
     }"
     >
@@ -20,7 +19,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonOne,
-      'font-family': fontFamilyButtonOne,
       'background': backgroundButtonOne
     }"
     >
@@ -33,7 +31,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonTwo,
-      'font-family': fontFamilyButtonTwo,
       'background': backgroundButtonTwo
     }"
     >
@@ -47,7 +44,6 @@
       @click.prevent="event"
       :style="{
       'color': colorButtonThree,
-      'font-family': fontFamilyButtonThree,
       'background': backgroundButtonThree
     }"
     >
@@ -69,9 +65,6 @@ export default {
     colorButtonZero: {
       type: String
     },
-    fontFamilyButtonZero: {
-      type: String
-    },
     backgroundButtonZero: {
       type: String
     },
@@ -79,9 +72,6 @@ export default {
       type: String
     },
     colorButtonOne: {
-      type: String
-    },
-    fontFamilyButtonOne: {
       type: String
     },
     backgroundButtonOne: {
@@ -93,9 +83,6 @@ export default {
     colorButtonTwo: {
       type: String
     },
-    fontFamilyButtonTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
@@ -103,9 +90,6 @@ export default {
       type: String
     },
     colorButtonThree: {
-      type: String
-    },
-    fontFamilyButtonThree: {
       type: String
     },
     backgroundButtonThree: {
