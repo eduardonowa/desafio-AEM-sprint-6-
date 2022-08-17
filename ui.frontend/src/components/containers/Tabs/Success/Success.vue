@@ -45,7 +45,6 @@
         :msgOne="msgOne"
         :colorButtonOne="colorButtonOne"
         :fontFamilyButtonOne="fontFamilyButtonOne"
-        :formatButtonFontSizeOne="formatButtonFontSizeOne"
         :backgroundButtonOne="backgroundButtonOne"
       />
     </div>
@@ -72,9 +71,6 @@ export default {
       type: String
     },
     fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
       type: String
     },
     backgroundButtonOne: {

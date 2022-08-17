@@ -51,7 +51,6 @@
           :msgZero="msgZero"
           :colorButtonZero="colorButtonZero"
           :fontFamilyButtonZero="fontFamilyButtonZero"
-          :formatButtonFontSizeZero="formatButtonFontSizeZero"
           :backgroundButtonZero="backgroundButtonZero"
           aria-label="Next Form"
         />
@@ -104,9 +103,7 @@ export default {
     fontFamilyButtonZero: {
       type: String
     },
-    formatButtonFontSizeZero: {
-      type: String
-    },
+
     backgroundButtonZero: {
       type: String
     },

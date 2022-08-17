@@ -17,7 +17,6 @@
           :event="openCertificates"
           :colorButtonThree="colorButtonThree"
           :fontFamilyButtonThree="fontFamilyButtonThree"
-          :formatButtonFontSizeThree="formatButtonFontSizeThree"
           :backgroundButtonThree="backgroundButtonThree"
         />
         <div v-show="isOpenCertificates" class="certificatesList" id="idList">
@@ -41,7 +40,6 @@
           :event="addCertificates"
           :colorButtonTwo="colorButtonTwo"
           :fontFamilyButtonTwo="fontFamilyButtonTwo"
-          :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
           :backgroundButtonTwo="backgroundButtonTwo"
         />
         <span> {{ spanMsg }} </span>
@@ -86,7 +84,6 @@
         :event="validate"
         :colorButtonOne="colorButtonOne"
         :fontFamilyButtonOne="fontFamilyButtonOne"
-        :formatButtonFontSizeOne="formatButtonFontSizeOne"
         :backgroundButtonOne="backgroundButtonOne"
       />
     </div>
@@ -127,9 +124,6 @@ export default {
     fontFamilyButtonOne: {
       type: String
     },
-    formatButtonFontSizeOne: {
-      type: String
-    },
     backgroundButtonOne: {
       type: String
     },
@@ -139,9 +133,6 @@ export default {
     fontFamilyButtonTwo: {
       type: String
     },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
@@ -149,9 +140,6 @@ export default {
       type: String
     },
     fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {
@@ -307,7 +295,7 @@ export default {
     this.$store.state.labelCertificates = this.labelCertificates.replace('*', '') + ': '
     this.$store.state.labelTeamname = this.labelTeamname.replace('*', '') + ': '
     this.$store.state.labelGraduation = this.LabelGraduation.replace('*', '') + ': '
-    this.$store.state.labelInstitution = this.labelFullname.replace('*', '') + ': '
+    this.$store.state.labelInstitution = this.labelInstitution.replace('*', '') + ': '
   },
   mounted () {
     document.title = `${process.env.VUE_APP_TITLE} | Certificates`

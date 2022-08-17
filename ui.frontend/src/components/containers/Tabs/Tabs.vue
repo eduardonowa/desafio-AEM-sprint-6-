@@ -38,7 +38,6 @@
             :msgZero="msgZero"
             :colorButtonZero="colorButtonZero"
             :fontFamilyButtonZero="fontFamilyButtonZero"
-            :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
             :labelFullname="labelFullname"
             :placeholderFullname="placeholderFullname"
@@ -62,7 +61,6 @@
             :msgZero="msgZero"
             :colorButtonZero="colorButtonZero"
             :fontFamilyButtonZero="fontFamilyButtonZero"
-            :formatButtonFontSizeZero="formatButtonFontSizeZero"
             :backgroundButtonZero="backgroundButtonZero"
             :placeholderLinkedin="placeholderLinkedin"
             :labelLinkedin="labelLinkedin"
@@ -79,15 +77,12 @@
             :msgThree="msgThree"
             :colorButtonOne="colorButtonOne"
             :fontFamilyButtonOne="fontFamilyButtonOne"
-            :formatButtonFontSizeOne="formatButtonFontSizeOne"
             :backgroundButtonOne="backgroundButtonOne"
             :colorButtonTwo="colorButtonTwo"
             :fontFamilyButtonTwo="fontFamilyButtonTwo"
-            :formatButtonFontSizeTwo="formatButtonFontSizeTwo"
             :backgroundButtonTwo="backgroundButtonTwo"
             :colorButtonThree="colorButtonThree"
             :fontFamilyButtonThree="fontFamilyButtonThree"
-            :formatButtonFontSizeThree="formatButtonFontSizeThree"
             :backgroundButtonThree="backgroundButtonThree"
             :labelCertificates="labelCertificates"
             :placeholderCertificates="placeholderCertificates"
@@ -109,7 +104,6 @@
           :msgOne="msgOne"
           :colorButtonOne="colorButtonOne"
           :fontFamilyButtonOne="fontFamilyButtonOne"
-          :formatButtonFontSizeOne="formatButtonFontSizeOne"
           :backgroundButtonOne="backgroundButtonOne"
           :fontFamilySuccess="fontFamilySuccess"
           :subTitleSuccess="subTitleSuccess"
@@ -146,10 +140,6 @@ export default {
     labelNickname: String,
     placeholderNickname: String,
     spanFullname: String,
-    labelFullname: {
-      type: String,
-      default: 'default'
-    },
     placeholderFullname: String,
     placeholderCertificates: String,
     labelCertificates: String,
@@ -238,9 +228,6 @@ export default {
     fontFamilyButtonZero: {
       type: String
     },
-    formatButtonFontSizeZero: {
-      type: String
-    },
     backgroundButtonZero: {
       type: String
     },
@@ -248,9 +235,6 @@ export default {
       type: String
     },
     fontFamilyButtonOne: {
-      type: String
-    },
-    formatButtonFontSizeOne: {
       type: String
     },
     backgroundButtonOne: {
@@ -262,9 +246,6 @@ export default {
     fontFamilyButtonTwo: {
       type: String
     },
-    formatButtonFontSizeTwo: {
-      type: String
-    },
     backgroundButtonTwo: {
       type: String
     },
@@ -272,9 +253,6 @@ export default {
       type: String
     },
     fontFamilyButtonThree: {
-      type: String
-    },
-    formatButtonFontSizeThree: {
       type: String
     },
     backgroundButtonThree: {
