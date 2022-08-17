@@ -4,63 +4,40 @@
     <Texts
     description="Full Name: "
     :text="this.fullname"
-    :textColor="textColorSuccessFullName"
-    :textFontFamily="textFontFamilySuccessFullName"
-    :textFontSize="textFontSizeSuccessFullName"
     />
     <Texts
     v-if="this.nickname"
     description="Nickname: "
     :text="this.nickname"
-    :textColor="textColorSuccessNickname"
-    :textFontFamily="textFontFamilySuccessNickname"
-    :textFontSize="textFontSizeSuccessNickname"
     />
     <Texts
     :description="emailSuccess"
     :text="this.email"
-    :textColor="textColorSuccessEmail"
-    :textFontFamily="textFontFamilySuccessEmail"
-    :textFontSize="textFontSizeSuccessEmail"
+
     />
     <Texts
     v-if="this.phone"
     description="Phone: "
     :text="this.phone"
-    :textColor="textColorSuccessPhone"
-    :textFontFamily="textFontFamilySuccessPhone"
-    :textFontSize="textFontSizeSuccessPhone"
     />
     <Texts
     description="Birthday: "
     :text="this.birthday"
-    :textColor="textColorSuccessBirthday"
-    :textFontFamily="textFontFamilySuccessBirthday"
-    :textFontSize="textFontSizeSuccessBirthday"
     />
     <Texts
     description="Age: "
     :text="this.age"
-    :textColor="textColorSuccessAge"
-    :textFontFamily="textFontFamilySuccessAge"
-    :textFontSize="textFontSizeSuccessAge"
     />
     <Texts
     v-if="this.linkedin"
     description="Linkedin: "
     :text="this.linkedin"
     id="hide"
-    :textColor="textColorSuccessLinkedin"
-    :textFontFamily="textFontFamilySuccessLinkedin"
-    :textFontSize="textFontSizeSuccessLinkedin"
     />
     <Texts
     description="Github: "
     :text="this.github"
     id="hide"
-    :textColor="textColorSuccessGithub"
-    :textFontFamily="textFontFamilySuccessGithub"
-    :textFontSize="textFontSizeSuccessGithub"
     />
 
     <div v-if="this.isCertificates" class="certificates">
@@ -78,23 +55,17 @@
     description="TeamName: "
     :text="this.teamName"
     id="hide"
-    :textColor="textColorSuccessTeam"
-    :textFontFamily="textFontFamilySuccessTeam"
-    :textFontSize="textFontSizeSuccessTeam"
+
     />
     <Texts
     description="Institution: "
     :text="this.institution"
-    :textColor="textColorSuccessInstitution"
-    :textFontFamily="textFontFamilySuccessInstitution"
-    :textFontSize="textFontSizeSuccessInstitution"
+
     />
     <Texts
     description="Graduation: "
     :text="this.graduation"
-    :textColor="textColorSuccessGraduation"
-    :textFontFamily="textFontFamilySuccessGraduation"
-    :textFontSize="textFontSizeSuccessGraduation"
+
     />
     <div class="button">
       <Buttons
@@ -136,109 +107,6 @@ export default {
     msgOne: {
       type: String,
       default: 'Return'
-    },
-    emailSuccess: {
-      type: String,
-      default: 'Email: '
-    },
-    textColorSuccessFullName: {
-      type: String
-    },
-    textFontFamilySuccessFullName: {
-      type: String
-    },
-    textFontSizeSuccessFullName: {
-      type: String
-    },
-    textColorSuccessNickname: {
-      type: String
-    },
-    textFontFamilySuccessNickname: {
-      type: String
-    },
-    textFontSizeSuccessNickname: {
-      type: String
-    },
-    textColorSuccessEmail: {
-      type: String
-    },
-    textFontFamilySuccessEmail: {
-      type: String
-    },
-    textFontSizeSuccessEmail: {
-      type: String
-    },
-    textColorSuccessPhone: {
-      type: String
-    },
-    textFontFamilySuccessPhone: {
-      type: String
-    },
-    textFontSizeSuccessPhone: {
-      type: String
-    },
-    textColorSuccessBirthday: {
-      type: String
-    },
-    textFontFamilySuccessBirthday: {
-      type: String
-    },
-    textFontSizeSuccessBirthday: {
-      type: String
-    },
-    textColorSuccessAge: {
-      type: String
-    },
-    textFontFamilySuccessAge: {
-      type: String
-    },
-    textFontSizeSuccessAge: {
-      type: String
-    },
-    textColorSuccessLinkedin: {
-      type: String
-    },
-    textFontFamilySuccessLinkedin: {
-      type: String
-    },
-    textFontSizeSuccessLinkedin: {
-      type: String
-    },
-    textColorSuccessGithub: {
-      type: String
-    },
-    textFontFamilySuccessGithub: {
-      type: String
-    },
-    textFontSizeSuccessGithub: {
-      type: String
-    },
-    textColorSuccessTeam: {
-      type: String
-    },
-    textFontFamilySuccessTeam: {
-      type: String
-    },
-    textFontSizeSuccessTeam: {
-      type: String
-    },
-    textColorSuccessInstitution: {
-      type: String
-    },
-    textFontFamilySuccessInstitution: {
-      type: String
-    },
-    textFontSizeSuccessInstitution: {
-      type: String
-    },
-    textColorSuccessGraduation: {
-      type: String
-    },
-    textFontFamilySuccessGraduation: {
-      type: String
-    },
-    textFontSizeSuccessGraduation: {
-      type: String
     }
   },
   data () {
