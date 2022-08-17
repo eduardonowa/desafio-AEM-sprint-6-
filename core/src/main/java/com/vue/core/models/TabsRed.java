@@ -154,6 +154,15 @@ public interface TabsRed
     @JsonProperty("placeholderCertificates")
     String getPlaceholderCertificates();
 
+    @JsonProperty("labelTeamname")
+    String getLabelTeamname();
+
+    @JsonProperty("placeholderTeamname")
+    String getPlaceholderTeamname();
+
+    @JsonProperty("spanTeamname")
+    String getSpanTeamname();
+
     @JsonProperty("titleTextSuccess")
     String getTitleTextSuccess();
 

@@ -48,11 +48,11 @@
       </div>
     </div>
     <Inputs
-      LabelInput="TeamName *"
+      :LabelInput="labelTeamname"
       idSpan="teamSpan"
       ClassField="team-name"
-      InvalidText="Please enter your Team Name"
-      Placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"
+      :InvalidText="spanTeamname"
+      :Placeholder="placeholderTeamname"
       Type="text"
       :valueInput="teamnameValue"
       aria-label="Team Name"
@@ -101,6 +101,18 @@ export default {
   name: 'Certificates',
   components: { Inputs, Buttons },
   props: {
+    spanTeamname: {
+      type: String,
+      default: 'Please enter your Team Name'
+    },
+    placeholderTeamname: {
+      type: String,
+      default: 'https://www.linkedin.com/in/foo-bar-3a0560104/'
+    },
+    labelTeamname: {
+      type: String,
+      default: 'TeamName *'
+    },
     labelCertificates: {
       type: String,
       default: 'Certificates'

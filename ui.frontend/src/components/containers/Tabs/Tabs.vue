@@ -91,6 +91,9 @@
             :backgroundButtonThree="backgroundButtonThree"
             :labelCertificates="labelCertificates"
             :placeholderCertificates="placeholderCertificates"
+            :labelTeamname="labelTeamname"
+            :spanTeamname="spanTeamname"
+            :placeholderTeamname="placeholderTeamname"
           />
         </template>
       </template>
@@ -124,6 +127,9 @@ export default {
   name: 'Tabs',
   components: { MenuComponent, Social, Basic, Certificates, Success, Header },
   props: {
+    placeholderTeamname: String,
+    spanTeamname: String,
+    labelTeamname: String,
     testMask: String,
     placeholderPhone: String,
     subTitleSuccess: String,

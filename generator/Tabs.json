@@ -95,7 +95,10 @@
           "fontFamilyTitleCertificates",
           "titleColorCertificates",
           "labelCertificates",
-          "placeholderCertificates"
+          "placeholderCertificates",
+          "labelTeamname",
+          "placeholderTeamname",
+          "spanTeamname"
         ]
       },
       {
@@ -141,6 +144,27 @@
         ]
       },
 
+      {
+        "field": "labelTeamname",
+        "label": "Label second input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "labelTeamname"
+      },
+      {
+        "field": "placeholderTeamname",
+        "label": "Placeholder second input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "placeholderTeamname"
+      },
+      {
+        "field": "spanTeamname",
+        "label": "Span second input",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "spanTeamname"
+      },
       {
         "field": "subTitleSuccess",
         "label": "Card Title Text",

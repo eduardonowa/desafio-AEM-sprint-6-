@@ -337,6 +337,7 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 name="./placeholderLinkedin"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+
                            <labelGithub cq-msm-lockable="./labelGithub"
                                         fieldLabel="GitHub Label"
                                         jcr:primaryType="nt:unstructured"
@@ -414,6 +415,21 @@
                                                     jcr:primaryType="nt:unstructured"
                                                     name="./placeholderCertificates"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <labelTeamname cq-msm-lockable="./labelTeamname"
+                                          fieldLabel="Label second input"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./labelTeamname"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <placeholderTeamname cq-msm-lockable="./placeholderTeamname"
+                                                fieldLabel="Placeholder second input"
+                                                jcr:primaryType="nt:unstructured"
+                                                name="./placeholderTeamname"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <spanTeamname cq-msm-lockable="./spanTeamname"
+                                         fieldLabel="Span second input"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./spanTeamname"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
                         </items>
                      </column>
                   </items>
