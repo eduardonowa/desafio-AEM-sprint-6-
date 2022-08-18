@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bodyType {
-  height: 100vh;
+  height: calc(100vh + 400px);
   width: 100vw;
   background: #e5e5e5;
 }

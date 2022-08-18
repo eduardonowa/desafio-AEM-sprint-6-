@@ -8,7 +8,6 @@ export default {
   ],
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    color: { control: 'color' },
     fontFamily: {
       control: { type: 'select' },
       options: ['Inter', 'Arial', 'Nunito']
@@ -25,5 +24,4 @@ const Template = (args, { argTypes }) => ({
 
 export const Type = Template.bind({})
 Type.args = {
-  Text: 'default text'
 }

@@ -1,11 +1,17 @@
 <template>
-  <div id="box-terms">
+  <div id="box-terms" :style="style">
     <label class="terms">
       <input type="checkbox" name="terms" class="chk" id="checkbox" required />
       <span class="geekmark"></span>
-      <label class="label-text">{{ label }}</label>
+      <label class="label-text" :style="styleFont">{{ label }}</label>
     </label>
-    <small id="chkError" class="classSpan" v-show="showSpan">{{ spanText }}</small>
+    <small
+      id="chkError"
+      class="classSpan"
+      v-show="showSpan"
+      :style="styleFont"
+      >{{ spanText }}</small
+    >
   </div>
 </template>
 
@@ -35,18 +41,19 @@ export default {
       type: String,
       default: 'Please confirm the terms'
     },
-    color: {
-      type: String
-    },
     fontSize: {
       type: String
     }
   },
   computed: {
-    style () {
+    styleFont() {
       return {
-        color: this.color,
-        fontFamily: this.fontFamily,
+        fontFamily: this.fontFamily
+      }
+    },
+
+    style() {
+      return {
         fontSize: this.fontSize / 16 + 'em'
       }
     }

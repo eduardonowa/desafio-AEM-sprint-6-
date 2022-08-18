@@ -16,7 +16,7 @@ export default {
     fontSize: { control: 'text' },
     type: {
       control: { type: 'select' },
-      options: ['text', 'date', 'email', 'tel']
+      options: ['text', 'date', 'email', 'phone']
     }
   }
 }

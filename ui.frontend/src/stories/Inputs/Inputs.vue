@@ -7,13 +7,13 @@
       :type="type"
       :placeholder="placeholder"
       id="inputStory"
-      @change="teste"
     />
   </div>
 </template>
 
 <script>
 import './inputs.css'
+import $ from 'jquery'
 import {} from 'jquery-mask-plugin'
 export default {
   // eslint-disable-next-line
@@ -49,9 +49,7 @@ export default {
       type: String,
       default: 'text',
       authenticator: function (value) {
-        return (
-          ['text', 'date', 'email', 'tel'].indexOf(value) !== -1
-        )
+        return ['text', 'date', 'email', 'phone'].indexOf(value) !== -1
       }
     },
     placeholder: {
@@ -63,26 +61,33 @@ export default {
     },
     labelColor: {
       type: String
+    },
+    placeholderColor:String
+  },
+  methods: {},
+  updated() {
+    if (this.type === 'phone') {
+      $(`.phone input`).mask('(00) 00000-0000')
+      console.log('teste')
     }
   },
-  methods: {
-
-  },
+  beforeUpdate() {},
   computed: {
-    style () {
+    style() {
       return {
         color: this.color,
         fontFamily: this.fontFamily,
         fontSize: this.fontSize / 16 + 'em'
       }
     },
-    labelStyle () {
+    labelStyle() {
       return {
         color: this.labelColor
       }
     },
-    inputStyle () {
+    inputStyle() {
       return {
+        color: this.placeholderColor,
         borderColor: this.borderColor
       }
     }
